@@ -75,6 +75,11 @@ class MaxMinFairnessPolicyWithPerf(Policy):
         cvxprob = cp.Problem(objective, constraints)
         result = cvxprob.solve(solver=self._solver)
 
+        assert priority_weights.shape[0] == scale_factors_array.shape[0]
+        assert priority_weights.shape[0] == throughputs.shape[0]
+
+        print(f"solver:PROFILE n:{throughputs.shape[0]} solve_time:{cvxprob.solver_stats.solve_time} setup_time:{cvxprob.solver_stats.setup_time}")
+
         if cvxprob.status != "optimal":
             print('WARNING: Allocation returned by policy not optimal!')
 
