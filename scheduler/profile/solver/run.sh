@@ -13,8 +13,8 @@ mkdir -p profile/solver/logs
 
 # run
 python  -u scripts/sweeps/run_sweep_continuous.py \
-        -s 4000 \
-        -e 5000 \
+        -s 100 \
+        -e 110 \
         -l profile/solver/logs \
         -j 20 \
         -p max_min_fairness \

@@ -78,6 +78,7 @@ class MaxMinFairnessPolicyWithPerf(Policy):
         assert priority_weights.shape[0] == scale_factors_array.shape[0]
         assert priority_weights.shape[0] == throughputs.shape[0]
 
+        print("solver:SHAPE", self._solver, throughputs.shape, priority_weights.shape, scale_factors_array.shape)
         print(f"solver:PROFILE n:{throughputs.shape[0]} solve_time:{cvxprob.solver_stats.solve_time} setup_time:{cvxprob.solver_stats.setup_time}")
 
         if cvxprob.status != "optimal":
