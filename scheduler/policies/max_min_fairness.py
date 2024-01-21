@@ -75,6 +75,14 @@ class MaxMinFairnessPolicyWithPerf(Policy):
         cvxprob = cp.Problem(objective, constraints)
         result = cvxprob.solve(solver=self._solver)
 
+        # log_dir = '/users/tareq/gavel/scheduler/profile/solver/logs'
+        # if throughputs.shape[0] == 10 and not os.path.exists(f'{log_dir}/dump.track'):
+        #     with open(f'{log_dir}/dump.track', 'w') as f:
+        #         pass
+        #     np.savetxt(f'{log_dir}/throughputs.txt', throughputs)
+        #     np.savetxt(f'{log_dir}/priority_weights.txt', priority_weights)
+        #     np.savetxt(f'{log_dir}/scale_factors_array.txt', scale_factors_array)
+
         assert priority_weights.shape[0] == scale_factors_array.shape[0]
         assert priority_weights.shape[0] == throughputs.shape[0]
 
@@ -357,6 +365,8 @@ class MaxMinFairnessPolicyWithPacking(PolicyWithPacking):
             kwargs = {}
 
         result = cvxprob.solve(solver=self._solver, **kwargs)
+
+        print(f"solver:PROFILE n:{x.shape[0]} solve_time:{cvxprob.solver_stats.solve_time} setup_time:{cvxprob.solver_stats.setup_time}")
 
         if cvxprob.status != "optimal":
             print('WARNING: Allocation returned by policy not optimal!')
