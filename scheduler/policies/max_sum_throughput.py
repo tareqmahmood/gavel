@@ -145,13 +145,22 @@ class ThroughputNormalizedByCostSumWithPackingSLOs(PolicyWithPacking):
                                    cp.vstack(per_job_SLOs))
         cvxprob = cp.Problem(objective, constraints + SLO_constraints)
         result = cvxprob.solve(solver=self._solver)
+        stats1 = cvxprob.solver_stats
+        state2 = None
 
         if x.value is None:
             print('WARNING: No allocation possible with provided SLOs!')
             cvxprob = cp.Problem(objective, constraints)
             result = cvxprob.solve(solver=self._solver)
+            stats2 = cvxprob.solver_stats
 
         if cvxprob.status != "optimal":
             print('WARNING: Allocation returned by policy not optimal!')
+
+        if state2:
+            print(f"solver:PROFILE n:{x.shape[0]} solve_time1:{stats1.solve_time} setup_time1:{stats1.setup_time} solve_time2:{stats2.solve_time} setup_time2:{stats2.setup_time}")
+        else:
+            print(f"solver:PROFILE n:{x.shape[0]} solve_time1:{stats1.solve_time} setup_time1:{stats1.setup_time} solve_time2:0 setup_time2:0")
+
 
         return super().unflatten(x.value.clip(min=0.0).clip(max=1.0), index)

@@ -260,12 +260,15 @@ def read_per_instance_type_spot_prices_azure(directory):
 
 def read_per_instance_type_spot_prices_json(directory):
     per_instance_type_spot_prices = {}
-    per_instance_type_spot_prices['aws'] = \
-        read_per_instance_type_spot_prices_aws(os.path.join(directory,
-                                                            'aws/logs'))
-    per_instance_type_spot_prices['azure'] = \
-        read_per_instance_type_spot_prices_azure(os.path.join(directory,
-                                                              'azure/logs'))
+    per_instance_type_spot_prices['aws'] = {
+        'p3.2xlarge': 0.74,
+        'p2.xlarge': 0.43
+    }
+    per_instance_type_spot_prices['azure'] = {
+        'NC6s v3': 0.74,
+        'NC6s v2': 0.43,
+        'NC6': 0.135
+    }
     per_instance_type_spot_prices['gcp'] = {
         'v100': 0.74,
         'p100': 0.43,
@@ -284,6 +287,8 @@ def get_latest_price_for_worker_type_aws(worker_type, current_time,
         instance_type = 'p2.xlarge'
     elif worker_type == 'k80':
         instance_type = 'p2.xlarge'
+
+    return per_instance_type_spot_prices[instance_type]
 
     timestamps = [datetime.strptime(x['Timestamp'], '%Y-%m-%dT%H:%M:%S.000Z')
                   for x in per_instance_type_spot_prices[instance_type]]
@@ -329,6 +334,8 @@ def get_latest_price_for_worker_type_azure(worker_type, current_time,
         instance_type = 'NC6s v2'
     elif worker_type == 'v100':
         instance_type = 'NC6s v3'
+
+    return per_instance_type_spot_prices[instance_type]
 
     earliest_timestamps = []
     for zone in per_instance_type_spot_prices[instance_type]:

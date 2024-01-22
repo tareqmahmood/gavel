@@ -9,6 +9,10 @@ throughputs = np.random.uniform(0, 1, (n, 3))
 priority_weights = np.random.uniform(0, 1, (n, 1))
 scale_factors_array = np.random.uniform(0, 1, (n, 3))
 
+# throughputs = np.ones((n, 3))
+# priority_weights = np.ones((n, 1))
+# scale_factors_array = np.ones((n, 3))
+
 # constraints
 def get_base_constraints(x, scale_factors_array):
     """Return base constraints."""
