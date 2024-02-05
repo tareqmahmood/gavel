@@ -509,7 +509,7 @@ class Scheduler:
                 timestamp = self.get_current_timestamp()
             self._per_job_start_timestamps[job_id] = timestamp
             self._logger.info(
-                '[Job dispatched]\tJob ID: {job_id}'.format(job_id=job_id))
+                '[Job dispatched]\tJob ID: {job_id} GPU:{gpu}'.format(job_id=job_id, gpu=job.scale_factor))
             self._scheduler_cv.notifyAll()
 
         return job_id

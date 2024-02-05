@@ -235,7 +235,7 @@ if __name__=='__main__':
                         help=('If set, fixes the duration of all jobs to the '
                               'specified value (in seconds)'))
     parser.add_argument('--throughputs-file', type=str,
-                        default='simulation_throughputs.json',
+                        default='norm_speed/norm_to_throughput.json',
                         help='Oracle throughputs file')
     parser.add_argument('-m', '--generate-multi-gpu-jobs', action='store_true',
                         default=False,

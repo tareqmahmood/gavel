@@ -79,16 +79,19 @@ def generate_job(throughputs, reference_worker_type='v100', rng=None,
 
     job_template = None
 
-    if always_generate_scale_factor:
-        scale_factor = scale_factor_generator_func(scale_factor_rng)
-    else:
-        # NOTE: We select the job template here to maintain backwards
-        # compatability with scripts/utils/generate_trace.py
-        job_template = rng.choice(JobTable)
-        if generate_multi_gpu_jobs and job_template.distributed:
-            scale_factor = scale_factor_generator_func(scale_factor_rng)
-        else:
-            scale_factor = 1
+    # if always_generate_scale_factor:
+    #     scale_factor = scale_factor_generator_func(scale_factor_rng)
+    # else:
+    #     # NOTE: We select the job template here to maintain backwards
+    #     # compatability with scripts/utils/generate_trace.py
+    #     job_template = rng.choice(JobTable)
+    #     if generate_multi_gpu_jobs and job_template.distributed:
+    #         scale_factor = scale_factor_generator_func(scale_factor_rng)
+    #     else:
+    #         scale_factor = 1
+
+    job_template = rng.choice(JobTable)
+    scale_factor = job_template.scale_factor
 
     if fixed_job_duration:
         run_time = fixed_job_duration
