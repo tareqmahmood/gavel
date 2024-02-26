@@ -72,7 +72,7 @@ from job_template import JobTemplate
 #                        num_steps_arg=num_steps_arg)
 
 # JobTable = []
-# 
+#
 # for batch_size in [16, 32, 64, 128, 256]:
 #     JobTable.append(resnet18(batch_size))
 # for batch_size in [16, 32, 64, 128]:
@@ -86,7 +86,8 @@ from job_template import JobTemplate
 # JobTable.append(a3c())
 # JobTable.append(cyclegan())
 
-def resnet50(batch_size, scale_factor):
+
+def resnet50(batch_size):
     model = 'resnet50 (batch size %d)' % (batch_size)
     command = 'python3 main.py -j 8 -a resnet50 -b %d' % (batch_size)
     command += ' %s/imagenet/'
@@ -94,9 +95,10 @@ def resnet50(batch_size, scale_factor):
     num_steps_arg = '--num_minibatches'
     return JobTemplate(model=model, command=command,
                        working_directory=working_directory,
-                       num_steps_arg=num_steps_arg, distributed=True, scale_factor=scale_factor)
+                       num_steps_arg=num_steps_arg, distributed=True)
 
-def vgg19(batch_size, scale_factor):
+
+def vgg19(batch_size):
     model = 'vgg19 (batch size %d)' % (batch_size)
     command = 'python3 main.py -j 8 -a vgg19 -b %d' % (batch_size)
     command += ' %s/imagenet/'
@@ -104,111 +106,117 @@ def vgg19(batch_size, scale_factor):
     num_steps_arg = '--num_minibatches'
     return JobTemplate(model=model, command=command,
                        working_directory=working_directory,
-                       num_steps_arg=num_steps_arg, distributed=True, scale_factor=scale_factor)
+                       num_steps_arg=num_steps_arg, distributed=True)
 
-def pointnet(batch_size, scale_factor):
+
+def pointnet(batch_size):
     model = 'PointNet (batch size %d)' % (batch_size)
     command = 'python3 main.py'
     working_directory = 'pointnet'
     num_steps_arg = '--num_minibatches'
     return JobTemplate(model=model, command=command,
                        working_directory=working_directory,
-                       num_steps_arg=num_steps_arg, distributed=True, scale_factor=scale_factor)
+                       num_steps_arg=num_steps_arg, distributed=True)
 
-def dcgan(batch_size, scale_factor):
+
+def dcgan(batch_size):
     model = 'DCGAN (batch size %d)' % (batch_size)
     command = 'python3 main.py'
     working_directory = 'dcgan'
     num_steps_arg = '--num_minibatches'
     return JobTemplate(model=model, command=command,
                        working_directory=working_directory,
-                       num_steps_arg=num_steps_arg, distributed=True, scale_factor=scale_factor)
+                       num_steps_arg=num_steps_arg, distributed=True)
 
-def gpt2xl(batch_size, micro_batch_size, scale_factor):
+
+def gpt2xl(batch_size, micro_batch_size):
     model = 'GPT2-XL (batch size %d/%d)' % (batch_size, micro_batch_size)
     command = 'python3 main.py'
     working_directory = 'gpt'
     num_steps_arg = '--steps'
     return JobTemplate(model=model, command=command,
                        working_directory=working_directory,
-                       num_steps_arg=num_steps_arg, distributed=True, scale_factor=scale_factor)
+                       num_steps_arg=num_steps_arg, distributed=True)
 
 
-def gpt2medium(batch_size, micro_batch_size, scale_factor):
+def gpt2medium(batch_size, micro_batch_size):
     model = 'GPT2-Medium (batch size %d/%d)' % (batch_size, micro_batch_size)
     command = 'python3 main.py'
     working_directory = 'gpt'
     num_steps_arg = '--steps'
     return JobTemplate(model=model, command=command,
                        working_directory=working_directory,
-                       num_steps_arg=num_steps_arg, distributed=True, scale_factor=scale_factor)
+                       num_steps_arg=num_steps_arg, distributed=True)
 
-def gpt2(batch_size, micro_batch_size, scale_factor):
+
+def gpt2(batch_size, micro_batch_size):
     model = 'GPT2 (batch size %d/%d)' % (batch_size, micro_batch_size)
     command = 'python3 main.py'
     working_directory = 'gpt'
     num_steps_arg = '--steps'
     return JobTemplate(model=model, command=command,
                        working_directory=working_directory,
-                       num_steps_arg=num_steps_arg, distributed=True, scale_factor=scale_factor)
+                       num_steps_arg=num_steps_arg, distributed=True)
 
-def bertbase(batch_size, micro_batch_size, scale_factor):
+
+def bertbase(batch_size, micro_batch_size):
     model = 'Bert-Base (batch size %d/%d)' % (batch_size, micro_batch_size)
     command = 'python3 main.py'
     working_directory = 'gpt'
     num_steps_arg = '--steps'
     return JobTemplate(model=model, command=command,
                        working_directory=working_directory,
-                       num_steps_arg=num_steps_arg, distributed=True, scale_factor=scale_factor)
+                       num_steps_arg=num_steps_arg, distributed=True)
 
-def bertlarge(batch_size, micro_batch_size, scale_factor):
+
+def bertlarge(batch_size, micro_batch_size):
     model = 'Bert-Large (batch size %d/%d)' % (batch_size, micro_batch_size)
     command = 'python3 main.py'
     working_directory = 'gpt'
     num_steps_arg = '--steps'
     return JobTemplate(model=model, command=command,
                        working_directory=working_directory,
-                       num_steps_arg=num_steps_arg, distributed=True, scale_factor=scale_factor)
+                       num_steps_arg=num_steps_arg, distributed=True)
 
+
+SmallJobTable = []
+LargeJobTable = []
 JobTable = []
 
-for batch_size in [32]:
-    for scale_factor in [2]:
-        JobTable.append(resnet50(batch_size, scale_factor))
+# large_model_list = ['Bert-Base', 'Bert-Large', 'GPT2', 'GPT2-Medium', 'GPT2-XL']
+# small_model_list = ['resnet50', 'vgg19', 'DCGAN', 'PointNet']
 
 for batch_size in [32]:
-    for scale_factor in [2]:
-        JobTable.append(vgg19(batch_size, scale_factor))
+    SmallJobTable.append(resnet50(batch_size))
 
 for batch_size in [32]:
-    for scale_factor in [2]:
-        JobTable.append(pointnet(batch_size, scale_factor))
+    SmallJobTable.append(vgg19(batch_size))
+
+for batch_size in [32]:
+    SmallJobTable.append(pointnet(batch_size))
 
 for batch_size in [128]:
-    for scale_factor in [2]:
-        JobTable.append(dcgan(batch_size, scale_factor))
-
-# for batch_size in [256, 512]:
-#     for micro_batch_size in [2, 4]:
-#         for scale_factor in [8]:
-#             JobTable.append(gpt2xl(batch_size, micro_batch_size, scale_factor))
-
-# for batch_size in [256, 512]:
-#     for micro_batch_size in [8, 32]:
-#         for scale_factor in [4]:
-#             JobTable.append(gpt2medium(batch_size, micro_batch_size, scale_factor))
+    SmallJobTable.append(dcgan(batch_size))
 
 for batch_size in [256, 512]:
     for micro_batch_size in [8, 16]:
-        for scale_factor in [2]:
-            JobTable.append(gpt2(batch_size, micro_batch_size, scale_factor))
+        LargeJobTable.append(gpt2(batch_size, micro_batch_size))
+
+for batch_size in [256, 512]:
+    for micro_batch_size in [8, 32]:
+        LargeJobTable.append(gpt2medium(batch_size, micro_batch_size))
+
+for batch_size in [256, 512]:
+    for micro_batch_size in [2, 4]:
+        LargeJobTable.append(gpt2xl(batch_size, micro_batch_size))
 
 for batch_size in [256]:
     for micro_batch_size in [16, 32]:
-        for scale_factor in [2]:
-            JobTable.append(bertbase(batch_size, micro_batch_size, scale_factor))
+        LargeJobTable.append(bertbase(batch_size, micro_batch_size))
 
-# for batch_size in [256]:
-#     for micro_batch_size in [16, 64]:
-#         for scale_factor in [4]:
-#             JobTable.append(bertlarge(batch_size, micro_batch_size, scale_factor))
+for batch_size in [256]:
+    for micro_batch_size in [16, 64]:
+        LargeJobTable.append(bertlarge(batch_size, micro_batch_size))
+
+
+JobTable = SmallJobTable + LargeJobTable
