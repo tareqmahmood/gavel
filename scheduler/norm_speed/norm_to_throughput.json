@@ -18,7 +18,11 @@
                 0.99,
                 1.0
             ],
-            "('GPT2 (batch size 256/8)', 2)": [
+            "('Bert-Base (batch size 256/32)', 2)": [
+                0.0,
+                0.0
+            ],
+            "('GPT2 (batch size 512/8)', 2)": [
                 0.0,
                 0.0
             ],
@@ -30,15 +34,11 @@
                 0.0,
                 0.0
             ],
-            "('GPT2 (batch size 512/8)', 2)": [
-                0.0,
-                0.0
-            ],
             "('Bert-Base (batch size 256/16)', 2)": [
                 0.0,
                 0.0
             ],
-            "('Bert-Base (batch size 256/32)', 2)": [
+            "('GPT2 (batch size 256/8)', 2)": [
                 0.0,
                 0.0
             ]
@@ -61,7 +61,11 @@
                 0.6,
                 1.0
             ],
-            "('GPT2 (batch size 256/8)', 2)": [
+            "('Bert-Base (batch size 256/32)', 2)": [
+                0.0,
+                0.0
+            ],
+            "('GPT2 (batch size 512/8)', 2)": [
                 0.0,
                 0.0
             ],
@@ -73,26 +77,26 @@
                 0.0,
                 0.0
             ],
-            "('GPT2 (batch size 512/8)', 2)": [
-                0.0,
-                0.0
-            ],
             "('Bert-Base (batch size 256/16)', 2)": [
                 0.0,
                 0.0
             ],
-            "('Bert-Base (batch size 256/32)', 2)": [
+            "('GPT2 (batch size 256/8)', 2)": [
                 0.0,
                 0.0
             ]
         },
         "('GPT2 (batch size 512/8)', 2)": {
             "null": 1.0,
+            "('Bert-Base (batch size 256/32)', 2)": [
+                0.0,
+                0.0
+            ],
             "('PointNet (batch size 32)', 2)": [
                 0.0,
                 0.0
             ],
-            "('GPT2 (batch size 256/8)', 2)": [
+            "('GPT2 (batch size 512/8)', 2)": [
                 0.0,
                 0.0
             ],
@@ -104,7 +108,7 @@
                 0.0,
                 0.0
             ],
-            "('GPT2 (batch size 512/8)', 2)": [
+            "('DCGAN (batch size 128)', 2)": [
                 0.0,
                 0.0
             ],
@@ -112,7 +116,7 @@
                 0.0,
                 0.0
             ],
-            "('DCGAN (batch size 128)', 2)": [
+            "('resnet50 (batch size 32)', 2)": [
                 0.0,
                 0.0
             ],
@@ -120,22 +124,22 @@
                 0.0,
                 0.0
             ],
-            "('resnet50 (batch size 32)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('Bert-Base (batch size 256/32)', 2)": [
+            "('GPT2 (batch size 256/8)', 2)": [
                 0.0,
                 0.0
             ]
         },
         "('GPT2 (batch size 512/16)', 2)": {
             "null": 0.76,
+            "('Bert-Base (batch size 256/32)', 2)": [
+                0.0,
+                0.0
+            ],
             "('PointNet (batch size 32)', 2)": [
                 0.0,
                 0.0
             ],
-            "('GPT2 (batch size 256/8)', 2)": [
+            "('GPT2 (batch size 512/8)', 2)": [
                 0.0,
                 0.0
             ],
@@ -147,7 +151,7 @@
                 0.0,
                 0.0
             ],
-            "('GPT2 (batch size 512/8)', 2)": [
+            "('DCGAN (batch size 128)', 2)": [
                 0.0,
                 0.0
             ],
@@ -155,7 +159,7 @@
                 0.0,
                 0.0
             ],
-            "('DCGAN (batch size 128)', 2)": [
+            "('resnet50 (batch size 32)', 2)": [
                 0.0,
                 0.0
             ],
@@ -163,46 +167,18 @@
                 0.0,
                 0.0
             ],
-            "('resnet50 (batch size 32)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('Bert-Base (batch size 256/32)', 2)": [
+            "('GPT2 (batch size 256/8)', 2)": [
                 0.0,
                 0.0
             ]
         },
         "('GPT2-Medium (batch size 512/8)', 4)": {
             "null": 1.0,
-            "('Bert-Large (batch size 256/16)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 512/32)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('Bert-Large (batch size 256/64)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 256/8)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('vgg19 (batch size 32)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('PointNet (batch size 32)', 4)": [
-                0.0,
-                0.0
-            ],
             "('resnet50 (batch size 32)', 4)": [
                 0.0,
                 0.0
             ],
-            "('DCGAN (batch size 128)', 4)": [
+            "('Bert-Large (batch size 256/64)', 4)": [
                 0.0,
                 0.0
             ],
@@ -211,41 +187,41 @@
                 0.0
             ],
             "('GPT2-Medium (batch size 512/8)', 4)": [
+                0.0,
+                0.0
+            ],
+            "('PointNet (batch size 32)', 4)": [
+                0.0,
+                0.0
+            ],
+            "('GPT2-Medium (batch size 256/8)', 4)": [
+                0.0,
+                0.0
+            ],
+            "('GPT2-Medium (batch size 512/32)', 4)": [
+                0.0,
+                0.0
+            ],
+            "('Bert-Large (batch size 256/16)', 4)": [
+                0.0,
+                0.0
+            ],
+            "('DCGAN (batch size 128)', 4)": [
+                0.0,
+                0.0
+            ],
+            "('vgg19 (batch size 32)', 4)": [
                 0.0,
                 0.0
             ]
         },
         "('GPT2-Medium (batch size 512/32)', 4)": {
             "null": 0.66,
-            "('Bert-Large (batch size 256/16)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 512/32)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('Bert-Large (batch size 256/64)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 256/8)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('vgg19 (batch size 32)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('PointNet (batch size 32)', 4)": [
-                0.0,
-                0.0
-            ],
             "('resnet50 (batch size 32)', 4)": [
                 0.0,
                 0.0
             ],
-            "('DCGAN (batch size 128)', 4)": [
+            "('Bert-Large (batch size 256/64)', 4)": [
                 0.0,
                 0.0
             ],
@@ -254,6 +230,30 @@
                 0.0
             ],
             "('GPT2-Medium (batch size 512/8)', 4)": [
+                0.0,
+                0.0
+            ],
+            "('PointNet (batch size 32)', 4)": [
+                0.0,
+                0.0
+            ],
+            "('GPT2-Medium (batch size 256/8)', 4)": [
+                0.0,
+                0.0
+            ],
+            "('GPT2-Medium (batch size 512/32)', 4)": [
+                0.0,
+                0.0
+            ],
+            "('Bert-Large (batch size 256/16)', 4)": [
+                0.0,
+                0.0
+            ],
+            "('DCGAN (batch size 128)', 4)": [
+                0.0,
+                0.0
+            ],
+            "('vgg19 (batch size 32)', 4)": [
                 0.0,
                 0.0
             ]
@@ -276,19 +276,7 @@
                 0.91,
                 0.96
             ],
-            "('Bert-Large (batch size 256/16)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 512/32)', 4)": [
-                0.0,
-                0.0
-            ],
             "('Bert-Large (batch size 256/64)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 256/8)', 4)": [
                 0.0,
                 0.0
             ],
@@ -297,6 +285,18 @@
                 0.0
             ],
             "('GPT2-Medium (batch size 512/8)', 4)": [
+                0.0,
+                0.0
+            ],
+            "('GPT2-Medium (batch size 256/8)', 4)": [
+                0.0,
+                0.0
+            ],
+            "('GPT2-Medium (batch size 512/32)', 4)": [
+                0.0,
+                0.0
+            ],
+            "('Bert-Large (batch size 256/16)', 4)": [
                 0.0,
                 0.0
             ]
@@ -319,19 +319,7 @@
                 0.57,
                 0.99
             ],
-            "('Bert-Large (batch size 256/16)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 512/32)', 4)": [
-                0.0,
-                0.0
-            ],
             "('Bert-Large (batch size 256/64)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 256/8)', 4)": [
                 0.0,
                 0.0
             ],
@@ -342,19 +330,23 @@
             "('GPT2-Medium (batch size 512/8)', 4)": [
                 0.0,
                 0.0
+            ],
+            "('GPT2-Medium (batch size 256/8)', 4)": [
+                0.0,
+                0.0
+            ],
+            "('GPT2-Medium (batch size 512/32)', 4)": [
+                0.0,
+                0.0
+            ],
+            "('Bert-Large (batch size 256/16)', 4)": [
+                0.0,
+                0.0
             ]
         },
         "('GPT2-XL (batch size 512/4)', 8)": {
             "null": 1.0,
-            "('resnet50 (batch size 32)', 8)": [
-                0.0,
-                0.0
-            ],
-            "('vgg19 (batch size 32)', 8)": [
-                0.0,
-                0.0
-            ],
-            "('DCGAN (batch size 128)', 8)": [
+            "('GPT2-XL (batch size 512/2)', 8)": [
                 0.0,
                 0.0
             ],
@@ -366,30 +358,30 @@
                 0.0,
                 0.0
             ],
-            "('GPT2-XL (batch size 512/2)', 8)": [
+            "('GPT2-XL (batch size 256/4)', 8)": [
+                0.0,
+                0.0
+            ],
+            "('DCGAN (batch size 128)', 8)": [
+                0.0,
+                0.0
+            ],
+            "('vgg19 (batch size 32)', 8)": [
+                0.0,
+                0.0
+            ],
+            "('resnet50 (batch size 32)', 8)": [
                 0.0,
                 0.0
             ],
             "('GPT2-XL (batch size 512/4)', 8)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-XL (batch size 256/4)', 8)": [
                 0.0,
                 0.0
             ]
         },
         "('GPT2-XL (batch size 512/2)', 8)": {
             "null": 0.73,
-            "('resnet50 (batch size 32)', 8)": [
-                0.0,
-                0.0
-            ],
-            "('vgg19 (batch size 32)', 8)": [
-                0.0,
-                0.0
-            ],
-            "('DCGAN (batch size 128)', 8)": [
+            "('GPT2-XL (batch size 512/2)', 8)": [
                 0.0,
                 0.0
             ],
@@ -401,15 +393,23 @@
                 0.0,
                 0.0
             ],
-            "('GPT2-XL (batch size 512/2)', 8)": [
+            "('GPT2-XL (batch size 256/4)', 8)": [
+                0.0,
+                0.0
+            ],
+            "('DCGAN (batch size 128)', 8)": [
+                0.0,
+                0.0
+            ],
+            "('vgg19 (batch size 32)', 8)": [
+                0.0,
+                0.0
+            ],
+            "('resnet50 (batch size 32)', 8)": [
                 0.0,
                 0.0
             ],
             "('GPT2-XL (batch size 512/4)', 8)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-XL (batch size 256/4)', 8)": [
                 0.0,
                 0.0
             ]
@@ -524,11 +524,11 @@
                 1.0
             ],
             "null": 1.0,
-            "('GPT2 (batch size 512/16)', 2)": [
+            "('GPT2 (batch size 512/8)', 2)": [
                 0.0,
                 0.0
             ],
-            "('GPT2 (batch size 512/8)', 2)": [
+            "('GPT2 (batch size 512/16)', 2)": [
                 0.0,
                 0.0
             ]
@@ -567,11 +567,11 @@
                 1.0
             ],
             "null": 1.0,
-            "('GPT2 (batch size 512/16)', 2)": [
+            "('GPT2 (batch size 512/8)', 2)": [
                 0.0,
                 0.0
             ],
-            "('GPT2 (batch size 512/8)', 2)": [
+            "('GPT2 (batch size 512/16)', 2)": [
                 0.0,
                 0.0
             ]
@@ -610,11 +610,11 @@
                 1.0
             ],
             "null": 1.0,
-            "('GPT2 (batch size 512/16)', 2)": [
+            "('GPT2 (batch size 512/8)', 2)": [
                 0.0,
                 0.0
             ],
-            "('GPT2 (batch size 512/8)', 2)": [
+            "('GPT2 (batch size 512/16)', 2)": [
                 0.0,
                 0.0
             ]
@@ -653,11 +653,11 @@
                 1.0
             ],
             "null": 1.0,
-            "('GPT2 (batch size 512/16)', 2)": [
+            "('GPT2 (batch size 512/8)', 2)": [
                 0.0,
                 0.0
             ],
-            "('GPT2 (batch size 512/8)', 2)": [
+            "('GPT2 (batch size 512/16)', 2)": [
                 0.0,
                 0.0
             ]
@@ -680,7 +680,11 @@
                 1.0
             ],
             "null": 1.0,
-            "('GPT2 (batch size 256/8)', 2)": [
+            "('Bert-Base (batch size 256/32)', 2)": [
+                0.0,
+                0.0
+            ],
+            "('GPT2 (batch size 512/8)', 2)": [
                 0.0,
                 0.0
             ],
@@ -692,15 +696,11 @@
                 0.0,
                 0.0
             ],
-            "('GPT2 (batch size 512/8)', 2)": [
-                0.0,
-                0.0
-            ],
             "('Bert-Base (batch size 256/16)', 2)": [
                 0.0,
                 0.0
             ],
-            "('Bert-Base (batch size 256/32)', 2)": [
+            "('GPT2 (batch size 256/8)', 2)": [
                 0.0,
                 0.0
             ]
@@ -723,7 +723,11 @@
                 1.0
             ],
             "null": 1.0,
-            "('GPT2 (batch size 256/8)', 2)": [
+            "('Bert-Base (batch size 256/32)', 2)": [
+                0.0,
+                0.0
+            ],
+            "('GPT2 (batch size 512/8)', 2)": [
                 0.0,
                 0.0
             ],
@@ -735,15 +739,11 @@
                 0.0,
                 0.0
             ],
-            "('GPT2 (batch size 512/8)', 2)": [
-                0.0,
-                0.0
-            ],
             "('Bert-Base (batch size 256/16)', 2)": [
                 0.0,
                 0.0
             ],
-            "('Bert-Base (batch size 256/32)', 2)": [
+            "('GPT2 (batch size 256/8)', 2)": [
                 0.0,
                 0.0
             ]
@@ -782,11 +782,11 @@
                 0.0
             ],
             "null": 1.0,
-            "('GPT2-Medium (batch size 512/32)', 4)": [
+            "('GPT2-Medium (batch size 512/8)', 4)": [
                 0.0,
                 0.0
             ],
-            "('GPT2-Medium (batch size 512/8)', 4)": [
+            "('GPT2-Medium (batch size 512/32)', 4)": [
                 0.0,
                 0.0
             ]
@@ -825,11 +825,11 @@
                 0.0
             ],
             "null": 1.0,
-            "('GPT2-Medium (batch size 512/32)', 4)": [
+            "('GPT2-Medium (batch size 512/8)', 4)": [
                 0.0,
                 0.0
             ],
-            "('GPT2-Medium (batch size 512/8)', 4)": [
+            "('GPT2-Medium (batch size 512/32)', 4)": [
                 0.0,
                 0.0
             ]
@@ -868,11 +868,11 @@
                 0.0
             ],
             "null": 1.0,
-            "('GPT2-Medium (batch size 512/32)', 4)": [
+            "('GPT2-Medium (batch size 512/8)', 4)": [
                 0.0,
                 0.0
             ],
-            "('GPT2-Medium (batch size 512/8)', 4)": [
+            "('GPT2-Medium (batch size 512/32)', 4)": [
                 0.0,
                 0.0
             ]
@@ -911,11 +911,11 @@
                 0.0
             ],
             "null": 1.0,
-            "('GPT2-Medium (batch size 512/32)', 4)": [
+            "('GPT2-Medium (batch size 512/8)', 4)": [
                 0.0,
                 0.0
             ],
-            "('GPT2-Medium (batch size 512/8)', 4)": [
+            "('GPT2-Medium (batch size 512/32)', 4)": [
                 0.0,
                 0.0
             ]
@@ -938,19 +938,7 @@
                 0.0
             ],
             "null": 1.0,
-            "('Bert-Large (batch size 256/16)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 512/32)', 4)": [
-                0.0,
-                0.0
-            ],
             "('Bert-Large (batch size 256/64)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 256/8)', 4)": [
                 0.0,
                 0.0
             ],
@@ -959,6 +947,18 @@
                 0.0
             ],
             "('GPT2-Medium (batch size 512/8)', 4)": [
+                0.0,
+                0.0
+            ],
+            "('GPT2-Medium (batch size 256/8)', 4)": [
+                0.0,
+                0.0
+            ],
+            "('GPT2-Medium (batch size 512/32)', 4)": [
+                0.0,
+                0.0
+            ],
+            "('Bert-Large (batch size 256/16)', 4)": [
                 0.0,
                 0.0
             ]
@@ -981,19 +981,7 @@
                 0.0
             ],
             "null": 1.0,
-            "('Bert-Large (batch size 256/16)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 512/32)', 4)": [
-                0.0,
-                0.0
-            ],
             "('Bert-Large (batch size 256/64)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 256/8)', 4)": [
                 0.0,
                 0.0
             ],
@@ -1002,6 +990,18 @@
                 0.0
             ],
             "('GPT2-Medium (batch size 512/8)', 4)": [
+                0.0,
+                0.0
+            ],
+            "('GPT2-Medium (batch size 256/8)', 4)": [
+                0.0,
+                0.0
+            ],
+            "('GPT2-Medium (batch size 512/32)', 4)": [
+                0.0,
+                0.0
+            ],
+            "('Bert-Large (batch size 256/16)', 4)": [
                 0.0,
                 0.0
             ]
@@ -1024,19 +1024,19 @@
                 1.0
             ],
             "null": 1.0,
-            "('GPT2-XL (batch size 256/2)', 8)": [
-                0.0,
-                0.0
-            ],
             "('GPT2-XL (batch size 512/2)', 8)": [
                 0.0,
                 0.0
             ],
-            "('GPT2-XL (batch size 512/4)', 8)": [
+            "('GPT2-XL (batch size 256/2)', 8)": [
                 0.0,
                 0.0
             ],
             "('GPT2-XL (batch size 256/4)', 8)": [
+                0.0,
+                0.0
+            ],
+            "('GPT2-XL (batch size 512/4)', 8)": [
                 0.0,
                 0.0
             ]
@@ -1199,19 +1199,19 @@
                 0.0
             ],
             "null": 1.0,
-            "('GPT2-XL (batch size 256/2)', 8)": [
-                0.0,
-                0.0
-            ],
             "('GPT2-XL (batch size 512/2)', 8)": [
                 0.0,
                 0.0
             ],
-            "('GPT2-XL (batch size 512/4)', 8)": [
+            "('GPT2-XL (batch size 256/2)', 8)": [
                 0.0,
                 0.0
             ],
             "('GPT2-XL (batch size 256/4)', 8)": [
+                0.0,
+                0.0
+            ],
+            "('GPT2-XL (batch size 512/4)', 8)": [
                 0.0,
                 0.0
             ]
@@ -1236,7 +1236,11 @@
                 0.99,
                 1.0
             ],
-            "('GPT2 (batch size 256/8)', 2)": [
+            "('Bert-Base (batch size 256/32)', 2)": [
+                0.0,
+                0.0
+            ],
+            "('GPT2 (batch size 512/8)', 2)": [
                 0.0,
                 0.0
             ],
@@ -1248,15 +1252,11 @@
                 0.0,
                 0.0
             ],
-            "('GPT2 (batch size 512/8)', 2)": [
-                0.0,
-                0.0
-            ],
             "('Bert-Base (batch size 256/16)', 2)": [
                 0.0,
                 0.0
             ],
-            "('Bert-Base (batch size 256/32)', 2)": [
+            "('GPT2 (batch size 256/8)', 2)": [
                 0.0,
                 0.0
             ]
@@ -1279,7 +1279,11 @@
                 0.6,
                 1.0
             ],
-            "('GPT2 (batch size 256/8)', 2)": [
+            "('Bert-Base (batch size 256/32)', 2)": [
+                0.0,
+                0.0
+            ],
+            "('GPT2 (batch size 512/8)', 2)": [
                 0.0,
                 0.0
             ],
@@ -1291,26 +1295,26 @@
                 0.0,
                 0.0
             ],
-            "('GPT2 (batch size 512/8)', 2)": [
-                0.0,
-                0.0
-            ],
             "('Bert-Base (batch size 256/16)', 2)": [
                 0.0,
                 0.0
             ],
-            "('Bert-Base (batch size 256/32)', 2)": [
+            "('GPT2 (batch size 256/8)', 2)": [
                 0.0,
                 0.0
             ]
         },
         "('GPT2 (batch size 512/8)', 2)": {
             "null": 1.0,
+            "('Bert-Base (batch size 256/32)', 2)": [
+                0.0,
+                0.0
+            ],
             "('PointNet (batch size 32)', 2)": [
                 0.0,
                 0.0
             ],
-            "('GPT2 (batch size 256/8)', 2)": [
+            "('GPT2 (batch size 512/8)', 2)": [
                 0.0,
                 0.0
             ],
@@ -1322,7 +1326,7 @@
                 0.0,
                 0.0
             ],
-            "('GPT2 (batch size 512/8)', 2)": [
+            "('DCGAN (batch size 128)', 2)": [
                 0.0,
                 0.0
             ],
@@ -1330,7 +1334,7 @@
                 0.0,
                 0.0
             ],
-            "('DCGAN (batch size 128)', 2)": [
+            "('resnet50 (batch size 32)', 2)": [
                 0.0,
                 0.0
             ],
@@ -1338,22 +1342,22 @@
                 0.0,
                 0.0
             ],
-            "('resnet50 (batch size 32)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('Bert-Base (batch size 256/32)', 2)": [
+            "('GPT2 (batch size 256/8)', 2)": [
                 0.0,
                 0.0
             ]
         },
         "('GPT2 (batch size 512/16)', 2)": {
             "null": 0.76,
+            "('Bert-Base (batch size 256/32)', 2)": [
+                0.0,
+                0.0
+            ],
             "('PointNet (batch size 32)', 2)": [
                 0.0,
                 0.0
             ],
-            "('GPT2 (batch size 256/8)', 2)": [
+            "('GPT2 (batch size 512/8)', 2)": [
                 0.0,
                 0.0
             ],
@@ -1365,7 +1369,7 @@
                 0.0,
                 0.0
             ],
-            "('GPT2 (batch size 512/8)', 2)": [
+            "('DCGAN (batch size 128)', 2)": [
                 0.0,
                 0.0
             ],
@@ -1373,7 +1377,7 @@
                 0.0,
                 0.0
             ],
-            "('DCGAN (batch size 128)', 2)": [
+            "('resnet50 (batch size 32)', 2)": [
                 0.0,
                 0.0
             ],
@@ -1381,46 +1385,18 @@
                 0.0,
                 0.0
             ],
-            "('resnet50 (batch size 32)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('Bert-Base (batch size 256/32)', 2)": [
+            "('GPT2 (batch size 256/8)', 2)": [
                 0.0,
                 0.0
             ]
         },
         "('GPT2-Medium (batch size 512/8)', 4)": {
             "null": 1.0,
-            "('Bert-Large (batch size 256/16)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 512/32)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('Bert-Large (batch size 256/64)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 256/8)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('vgg19 (batch size 32)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('PointNet (batch size 32)', 4)": [
-                0.0,
-                0.0
-            ],
             "('resnet50 (batch size 32)', 4)": [
                 0.0,
                 0.0
             ],
-            "('DCGAN (batch size 128)', 4)": [
+            "('Bert-Large (batch size 256/64)', 4)": [
                 0.0,
                 0.0
             ],
@@ -1429,41 +1405,41 @@
                 0.0
             ],
             "('GPT2-Medium (batch size 512/8)', 4)": [
+                0.0,
+                0.0
+            ],
+            "('PointNet (batch size 32)', 4)": [
+                0.0,
+                0.0
+            ],
+            "('GPT2-Medium (batch size 256/8)', 4)": [
+                0.0,
+                0.0
+            ],
+            "('GPT2-Medium (batch size 512/32)', 4)": [
+                0.0,
+                0.0
+            ],
+            "('Bert-Large (batch size 256/16)', 4)": [
+                0.0,
+                0.0
+            ],
+            "('DCGAN (batch size 128)', 4)": [
+                0.0,
+                0.0
+            ],
+            "('vgg19 (batch size 32)', 4)": [
                 0.0,
                 0.0
             ]
         },
         "('GPT2-Medium (batch size 512/32)', 4)": {
             "null": 0.66,
-            "('Bert-Large (batch size 256/16)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 512/32)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('Bert-Large (batch size 256/64)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 256/8)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('vgg19 (batch size 32)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('PointNet (batch size 32)', 4)": [
-                0.0,
-                0.0
-            ],
             "('resnet50 (batch size 32)', 4)": [
                 0.0,
                 0.0
             ],
-            "('DCGAN (batch size 128)', 4)": [
+            "('Bert-Large (batch size 256/64)', 4)": [
                 0.0,
                 0.0
             ],
@@ -1472,6 +1448,30 @@
                 0.0
             ],
             "('GPT2-Medium (batch size 512/8)', 4)": [
+                0.0,
+                0.0
+            ],
+            "('PointNet (batch size 32)', 4)": [
+                0.0,
+                0.0
+            ],
+            "('GPT2-Medium (batch size 256/8)', 4)": [
+                0.0,
+                0.0
+            ],
+            "('GPT2-Medium (batch size 512/32)', 4)": [
+                0.0,
+                0.0
+            ],
+            "('Bert-Large (batch size 256/16)', 4)": [
+                0.0,
+                0.0
+            ],
+            "('DCGAN (batch size 128)', 4)": [
+                0.0,
+                0.0
+            ],
+            "('vgg19 (batch size 32)', 4)": [
                 0.0,
                 0.0
             ]
@@ -1494,19 +1494,7 @@
                 0.91,
                 0.96
             ],
-            "('Bert-Large (batch size 256/16)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 512/32)', 4)": [
-                0.0,
-                0.0
-            ],
             "('Bert-Large (batch size 256/64)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 256/8)', 4)": [
                 0.0,
                 0.0
             ],
@@ -1515,6 +1503,18 @@
                 0.0
             ],
             "('GPT2-Medium (batch size 512/8)', 4)": [
+                0.0,
+                0.0
+            ],
+            "('GPT2-Medium (batch size 256/8)', 4)": [
+                0.0,
+                0.0
+            ],
+            "('GPT2-Medium (batch size 512/32)', 4)": [
+                0.0,
+                0.0
+            ],
+            "('Bert-Large (batch size 256/16)', 4)": [
                 0.0,
                 0.0
             ]
@@ -1537,19 +1537,7 @@
                 0.57,
                 0.99
             ],
-            "('Bert-Large (batch size 256/16)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 512/32)', 4)": [
-                0.0,
-                0.0
-            ],
             "('Bert-Large (batch size 256/64)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 256/8)', 4)": [
                 0.0,
                 0.0
             ],
@@ -1560,19 +1548,23 @@
             "('GPT2-Medium (batch size 512/8)', 4)": [
                 0.0,
                 0.0
+            ],
+            "('GPT2-Medium (batch size 256/8)', 4)": [
+                0.0,
+                0.0
+            ],
+            "('GPT2-Medium (batch size 512/32)', 4)": [
+                0.0,
+                0.0
+            ],
+            "('Bert-Large (batch size 256/16)', 4)": [
+                0.0,
+                0.0
             ]
         },
         "('GPT2-XL (batch size 512/4)', 8)": {
             "null": 1.0,
-            "('resnet50 (batch size 32)', 8)": [
-                0.0,
-                0.0
-            ],
-            "('vgg19 (batch size 32)', 8)": [
-                0.0,
-                0.0
-            ],
-            "('DCGAN (batch size 128)', 8)": [
+            "('GPT2-XL (batch size 512/2)', 8)": [
                 0.0,
                 0.0
             ],
@@ -1584,30 +1576,30 @@
                 0.0,
                 0.0
             ],
-            "('GPT2-XL (batch size 512/2)', 8)": [
+            "('GPT2-XL (batch size 256/4)', 8)": [
+                0.0,
+                0.0
+            ],
+            "('DCGAN (batch size 128)', 8)": [
+                0.0,
+                0.0
+            ],
+            "('vgg19 (batch size 32)', 8)": [
+                0.0,
+                0.0
+            ],
+            "('resnet50 (batch size 32)', 8)": [
                 0.0,
                 0.0
             ],
             "('GPT2-XL (batch size 512/4)', 8)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-XL (batch size 256/4)', 8)": [
                 0.0,
                 0.0
             ]
         },
         "('GPT2-XL (batch size 512/2)', 8)": {
             "null": 0.73,
-            "('resnet50 (batch size 32)', 8)": [
-                0.0,
-                0.0
-            ],
-            "('vgg19 (batch size 32)', 8)": [
-                0.0,
-                0.0
-            ],
-            "('DCGAN (batch size 128)', 8)": [
+            "('GPT2-XL (batch size 512/2)', 8)": [
                 0.0,
                 0.0
             ],
@@ -1619,15 +1611,23 @@
                 0.0,
                 0.0
             ],
-            "('GPT2-XL (batch size 512/2)', 8)": [
+            "('GPT2-XL (batch size 256/4)', 8)": [
+                0.0,
+                0.0
+            ],
+            "('DCGAN (batch size 128)', 8)": [
+                0.0,
+                0.0
+            ],
+            "('vgg19 (batch size 32)', 8)": [
+                0.0,
+                0.0
+            ],
+            "('resnet50 (batch size 32)', 8)": [
                 0.0,
                 0.0
             ],
             "('GPT2-XL (batch size 512/4)', 8)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-XL (batch size 256/4)', 8)": [
                 0.0,
                 0.0
             ]
@@ -1742,11 +1742,11 @@
                 1.0
             ],
             "null": 1.0,
-            "('GPT2 (batch size 512/16)', 2)": [
+            "('GPT2 (batch size 512/8)', 2)": [
                 0.0,
                 0.0
             ],
-            "('GPT2 (batch size 512/8)', 2)": [
+            "('GPT2 (batch size 512/16)', 2)": [
                 0.0,
                 0.0
             ]
@@ -1785,11 +1785,11 @@
                 1.0
             ],
             "null": 1.0,
-            "('GPT2 (batch size 512/16)', 2)": [
+            "('GPT2 (batch size 512/8)', 2)": [
                 0.0,
                 0.0
             ],
-            "('GPT2 (batch size 512/8)', 2)": [
+            "('GPT2 (batch size 512/16)', 2)": [
                 0.0,
                 0.0
             ]
@@ -1828,11 +1828,11 @@
                 1.0
             ],
             "null": 1.0,
-            "('GPT2 (batch size 512/16)', 2)": [
+            "('GPT2 (batch size 512/8)', 2)": [
                 0.0,
                 0.0
             ],
-            "('GPT2 (batch size 512/8)', 2)": [
+            "('GPT2 (batch size 512/16)', 2)": [
                 0.0,
                 0.0
             ]
@@ -1871,11 +1871,11 @@
                 1.0
             ],
             "null": 1.0,
-            "('GPT2 (batch size 512/16)', 2)": [
+            "('GPT2 (batch size 512/8)', 2)": [
                 0.0,
                 0.0
             ],
-            "('GPT2 (batch size 512/8)', 2)": [
+            "('GPT2 (batch size 512/16)', 2)": [
                 0.0,
                 0.0
             ]
@@ -1898,7 +1898,11 @@
                 1.0
             ],
             "null": 1.0,
-            "('GPT2 (batch size 256/8)', 2)": [
+            "('Bert-Base (batch size 256/32)', 2)": [
+                0.0,
+                0.0
+            ],
+            "('GPT2 (batch size 512/8)', 2)": [
                 0.0,
                 0.0
             ],
@@ -1910,15 +1914,11 @@
                 0.0,
                 0.0
             ],
-            "('GPT2 (batch size 512/8)', 2)": [
-                0.0,
-                0.0
-            ],
             "('Bert-Base (batch size 256/16)', 2)": [
                 0.0,
                 0.0
             ],
-            "('Bert-Base (batch size 256/32)', 2)": [
+            "('GPT2 (batch size 256/8)', 2)": [
                 0.0,
                 0.0
             ]
@@ -1941,7 +1941,11 @@
                 1.0
             ],
             "null": 1.0,
-            "('GPT2 (batch size 256/8)', 2)": [
+            "('Bert-Base (batch size 256/32)', 2)": [
+                0.0,
+                0.0
+            ],
+            "('GPT2 (batch size 512/8)', 2)": [
                 0.0,
                 0.0
             ],
@@ -1953,15 +1957,11 @@
                 0.0,
                 0.0
             ],
-            "('GPT2 (batch size 512/8)', 2)": [
-                0.0,
-                0.0
-            ],
             "('Bert-Base (batch size 256/16)', 2)": [
                 0.0,
                 0.0
             ],
-            "('Bert-Base (batch size 256/32)', 2)": [
+            "('GPT2 (batch size 256/8)', 2)": [
                 0.0,
                 0.0
             ]
@@ -2000,11 +2000,11 @@
                 0.0
             ],
             "null": 1.0,
-            "('GPT2-Medium (batch size 512/32)', 4)": [
+            "('GPT2-Medium (batch size 512/8)', 4)": [
                 0.0,
                 0.0
             ],
-            "('GPT2-Medium (batch size 512/8)', 4)": [
+            "('GPT2-Medium (batch size 512/32)', 4)": [
                 0.0,
                 0.0
             ]
@@ -2043,11 +2043,11 @@
                 0.0
             ],
             "null": 1.0,
-            "('GPT2-Medium (batch size 512/32)', 4)": [
+            "('GPT2-Medium (batch size 512/8)', 4)": [
                 0.0,
                 0.0
             ],
-            "('GPT2-Medium (batch size 512/8)', 4)": [
+            "('GPT2-Medium (batch size 512/32)', 4)": [
                 0.0,
                 0.0
             ]
@@ -2086,11 +2086,11 @@
                 0.0
             ],
             "null": 1.0,
-            "('GPT2-Medium (batch size 512/32)', 4)": [
+            "('GPT2-Medium (batch size 512/8)', 4)": [
                 0.0,
                 0.0
             ],
-            "('GPT2-Medium (batch size 512/8)', 4)": [
+            "('GPT2-Medium (batch size 512/32)', 4)": [
                 0.0,
                 0.0
             ]
@@ -2129,11 +2129,11 @@
                 0.0
             ],
             "null": 1.0,
-            "('GPT2-Medium (batch size 512/32)', 4)": [
+            "('GPT2-Medium (batch size 512/8)', 4)": [
                 0.0,
                 0.0
             ],
-            "('GPT2-Medium (batch size 512/8)', 4)": [
+            "('GPT2-Medium (batch size 512/32)', 4)": [
                 0.0,
                 0.0
             ]
@@ -2156,19 +2156,7 @@
                 0.0
             ],
             "null": 1.0,
-            "('Bert-Large (batch size 256/16)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 512/32)', 4)": [
-                0.0,
-                0.0
-            ],
             "('Bert-Large (batch size 256/64)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 256/8)', 4)": [
                 0.0,
                 0.0
             ],
@@ -2177,6 +2165,18 @@
                 0.0
             ],
             "('GPT2-Medium (batch size 512/8)', 4)": [
+                0.0,
+                0.0
+            ],
+            "('GPT2-Medium (batch size 256/8)', 4)": [
+                0.0,
+                0.0
+            ],
+            "('GPT2-Medium (batch size 512/32)', 4)": [
+                0.0,
+                0.0
+            ],
+            "('Bert-Large (batch size 256/16)', 4)": [
                 0.0,
                 0.0
             ]
@@ -2199,19 +2199,7 @@
                 0.0
             ],
             "null": 1.0,
-            "('Bert-Large (batch size 256/16)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 512/32)', 4)": [
-                0.0,
-                0.0
-            ],
             "('Bert-Large (batch size 256/64)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 256/8)', 4)": [
                 0.0,
                 0.0
             ],
@@ -2220,6 +2208,18 @@
                 0.0
             ],
             "('GPT2-Medium (batch size 512/8)', 4)": [
+                0.0,
+                0.0
+            ],
+            "('GPT2-Medium (batch size 256/8)', 4)": [
+                0.0,
+                0.0
+            ],
+            "('GPT2-Medium (batch size 512/32)', 4)": [
+                0.0,
+                0.0
+            ],
+            "('Bert-Large (batch size 256/16)', 4)": [
                 0.0,
                 0.0
             ]
@@ -2242,19 +2242,19 @@
                 1.0
             ],
             "null": 1.0,
-            "('GPT2-XL (batch size 256/2)', 8)": [
-                0.0,
-                0.0
-            ],
             "('GPT2-XL (batch size 512/2)', 8)": [
                 0.0,
                 0.0
             ],
-            "('GPT2-XL (batch size 512/4)', 8)": [
+            "('GPT2-XL (batch size 256/2)', 8)": [
                 0.0,
                 0.0
             ],
             "('GPT2-XL (batch size 256/4)', 8)": [
+                0.0,
+                0.0
+            ],
+            "('GPT2-XL (batch size 512/4)', 8)": [
                 0.0,
                 0.0
             ]
@@ -2417,19 +2417,19 @@
                 0.0
             ],
             "null": 1.0,
-            "('GPT2-XL (batch size 256/2)', 8)": [
-                0.0,
-                0.0
-            ],
             "('GPT2-XL (batch size 512/2)', 8)": [
                 0.0,
                 0.0
             ],
-            "('GPT2-XL (batch size 512/4)', 8)": [
+            "('GPT2-XL (batch size 256/2)', 8)": [
                 0.0,
                 0.0
             ],
             "('GPT2-XL (batch size 256/4)', 8)": [
+                0.0,
+                0.0
+            ],
+            "('GPT2-XL (batch size 512/4)', 8)": [
                 0.0,
                 0.0
             ]
@@ -2454,7 +2454,11 @@
                 0.99,
                 1.0
             ],
-            "('GPT2 (batch size 256/8)', 2)": [
+            "('Bert-Base (batch size 256/32)', 2)": [
+                0.0,
+                0.0
+            ],
+            "('GPT2 (batch size 512/8)', 2)": [
                 0.0,
                 0.0
             ],
@@ -2466,15 +2470,11 @@
                 0.0,
                 0.0
             ],
-            "('GPT2 (batch size 512/8)', 2)": [
-                0.0,
-                0.0
-            ],
             "('Bert-Base (batch size 256/16)', 2)": [
                 0.0,
                 0.0
             ],
-            "('Bert-Base (batch size 256/32)', 2)": [
+            "('GPT2 (batch size 256/8)', 2)": [
                 0.0,
                 0.0
             ]
@@ -2497,7 +2497,11 @@
                 0.6,
                 1.0
             ],
-            "('GPT2 (batch size 256/8)', 2)": [
+            "('Bert-Base (batch size 256/32)', 2)": [
+                0.0,
+                0.0
+            ],
+            "('GPT2 (batch size 512/8)', 2)": [
                 0.0,
                 0.0
             ],
@@ -2509,26 +2513,26 @@
                 0.0,
                 0.0
             ],
-            "('GPT2 (batch size 512/8)', 2)": [
-                0.0,
-                0.0
-            ],
             "('Bert-Base (batch size 256/16)', 2)": [
                 0.0,
                 0.0
             ],
-            "('Bert-Base (batch size 256/32)', 2)": [
+            "('GPT2 (batch size 256/8)', 2)": [
                 0.0,
                 0.0
             ]
         },
         "('GPT2 (batch size 512/8)', 2)": {
             "null": 1.0,
+            "('Bert-Base (batch size 256/32)', 2)": [
+                0.0,
+                0.0
+            ],
             "('PointNet (batch size 32)', 2)": [
                 0.0,
                 0.0
             ],
-            "('GPT2 (batch size 256/8)', 2)": [
+            "('GPT2 (batch size 512/8)', 2)": [
                 0.0,
                 0.0
             ],
@@ -2540,7 +2544,7 @@
                 0.0,
                 0.0
             ],
-            "('GPT2 (batch size 512/8)', 2)": [
+            "('DCGAN (batch size 128)', 2)": [
                 0.0,
                 0.0
             ],
@@ -2548,7 +2552,7 @@
                 0.0,
                 0.0
             ],
-            "('DCGAN (batch size 128)', 2)": [
+            "('resnet50 (batch size 32)', 2)": [
                 0.0,
                 0.0
             ],
@@ -2556,22 +2560,22 @@
                 0.0,
                 0.0
             ],
-            "('resnet50 (batch size 32)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('Bert-Base (batch size 256/32)', 2)": [
+            "('GPT2 (batch size 256/8)', 2)": [
                 0.0,
                 0.0
             ]
         },
         "('GPT2 (batch size 512/16)', 2)": {
             "null": 0.76,
+            "('Bert-Base (batch size 256/32)', 2)": [
+                0.0,
+                0.0
+            ],
             "('PointNet (batch size 32)', 2)": [
                 0.0,
                 0.0
             ],
-            "('GPT2 (batch size 256/8)', 2)": [
+            "('GPT2 (batch size 512/8)', 2)": [
                 0.0,
                 0.0
             ],
@@ -2583,7 +2587,7 @@
                 0.0,
                 0.0
             ],
-            "('GPT2 (batch size 512/8)', 2)": [
+            "('DCGAN (batch size 128)', 2)": [
                 0.0,
                 0.0
             ],
@@ -2591,7 +2595,7 @@
                 0.0,
                 0.0
             ],
-            "('DCGAN (batch size 128)', 2)": [
+            "('resnet50 (batch size 32)', 2)": [
                 0.0,
                 0.0
             ],
@@ -2599,46 +2603,18 @@
                 0.0,
                 0.0
             ],
-            "('resnet50 (batch size 32)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('Bert-Base (batch size 256/32)', 2)": [
+            "('GPT2 (batch size 256/8)', 2)": [
                 0.0,
                 0.0
             ]
         },
         "('GPT2-Medium (batch size 512/8)', 4)": {
             "null": 1.0,
-            "('Bert-Large (batch size 256/16)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 512/32)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('Bert-Large (batch size 256/64)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 256/8)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('vgg19 (batch size 32)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('PointNet (batch size 32)', 4)": [
-                0.0,
-                0.0
-            ],
             "('resnet50 (batch size 32)', 4)": [
                 0.0,
                 0.0
             ],
-            "('DCGAN (batch size 128)', 4)": [
+            "('Bert-Large (batch size 256/64)', 4)": [
                 0.0,
                 0.0
             ],
@@ -2647,41 +2623,41 @@
                 0.0
             ],
             "('GPT2-Medium (batch size 512/8)', 4)": [
+                0.0,
+                0.0
+            ],
+            "('PointNet (batch size 32)', 4)": [
+                0.0,
+                0.0
+            ],
+            "('GPT2-Medium (batch size 256/8)', 4)": [
+                0.0,
+                0.0
+            ],
+            "('GPT2-Medium (batch size 512/32)', 4)": [
+                0.0,
+                0.0
+            ],
+            "('Bert-Large (batch size 256/16)', 4)": [
+                0.0,
+                0.0
+            ],
+            "('DCGAN (batch size 128)', 4)": [
+                0.0,
+                0.0
+            ],
+            "('vgg19 (batch size 32)', 4)": [
                 0.0,
                 0.0
             ]
         },
         "('GPT2-Medium (batch size 512/32)', 4)": {
             "null": 0.66,
-            "('Bert-Large (batch size 256/16)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 512/32)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('Bert-Large (batch size 256/64)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 256/8)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('vgg19 (batch size 32)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('PointNet (batch size 32)', 4)": [
-                0.0,
-                0.0
-            ],
             "('resnet50 (batch size 32)', 4)": [
                 0.0,
                 0.0
             ],
-            "('DCGAN (batch size 128)', 4)": [
+            "('Bert-Large (batch size 256/64)', 4)": [
                 0.0,
                 0.0
             ],
@@ -2690,6 +2666,30 @@
                 0.0
             ],
             "('GPT2-Medium (batch size 512/8)', 4)": [
+                0.0,
+                0.0
+            ],
+            "('PointNet (batch size 32)', 4)": [
+                0.0,
+                0.0
+            ],
+            "('GPT2-Medium (batch size 256/8)', 4)": [
+                0.0,
+                0.0
+            ],
+            "('GPT2-Medium (batch size 512/32)', 4)": [
+                0.0,
+                0.0
+            ],
+            "('Bert-Large (batch size 256/16)', 4)": [
+                0.0,
+                0.0
+            ],
+            "('DCGAN (batch size 128)', 4)": [
+                0.0,
+                0.0
+            ],
+            "('vgg19 (batch size 32)', 4)": [
                 0.0,
                 0.0
             ]
@@ -2712,19 +2712,7 @@
                 0.91,
                 0.96
             ],
-            "('Bert-Large (batch size 256/16)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 512/32)', 4)": [
-                0.0,
-                0.0
-            ],
             "('Bert-Large (batch size 256/64)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 256/8)', 4)": [
                 0.0,
                 0.0
             ],
@@ -2733,6 +2721,18 @@
                 0.0
             ],
             "('GPT2-Medium (batch size 512/8)', 4)": [
+                0.0,
+                0.0
+            ],
+            "('GPT2-Medium (batch size 256/8)', 4)": [
+                0.0,
+                0.0
+            ],
+            "('GPT2-Medium (batch size 512/32)', 4)": [
+                0.0,
+                0.0
+            ],
+            "('Bert-Large (batch size 256/16)', 4)": [
                 0.0,
                 0.0
             ]
@@ -2755,19 +2755,7 @@
                 0.57,
                 0.99
             ],
-            "('Bert-Large (batch size 256/16)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 512/32)', 4)": [
-                0.0,
-                0.0
-            ],
             "('Bert-Large (batch size 256/64)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 256/8)', 4)": [
                 0.0,
                 0.0
             ],
@@ -2778,19 +2766,23 @@
             "('GPT2-Medium (batch size 512/8)', 4)": [
                 0.0,
                 0.0
+            ],
+            "('GPT2-Medium (batch size 256/8)', 4)": [
+                0.0,
+                0.0
+            ],
+            "('GPT2-Medium (batch size 512/32)', 4)": [
+                0.0,
+                0.0
+            ],
+            "('Bert-Large (batch size 256/16)', 4)": [
+                0.0,
+                0.0
             ]
         },
         "('GPT2-XL (batch size 512/4)', 8)": {
             "null": 1.0,
-            "('resnet50 (batch size 32)', 8)": [
-                0.0,
-                0.0
-            ],
-            "('vgg19 (batch size 32)', 8)": [
-                0.0,
-                0.0
-            ],
-            "('DCGAN (batch size 128)', 8)": [
+            "('GPT2-XL (batch size 512/2)', 8)": [
                 0.0,
                 0.0
             ],
@@ -2802,30 +2794,30 @@
                 0.0,
                 0.0
             ],
-            "('GPT2-XL (batch size 512/2)', 8)": [
+            "('GPT2-XL (batch size 256/4)', 8)": [
+                0.0,
+                0.0
+            ],
+            "('DCGAN (batch size 128)', 8)": [
+                0.0,
+                0.0
+            ],
+            "('vgg19 (batch size 32)', 8)": [
+                0.0,
+                0.0
+            ],
+            "('resnet50 (batch size 32)', 8)": [
                 0.0,
                 0.0
             ],
             "('GPT2-XL (batch size 512/4)', 8)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-XL (batch size 256/4)', 8)": [
                 0.0,
                 0.0
             ]
         },
         "('GPT2-XL (batch size 512/2)', 8)": {
             "null": 0.73,
-            "('resnet50 (batch size 32)', 8)": [
-                0.0,
-                0.0
-            ],
-            "('vgg19 (batch size 32)', 8)": [
-                0.0,
-                0.0
-            ],
-            "('DCGAN (batch size 128)', 8)": [
+            "('GPT2-XL (batch size 512/2)', 8)": [
                 0.0,
                 0.0
             ],
@@ -2837,15 +2829,23 @@
                 0.0,
                 0.0
             ],
-            "('GPT2-XL (batch size 512/2)', 8)": [
+            "('GPT2-XL (batch size 256/4)', 8)": [
+                0.0,
+                0.0
+            ],
+            "('DCGAN (batch size 128)', 8)": [
+                0.0,
+                0.0
+            ],
+            "('vgg19 (batch size 32)', 8)": [
+                0.0,
+                0.0
+            ],
+            "('resnet50 (batch size 32)', 8)": [
                 0.0,
                 0.0
             ],
             "('GPT2-XL (batch size 512/4)', 8)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-XL (batch size 256/4)', 8)": [
                 0.0,
                 0.0
             ]
@@ -2960,11 +2960,11 @@
                 1.0
             ],
             "null": 1.0,
-            "('GPT2 (batch size 512/16)', 2)": [
+            "('GPT2 (batch size 512/8)', 2)": [
                 0.0,
                 0.0
             ],
-            "('GPT2 (batch size 512/8)', 2)": [
+            "('GPT2 (batch size 512/16)', 2)": [
                 0.0,
                 0.0
             ]
@@ -3003,11 +3003,11 @@
                 1.0
             ],
             "null": 1.0,
-            "('GPT2 (batch size 512/16)', 2)": [
+            "('GPT2 (batch size 512/8)', 2)": [
                 0.0,
                 0.0
             ],
-            "('GPT2 (batch size 512/8)', 2)": [
+            "('GPT2 (batch size 512/16)', 2)": [
                 0.0,
                 0.0
             ]
@@ -3046,11 +3046,11 @@
                 1.0
             ],
             "null": 1.0,
-            "('GPT2 (batch size 512/16)', 2)": [
+            "('GPT2 (batch size 512/8)', 2)": [
                 0.0,
                 0.0
             ],
-            "('GPT2 (batch size 512/8)', 2)": [
+            "('GPT2 (batch size 512/16)', 2)": [
                 0.0,
                 0.0
             ]
@@ -3089,11 +3089,11 @@
                 1.0
             ],
             "null": 1.0,
-            "('GPT2 (batch size 512/16)', 2)": [
+            "('GPT2 (batch size 512/8)', 2)": [
                 0.0,
                 0.0
             ],
-            "('GPT2 (batch size 512/8)', 2)": [
+            "('GPT2 (batch size 512/16)', 2)": [
                 0.0,
                 0.0
             ]
@@ -3116,7 +3116,11 @@
                 1.0
             ],
             "null": 1.0,
-            "('GPT2 (batch size 256/8)', 2)": [
+            "('Bert-Base (batch size 256/32)', 2)": [
+                0.0,
+                0.0
+            ],
+            "('GPT2 (batch size 512/8)', 2)": [
                 0.0,
                 0.0
             ],
@@ -3128,15 +3132,11 @@
                 0.0,
                 0.0
             ],
-            "('GPT2 (batch size 512/8)', 2)": [
-                0.0,
-                0.0
-            ],
             "('Bert-Base (batch size 256/16)', 2)": [
                 0.0,
                 0.0
             ],
-            "('Bert-Base (batch size 256/32)', 2)": [
+            "('GPT2 (batch size 256/8)', 2)": [
                 0.0,
                 0.0
             ]
@@ -3159,7 +3159,11 @@
                 1.0
             ],
             "null": 1.0,
-            "('GPT2 (batch size 256/8)', 2)": [
+            "('Bert-Base (batch size 256/32)', 2)": [
+                0.0,
+                0.0
+            ],
+            "('GPT2 (batch size 512/8)', 2)": [
                 0.0,
                 0.0
             ],
@@ -3171,15 +3175,11 @@
                 0.0,
                 0.0
             ],
-            "('GPT2 (batch size 512/8)', 2)": [
-                0.0,
-                0.0
-            ],
             "('Bert-Base (batch size 256/16)', 2)": [
                 0.0,
                 0.0
             ],
-            "('Bert-Base (batch size 256/32)', 2)": [
+            "('GPT2 (batch size 256/8)', 2)": [
                 0.0,
                 0.0
             ]
@@ -3218,11 +3218,11 @@
                 0.0
             ],
             "null": 1.0,
-            "('GPT2-Medium (batch size 512/32)', 4)": [
+            "('GPT2-Medium (batch size 512/8)', 4)": [
                 0.0,
                 0.0
             ],
-            "('GPT2-Medium (batch size 512/8)', 4)": [
+            "('GPT2-Medium (batch size 512/32)', 4)": [
                 0.0,
                 0.0
             ]
@@ -3261,11 +3261,11 @@
                 0.0
             ],
             "null": 1.0,
-            "('GPT2-Medium (batch size 512/32)', 4)": [
+            "('GPT2-Medium (batch size 512/8)', 4)": [
                 0.0,
                 0.0
             ],
-            "('GPT2-Medium (batch size 512/8)', 4)": [
+            "('GPT2-Medium (batch size 512/32)', 4)": [
                 0.0,
                 0.0
             ]
@@ -3304,11 +3304,11 @@
                 0.0
             ],
             "null": 1.0,
-            "('GPT2-Medium (batch size 512/32)', 4)": [
+            "('GPT2-Medium (batch size 512/8)', 4)": [
                 0.0,
                 0.0
             ],
-            "('GPT2-Medium (batch size 512/8)', 4)": [
+            "('GPT2-Medium (batch size 512/32)', 4)": [
                 0.0,
                 0.0
             ]
@@ -3347,11 +3347,11 @@
                 0.0
             ],
             "null": 1.0,
-            "('GPT2-Medium (batch size 512/32)', 4)": [
+            "('GPT2-Medium (batch size 512/8)', 4)": [
                 0.0,
                 0.0
             ],
-            "('GPT2-Medium (batch size 512/8)', 4)": [
+            "('GPT2-Medium (batch size 512/32)', 4)": [
                 0.0,
                 0.0
             ]
@@ -3374,19 +3374,7 @@
                 0.0
             ],
             "null": 1.0,
-            "('Bert-Large (batch size 256/16)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 512/32)', 4)": [
-                0.0,
-                0.0
-            ],
             "('Bert-Large (batch size 256/64)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 256/8)', 4)": [
                 0.0,
                 0.0
             ],
@@ -3395,6 +3383,18 @@
                 0.0
             ],
             "('GPT2-Medium (batch size 512/8)', 4)": [
+                0.0,
+                0.0
+            ],
+            "('GPT2-Medium (batch size 256/8)', 4)": [
+                0.0,
+                0.0
+            ],
+            "('GPT2-Medium (batch size 512/32)', 4)": [
+                0.0,
+                0.0
+            ],
+            "('Bert-Large (batch size 256/16)', 4)": [
                 0.0,
                 0.0
             ]
@@ -3417,19 +3417,7 @@
                 0.0
             ],
             "null": 1.0,
-            "('Bert-Large (batch size 256/16)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 512/32)', 4)": [
-                0.0,
-                0.0
-            ],
             "('Bert-Large (batch size 256/64)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 256/8)', 4)": [
                 0.0,
                 0.0
             ],
@@ -3438,6 +3426,18 @@
                 0.0
             ],
             "('GPT2-Medium (batch size 512/8)', 4)": [
+                0.0,
+                0.0
+            ],
+            "('GPT2-Medium (batch size 256/8)', 4)": [
+                0.0,
+                0.0
+            ],
+            "('GPT2-Medium (batch size 512/32)', 4)": [
+                0.0,
+                0.0
+            ],
+            "('Bert-Large (batch size 256/16)', 4)": [
                 0.0,
                 0.0
             ]
@@ -3460,19 +3460,19 @@
                 1.0
             ],
             "null": 1.0,
-            "('GPT2-XL (batch size 256/2)', 8)": [
-                0.0,
-                0.0
-            ],
             "('GPT2-XL (batch size 512/2)', 8)": [
                 0.0,
                 0.0
             ],
-            "('GPT2-XL (batch size 512/4)', 8)": [
+            "('GPT2-XL (batch size 256/2)', 8)": [
                 0.0,
                 0.0
             ],
             "('GPT2-XL (batch size 256/4)', 8)": [
+                0.0,
+                0.0
+            ],
+            "('GPT2-XL (batch size 512/4)', 8)": [
                 0.0,
                 0.0
             ]
@@ -3635,19 +3635,19 @@
                 0.0
             ],
             "null": 1.0,
-            "('GPT2-XL (batch size 256/2)', 8)": [
-                0.0,
-                0.0
-            ],
             "('GPT2-XL (batch size 512/2)', 8)": [
                 0.0,
                 0.0
             ],
-            "('GPT2-XL (batch size 512/4)', 8)": [
+            "('GPT2-XL (batch size 256/2)', 8)": [
                 0.0,
                 0.0
             ],
             "('GPT2-XL (batch size 256/4)', 8)": [
+                0.0,
+                0.0
+            ],
+            "('GPT2-XL (batch size 512/4)', 8)": [
                 0.0,
                 0.0
             ]

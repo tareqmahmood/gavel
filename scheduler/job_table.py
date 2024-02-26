@@ -182,41 +182,69 @@ def bertlarge(batch_size, micro_batch_size):
 SmallJobTable = []
 LargeJobTable = []
 JobTable = []
+JobScaleTable = {
+    1: [],
+    2: [],
+    4: [],
+    8: []
+}
 
 # large_model_list = ['Bert-Base', 'Bert-Large', 'GPT2', 'GPT2-Medium', 'GPT2-XL']
 # small_model_list = ['resnet50', 'vgg19', 'DCGAN', 'PointNet']
 
 for batch_size in [32]:
     SmallJobTable.append(resnet50(batch_size))
+    for scale_factor in [1, 2, 4, 8]:
+        JobScaleTable[scale_factor].append(resnet50(batch_size))
 
 for batch_size in [32]:
     SmallJobTable.append(vgg19(batch_size))
+    for scale_factor in [1, 2, 4, 8]:
+        JobScaleTable[scale_factor].append(vgg19(batch_size))
 
 for batch_size in [32]:
     SmallJobTable.append(pointnet(batch_size))
+    for scale_factor in [1, 2, 4, 8]:
+        JobScaleTable[scale_factor].append(pointnet(batch_size))
 
 for batch_size in [128]:
     SmallJobTable.append(dcgan(batch_size))
+    for scale_factor in [1, 2, 4, 8]:
+        JobScaleTable[scale_factor].append(dcgan(batch_size))
 
 for batch_size in [256, 512]:
     for micro_batch_size in [8, 16]:
         LargeJobTable.append(gpt2(batch_size, micro_batch_size))
+        for scale_factor in [2]:
+            JobScaleTable[scale_factor].append(
+                gpt2(batch_size, micro_batch_size))
 
 for batch_size in [256, 512]:
     for micro_batch_size in [8, 32]:
         LargeJobTable.append(gpt2medium(batch_size, micro_batch_size))
+        for scale_factor in [4]:
+            JobScaleTable[scale_factor].append(
+                gpt2medium(batch_size, micro_batch_size))
 
 for batch_size in [256, 512]:
     for micro_batch_size in [2, 4]:
         LargeJobTable.append(gpt2xl(batch_size, micro_batch_size))
+        for scale_factor in [8]:
+            JobScaleTable[scale_factor].append(
+                gpt2xl(batch_size, micro_batch_size))
 
 for batch_size in [256]:
     for micro_batch_size in [16, 32]:
         LargeJobTable.append(bertbase(batch_size, micro_batch_size))
+        for scale_factor in [2]:
+            JobScaleTable[scale_factor].append(
+                bertbase(batch_size, micro_batch_size))
 
 for batch_size in [256]:
     for micro_batch_size in [16, 64]:
         LargeJobTable.append(bertlarge(batch_size, micro_batch_size))
-
+        for scale_factor in [4]:
+            JobScaleTable[scale_factor].append(
+                bertlarge(batch_size, micro_batch_size))
 
 JobTable = SmallJobTable + LargeJobTable

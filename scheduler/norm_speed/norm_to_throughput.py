@@ -29,7 +29,6 @@ for i, row in norm.iterrows():
     if model[1] == 'Empty':
         job2 = 'null'
         tput['k80'][job1][job2] = row['speed1']
-        
     else:
         job2 = f"('{model[1]} (batch size {batch_size[1]})', {num_gpu})"
         tput['k80'][job1][job2] = [row['speed1'], row['speed2']]
@@ -41,14 +40,14 @@ for i, row in norm.iterrows():
         tput['k80'][job2][job1] = [row['speed2'], row['speed1']]
 
 # add missing values
-for job1 in tput['k80']:
-    num_gpu1 = int(job1.split(',')[-1][:-1])
-    if "null" not in tput['k80'][job1]:
-        tput['k80'][job1]['null'] = 1.0
-    for job2 in unique_jobs:
-        num_gpu2 = int(job2.split(',')[-1][:-1])
-        if num_gpu1 == num_gpu2 and job2 not in tput['k80'][job1]:
-            tput['k80'][job1][job2] = [0.0, 0.0]
+# for job1 in tput['k80']:
+#     num_gpu1 = int(job1.split(',')[-1][:-1])
+#     if "null" not in tput['k80'][job1]:
+#         tput['k80'][job1]['null'] = 0.0
+#     for job2 in unique_jobs:
+#         num_gpu2 = int(job2.split(',')[-1][:-1])
+#         if num_gpu1 == num_gpu2 and job2 not in tput['k80'][job1]:
+#             tput['k80'][job1][job2] = [0.0, 0.0]
 
 
 tput['v100'] = tput['p100'] = tput['k80']
