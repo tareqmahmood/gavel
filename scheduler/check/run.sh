@@ -21,5 +21,17 @@ python  -u scripts/sweeps/run_sweep_continuous.py \
         -m \
         -c 64:0:0 \
         -a 0.0 \
-        -b 720 \
+        -b 12 \
         -n 2
+
+
+# python  -u scripts/sweeps/run_sweep_static.py \
+#         -l check/logs \
+#         --throughputs-file norm_speed/norm_to_throughput.json \
+#         -p max_min_fairness_perf \
+#         --seeds 0 \
+#         -m \
+#         -c 64:0:0 \
+#         -a 0 \
+#         -b 220 \
+#         -n 2
