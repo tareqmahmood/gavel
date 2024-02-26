@@ -11,27 +11,28 @@ conda activate gavel
 # logs
 mkdir -p check/logs
 
-python  -u scripts/sweeps/run_sweep_continuous.py \
-        -s 0 \
-        -e 220 \
+# python  -u scripts/sweeps/run_sweep_continuous.py \
+#         -s 0 \
+#         -e 220 \
+#         -l check/logs \
+#         --throughputs-file norm_speed/norm_to_throughput.json \
+#         -p max_min_fairness \
+#         --seeds 0 \
+#         -m \
+#         -c 64:0:0 \
+#         -a 0.0 \
+#         -b 12 \
+#         -n 2
+
+
+python  -u scripts/sweeps/run_check.py \
         -l check/logs \
         --throughputs-file norm_speed/norm_to_throughput.json \
         -p max_min_fairness \
         --seeds 0 \
         -m \
         -c 64:0:0 \
-        -a 0.0 \
-        -b 12 \
+        --lam 5 \
+        -a 0 \
+        -b 220 \
         -n 2
-
-
-# python  -u scripts/sweeps/run_sweep_static.py \
-#         -l check/logs \
-#         --throughputs-file norm_speed/norm_to_throughput.json \
-#         -p max_min_fairness_perf \
-#         --seeds 0 \
-#         -m \
-#         -c 64:0:0 \
-#         -a 0 \
-#         -b 220 \
-#         -n 2
