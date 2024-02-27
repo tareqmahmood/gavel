@@ -1,0 +1,2 @@
+job_type,command,working_directory,num_steps_arg,needs_data_dir,total_steps,scale_factor,priority_weight,SLO,arrival_time
+resnet50 (batch size 32),cd model && python3 main.py,datadir,--num_steps,1,47442,4,1,-1.00000,0

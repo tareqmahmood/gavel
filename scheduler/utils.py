@@ -526,14 +526,18 @@ def get_policy(policy_name, solver=None, seed=None,
     return policy
 
 
-def parse_trace(trace_file):
+def parse_trace(trace_file, delim=','):
     jobs = []
     arrival_times = []
     with open(trace_file, 'r') as f:
         for line in f:
+            # ignore first line
+            if line.startswith('job_type'):
+                continue
+            print(line.split(delim))
             (job_type, command, working_directory, num_steps_arg,
              needs_data_dir, total_steps, scale_factor, priority_weight, SLO,
-             arrival_time) = line.split('\t')
+             arrival_time) = line.split(delim)
             assert (int(scale_factor) >= 1)
             jobs.append(Job(job_id=None,
                             job_type=job_type,
