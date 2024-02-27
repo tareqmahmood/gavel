@@ -1,0 +1,59 @@
+scheduler:INFO [0] Running scheduler in simulation with the following args: policy=MaxMinFairness, seed=0, time_per_iteration=360, profiling_percentage=1.0, num_reference_models=20
+scheduler:INFO [12.0] [Job dispatched]	Job ID: 0 GPU:2
+scheduler:DEBUG [12.0] Resetting time run so far
+scheduler:INFO [12.0] [Micro-task scheduled]	Job ID: 0	Worker type: v100	Worker ID(s): 0,1	Priority: 1.00	Deficit: 0.00	Allocation:  [v100 1.00]
+scheduler:WARNING [12.0] 62 GPUs of type v100 left unused. Number of active jobs: 1
+scheduler:DEBUG [65.0] Current active completion events: dict_keys([])
+scheduler:INFO [65.0] [Micro-task succeeded]	Job ID: 0	Worker type: v100	Worker ID(s): [0, 1]
+scheduler:INFO [65.0] [Job succeeded]	Job ID: 0	Start timestamp: 12.00	End timestamp: 65.00	Duration: 53.00
+scheduler:INFO [65.0] Remaining active jobs: 0
+scheduler:INFO [65.0] [Job dispatched]	Job ID: 1 GPU:1
+scheduler:WARNING [65.0] 64 GPUs of type v100 left unused. Number of active jobs: 1
+scheduler:INFO [72.0] [Job dispatched]	Job ID: 2 GPU:1
+scheduler:WARNING [72.0] 64 GPUs of type v100 left unused. Number of active jobs: 2
+scheduler:INFO [115.0] [Job dispatched]	Job ID: 3 GPU:1
+scheduler:WARNING [115.0] 64 GPUs of type v100 left unused. Number of active jobs: 3
+scheduler:INFO [123.0] [Job dispatched]	Job ID: 4 GPU:2
+scheduler:WARNING [123.0] 64 GPUs of type v100 left unused. Number of active jobs: 4
+scheduler:INFO [143.0] [Job dispatched]	Job ID: 5 GPU:4
+scheduler:WARNING [143.0] 64 GPUs of type v100 left unused. Number of active jobs: 5
+scheduler:DEBUG [143.0] Resetting time run so far
+scheduler:INFO [143.0] [Micro-task scheduled]	Job ID: 5	Worker type: v100	Worker ID(s): 0,1,2,3	Priority: 3.49	Deficit: 0.00	Allocation:  [v100 0.70]
+scheduler:INFO [143.0] [Micro-task scheduled]	Job ID: 4	Worker type: v100	Worker ID(s): 4,5	Priority: 3.94	Deficit: 0.00	Allocation:  [v100 0.79]
+scheduler:INFO [143.0] [Micro-task scheduled]	Job ID: 1	Worker type: v100	Worker ID(s): 6	Priority: 5.00	Deficit: 0.00	Allocation:  [v100 1.00]
+scheduler:INFO [143.0] [Micro-task scheduled]	Job ID: 2	Worker type: v100	Worker ID(s): 7	Priority: 5.00	Deficit: 0.00	Allocation:  [v100 1.00]
+scheduler:INFO [143.0] [Micro-task scheduled]	Job ID: 3	Worker type: v100	Worker ID(s): 8	Priority: 5.00	Deficit: 0.00	Allocation:  [v100 1.00]
+scheduler:WARNING [143.0] 55 GPUs of type v100 left unused. Number of active jobs: 5
+scheduler:DEBUG [198.0] Current active completion events: dict_keys([])
+scheduler:INFO [198.0] [Micro-task succeeded]	Job ID: 5	Worker type: v100	Worker ID(s): [0, 1, 2, 3]
+scheduler:INFO [198.0] [Job succeeded]	Job ID: 5	Start timestamp: 143.00	End timestamp: 198.00	Duration: 55.00
+scheduler:INFO [198.0] Remaining active jobs: 4
+scheduler:DEBUG [198.0] Current active completion events: dict_keys([])
+scheduler:INFO [198.0] [Micro-task succeeded]	Job ID: 4	Worker type: v100	Worker ID(s): [4, 5]
+scheduler:INFO [198.0] [Job succeeded]	Job ID: 4	Start timestamp: 123.00	End timestamp: 197.00	Duration: 74.00
+scheduler:INFO [198.0] Remaining active jobs: 3
+scheduler:DEBUG [198.0] Current active completion events: dict_keys([])
+scheduler:INFO [198.0] [Micro-task succeeded]	Job ID: 2	Worker type: v100	Worker ID(s): [7]
+scheduler:INFO [198.0] [Job succeeded]	Job ID: 2	Start timestamp: 72.00	End timestamp: 195.00	Duration: 123.00
+scheduler:INFO [198.0] Remaining active jobs: 2
+scheduler:DEBUG [198.0] Current active completion events: dict_keys([])
+scheduler:INFO [198.0] [Micro-task succeeded]	Job ID: 1	Worker type: v100	Worker ID(s): [6]
+scheduler:INFO [198.0] [Job succeeded]	Job ID: 1	Start timestamp: 16.00	End timestamp: 194.00	Duration: 178.00
+scheduler:INFO [198.0] Remaining active jobs: 1
+scheduler:DEBUG [198.0] Current active completion events: dict_keys([])
+scheduler:INFO [198.0] [Micro-task succeeded]	Job ID: 3	Worker type: v100	Worker ID(s): [8]
+scheduler:INFO [198.0] [Job succeeded]	Job ID: 3	Start timestamp: 115.00	End timestamp: 193.00	Duration: 78.00
+scheduler:INFO [198.0] Remaining active jobs: 0
+scheduler:WARNING [198.0] 64 GPUs of type v100 left unused. Number of active jobs: 0
+Total duration: 198.000 seconds (0.06 hours)
+Job completion times:
+Job 0: 53.000
+Job 1: 178.000
+Job 2: 123.000
+Job 3: 78.000
+Job 4: 74.000
+Job 5: 55.000
+Average job completion time: 93.500 seconds (0.03 hours)
+Average job completion time (low priority): 93.500 seconds (0.03 hours)
+Cluster utilization: 0.104
+No lease extension opportunities

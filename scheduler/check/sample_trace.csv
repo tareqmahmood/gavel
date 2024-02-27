@@ -1,2 +1,7 @@
-job_type,command,working_directory,num_steps_arg,needs_data_dir,total_steps,scale_factor,priority_weight,SLO,arrival_time
-resnet50 (batch size 32),cd model && python3 main.py,datadir,--num_steps,1,47442,4,1,-1.00000,0
+job_id,num_gpus,submit_time,duration,model,batch_size
+1,2,12,53,GPT2,256/16
+2,1,16,51,vgg19,32
+3,1,72,52,DCGAN,128
+4,1,115,50,resnet50,32
+5,2,123,54,PointNet,32
+6,4,143,55,Bert-Large,256/16

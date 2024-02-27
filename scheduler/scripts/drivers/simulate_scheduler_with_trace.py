@@ -15,7 +15,7 @@ import utils
 
 
 def main(args):
-    jobs, arrival_times = utils.parse_trace(args.trace_file)
+    jobs, arrival_times = utils.parse_trace(args.trace_file, is_custom=True, delim=',', throuputs_file=args.throughputs_file)
     policy = utils.get_policy(args.policy, solver=args.solver, seed=args.seed)
 
     sched = scheduler.Scheduler(policy,

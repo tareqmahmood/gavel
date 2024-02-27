@@ -526,31 +526,69 @@ def get_policy(policy_name, solver=None, seed=None,
     return policy
 
 
-def parse_trace(trace_file, delim=','):
+def parse_trace(trace_file, is_custom=False, delim='\t', throuputs_file=None):
     jobs = []
     arrival_times = []
-    with open(trace_file, 'r') as f:
-        for line in f:
-            # ignore first line
-            if line.startswith('job_type'):
-                continue
-            print(line.split(delim))
-            (job_type, command, working_directory, num_steps_arg,
-             needs_data_dir, total_steps, scale_factor, priority_weight, SLO,
-             arrival_time) = line.split(delim)
-            assert (int(scale_factor) >= 1)
-            jobs.append(Job(job_id=None,
-                            job_type=job_type,
-                            command=command,
-                            working_directory=working_directory,
-                            needs_data_dir=bool(int(needs_data_dir)),
-                            num_steps_arg=num_steps_arg,
-                            total_steps=int(total_steps),
-                            duration=None,
-                            scale_factor=int(scale_factor),
-                            priority_weight=float(priority_weight),
-                            SLO=float(SLO)))
-            arrival_times.append(float(arrival_time))
+
+    if is_custom:
+        with open(trace_file, 'r') as f:
+            for line in f:
+                # ignore first line
+                if line.startswith('job'):
+                    continue
+                
+                line = line.strip()
+                job_id, num_gpus, submit_time, duration, model, batch_size = line.split(delim)
+                assert (int(num_gpus) >= 1)
+
+                # conversion
+                arrival_time = float(submit_time)
+                scale_factor = int(num_gpus)
+                duration = int(duration)
+                job_id = int(job_id)
+                job_type = f'{model} (batch size {batch_size})'
+                command = f'python3 {model}.py'
+                working_directory = f'model/{model}'
+                priority_weight = 1.0
+                SLO = -1.0
+
+                throughputs = read_all_throughputs_json_v2(throuputs_file)
+                reference_worker_type = 'v100'
+                num_steps = duration * throughputs[reference_worker_type][(job_type, scale_factor)]['null']
+                total_steps = num_steps            
+
+                jobs.append(Job(job_id=job_id,
+                                job_type=job_type,
+                                command=command,
+                                working_directory=working_directory,
+                                needs_data_dir=False,
+                                num_steps_arg=None,
+                                total_steps=total_steps,
+                                duration=int(duration),
+                                scale_factor=scale_factor,
+                                priority_weight=priority_weight,
+                                SLO=SLO))
+                arrival_times.append(arrival_time)
+
+    else:
+        with open(trace_file, 'r') as f:
+            for line in f:
+                (job_type, command, working_directory, num_steps_arg,
+                 needs_data_dir, total_steps, scale_factor, priority_weight, SLO,
+                 arrival_time) = line.split(delim)
+                assert (int(scale_factor) >= 1)
+                jobs.append(Job(job_id=None,
+                                job_type=job_type,
+                                command=command,
+                                working_directory=working_directory,
+                                needs_data_dir=bool(int(needs_data_dir)),
+                                num_steps_arg=num_steps_arg,
+                                total_steps=int(total_steps),
+                                duration=None,
+                                scale_factor=int(scale_factor),
+                                priority_weight=float(priority_weight),
+                                SLO=float(SLO)))
+                arrival_times.append(float(arrival_time))
     return jobs, arrival_times
 
 
