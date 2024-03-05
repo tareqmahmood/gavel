@@ -530,6 +530,10 @@ def parse_trace(trace_file, is_custom=False, delim='\t', throuputs_file=None):
     jobs = []
     arrival_times = []
 
+    large_model_list = ['Bert-Base', 'Bert-Large', 'GPT2', 'GPT2-Medium', 'GPT2-XL']
+    small_model_list = ['resnet50', 'vgg19', 'DCGAN', 'PointNet']
+    model_list = large_model_list + small_model_list
+
     if is_custom:
         with open(trace_file, 'r') as f:
             for line in f:
@@ -539,14 +543,21 @@ def parse_trace(trace_file, is_custom=False, delim='\t', throuputs_file=None):
                 
                 line = line.strip()
                 job_id, num_gpus, submit_time, duration, model, batch_size = line.split(delim)
+                
                 assert (int(num_gpus) >= 1)
+                assert model in model_list
 
                 # conversion
                 arrival_time = float(submit_time)
                 scale_factor = int(num_gpus)
                 duration = int(duration)
                 job_id = int(job_id)
+
+                # ignore batch size for large models
+                if model in large_model_list:
+                    batch_size = 'NA'
                 job_type = f'{model} (batch size {batch_size})'
+                
                 command = f'python3 {model}.py'
                 working_directory = f'model/{model}'
                 priority_weight = 1.0

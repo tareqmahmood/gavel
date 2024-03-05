@@ -13,7 +13,7 @@ mkdir -p check/logs
 
 
 python  -u scripts/drivers/simulate_scheduler_with_trace.py \
-        -t check/sample_trace.csv \
+        -t evaluate/poisson_gavel_trace/poisson_trace_220+20.0.csv \
         --throughputs_file norm_speed/norm_to_throughput.json \
         -p max_min_fairness \
         --seed 0 \

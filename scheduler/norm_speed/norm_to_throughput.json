@@ -1,6 +1,82 @@
 {
     "k80": {
-        "('Bert-Base (batch size 256/16)', 2)": {
+        "('resnet50 (batch size 32)', 1)": {
+            "null": 1.0,
+            "('resnet50 (batch size 32)', 1)": [
+                0.76,
+                0.76
+            ],
+            "('vgg19 (batch size 32)', 1)": [
+                0.41,
+                0.8
+            ],
+            "('DCGAN (batch size 128)', 1)": [
+                1.0,
+                0.81
+            ],
+            "('PointNet (batch size 32)', 1)": [
+                1.0,
+                1.0
+            ]
+        },
+        "('vgg19 (batch size 32)', 1)": {
+            "null": 1.0,
+            "('resnet50 (batch size 32)', 1)": [
+                0.8,
+                0.41
+            ],
+            "('vgg19 (batch size 32)', 1)": [
+                0.36,
+                0.36
+            ],
+            "('DCGAN (batch size 128)', 1)": [
+                0.9,
+                0.41
+            ],
+            "('PointNet (batch size 32)', 1)": [
+                0.92,
+                1.0
+            ]
+        },
+        "('DCGAN (batch size 128)', 1)": {
+            "null": 1.0,
+            "('resnet50 (batch size 32)', 1)": [
+                0.81,
+                1.0
+            ],
+            "('vgg19 (batch size 32)', 1)": [
+                0.41,
+                0.9
+            ],
+            "('DCGAN (batch size 128)', 1)": [
+                0.71,
+                0.69
+            ],
+            "('PointNet (batch size 32)', 1)": [
+                0.9,
+                1.0
+            ]
+        },
+        "('PointNet (batch size 32)', 1)": {
+            "null": 1.0,
+            "('resnet50 (batch size 32)', 1)": [
+                1.0,
+                1.0
+            ],
+            "('vgg19 (batch size 32)', 1)": [
+                1.0,
+                0.92
+            ],
+            "('DCGAN (batch size 128)', 1)": [
+                1.0,
+                0.9
+            ],
+            "('PointNet (batch size 32)', 1)": [
+                1.0,
+                1.0
+            ]
+        },
+        "('Bert-Base (batch size NA)', 2)": {
             "null": 1.0,
             "('resnet50 (batch size 32)', 2)": [
                 0.76,
@@ -18,247 +94,259 @@
                 0.99,
                 1.0
             ],
-            "('Bert-Base (batch size 256/32)', 2)": [
+            "('GPT2 (batch size NA)', 2)": [
                 0.0,
                 0.0
             ],
-            "('GPT2 (batch size 512/8)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2 (batch size 512/16)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2 (batch size 256/16)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('Bert-Base (batch size 256/16)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2 (batch size 256/8)', 2)": [
+            "('Bert-Base (batch size NA)', 2)": [
                 0.0,
                 0.0
             ]
         },
-        "('Bert-Base (batch size 256/32)', 2)": {
-            "null": 0.62,
+        "('resnet50 (batch size 32)', 2)": {
+            "null": 1.0,
+            "('Bert-Base (batch size NA)', 2)": [
+                0.57,
+                0.76
+            ],
+            "('GPT2 (batch size NA)', 2)": [
+                0.48,
+                0.71
+            ],
             "('resnet50 (batch size 32)', 2)": [
-                0.5,
+                0.67,
                 0.67
             ],
             "('vgg19 (batch size 32)', 2)": [
-                0.28,
-                0.77
+                0.37,
+                0.75
             ],
             "('DCGAN (batch size 128)', 2)": [
-                0.6,
-                0.69
+                0.98,
+                0.86
             ],
             "('PointNet (batch size 32)', 2)": [
-                0.6,
+                0.98,
+                1.0
+            ]
+        },
+        "('vgg19 (batch size 32)', 2)": {
+            "null": 1.0,
+            "('Bert-Base (batch size NA)', 2)": [
+                0.72,
+                0.46
+            ],
+            "('GPT2 (batch size NA)', 2)": [
+                0.66,
+                0.44
+            ],
+            "('resnet50 (batch size 32)', 2)": [
+                0.75,
+                0.37
+            ],
+            "('vgg19 (batch size 32)', 2)": [
+                0.42,
+                0.42
+            ],
+            "('DCGAN (batch size 128)', 2)": [
+                0.9,
+                0.44
+            ],
+            "('PointNet (batch size 32)', 2)": [
+                0.95,
+                1.0
+            ]
+        },
+        "('DCGAN (batch size 128)', 2)": {
+            "null": 1.0,
+            "('Bert-Base (batch size NA)', 2)": [
+                0.56,
+                0.87
+            ],
+            "('GPT2 (batch size NA)', 2)": [
+                0.47,
+                0.82
+            ],
+            "('resnet50 (batch size 32)', 2)": [
+                0.86,
+                0.98
+            ],
+            "('vgg19 (batch size 32)', 2)": [
+                0.44,
+                0.9
+            ],
+            "('DCGAN (batch size 128)', 2)": [
+                0.72,
+                0.72
+            ],
+            "('PointNet (batch size 32)', 2)": [
+                0.91,
+                1.0
+            ]
+        },
+        "('PointNet (batch size 32)', 2)": {
+            "null": 1.0,
+            "('Bert-Base (batch size NA)', 2)": [
+                1.0,
+                0.99
+            ],
+            "('GPT2 (batch size NA)', 2)": [
+                1.0,
+                0.94
+            ],
+            "('resnet50 (batch size 32)', 2)": [
+                1.0,
+                0.98
+            ],
+            "('vgg19 (batch size 32)', 2)": [
+                1.0,
+                0.95
+            ],
+            "('DCGAN (batch size 128)', 2)": [
+                1.0,
+                0.91
+            ],
+            "('PointNet (batch size 32)', 2)": [
+                1.0,
+                1.0
+            ]
+        },
+        "('GPT2 (batch size NA)', 2)": {
+            "null": 1.0,
+            "('resnet50 (batch size 32)', 2)": [
+                0.71,
+                0.48
+            ],
+            "('vgg19 (batch size 32)', 2)": [
+                0.44,
+                0.66
+            ],
+            "('DCGAN (batch size 128)', 2)": [
+                0.82,
+                0.47
+            ],
+            "('PointNet (batch size 32)', 2)": [
+                0.94,
                 1.0
             ],
-            "('Bert-Base (batch size 256/32)', 2)": [
+            "('GPT2 (batch size NA)', 2)": [
                 0.0,
                 0.0
             ],
-            "('GPT2 (batch size 512/8)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2 (batch size 512/16)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2 (batch size 256/16)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('Bert-Base (batch size 256/16)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2 (batch size 256/8)', 2)": [
+            "('Bert-Base (batch size NA)', 2)": [
                 0.0,
                 0.0
             ]
         },
-        "('GPT2 (batch size 512/8)', 2)": {
-            "null": 1.0,
-            "('Bert-Base (batch size 256/32)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('PointNet (batch size 32)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2 (batch size 512/8)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2 (batch size 512/16)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2 (batch size 256/16)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('DCGAN (batch size 128)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('vgg19 (batch size 32)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('resnet50 (batch size 32)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('Bert-Base (batch size 256/16)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2 (batch size 256/8)', 2)": [
-                0.0,
-                0.0
-            ]
-        },
-        "('GPT2 (batch size 512/16)', 2)": {
-            "null": 0.76,
-            "('Bert-Base (batch size 256/32)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('PointNet (batch size 32)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2 (batch size 512/8)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2 (batch size 512/16)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2 (batch size 256/16)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('DCGAN (batch size 128)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('vgg19 (batch size 32)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('resnet50 (batch size 32)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('Bert-Base (batch size 256/16)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2 (batch size 256/8)', 2)": [
-                0.0,
-                0.0
-            ]
-        },
-        "('GPT2-Medium (batch size 512/8)', 4)": {
+        "('resnet50 (batch size 32)', 4)": {
             "null": 1.0,
             "('resnet50 (batch size 32)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('Bert-Large (batch size 256/64)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 256/32)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 512/8)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('PointNet (batch size 32)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 256/8)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 512/32)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('Bert-Large (batch size 256/16)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('DCGAN (batch size 128)', 4)": [
-                0.0,
-                0.0
+                0.67,
+                0.67
             ],
             "('vgg19 (batch size 32)', 4)": [
+                0.51,
+                0.83
+            ],
+            "('DCGAN (batch size 128)', 4)": [
+                1.0,
+                0.85
+            ],
+            "('PointNet (batch size 32)', 4)": [
+                0.98,
+                0.94
+            ],
+            "('Bert-Large (batch size NA)', 4)": [
+                0.55,
+                0.71
+            ],
+            "('GPT2-Medium (batch size NA)', 4)": [
                 0.0,
                 0.0
             ]
         },
-        "('GPT2-Medium (batch size 512/32)', 4)": {
-            "null": 0.66,
+        "('vgg19 (batch size 32)', 4)": {
+            "null": 1.0,
             "('resnet50 (batch size 32)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('Bert-Large (batch size 256/64)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 256/32)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 512/8)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('PointNet (batch size 32)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 256/8)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 512/32)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('Bert-Large (batch size 256/16)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('DCGAN (batch size 128)', 4)": [
-                0.0,
-                0.0
+                0.83,
+                0.51
             ],
             "('vgg19 (batch size 32)', 4)": [
+                0.42,
+                0.43
+            ],
+            "('DCGAN (batch size 128)', 4)": [
+                0.9,
+                0.49
+            ],
+            "('PointNet (batch size 32)', 4)": [
+                0.97,
+                0.94
+            ],
+            "('Bert-Large (batch size NA)', 4)": [
+                0.69,
+                0.49
+            ],
+            "('GPT2-Medium (batch size NA)', 4)": [
                 0.0,
                 0.0
             ]
         },
-        "('Bert-Large (batch size 256/16)', 4)": {
+        "('DCGAN (batch size 128)', 4)": {
+            "null": 1.0,
+            "('resnet50 (batch size 32)', 4)": [
+                0.85,
+                1.0
+            ],
+            "('vgg19 (batch size 32)', 4)": [
+                0.49,
+                0.9
+            ],
+            "('DCGAN (batch size 128)', 4)": [
+                0.96,
+                0.95
+            ],
+            "('PointNet (batch size 32)', 4)": [
+                0.89,
+                0.96
+            ],
+            "('Bert-Large (batch size NA)', 4)": [
+                0.51,
+                0.81
+            ],
+            "('GPT2-Medium (batch size NA)', 4)": [
+                0.0,
+                0.0
+            ]
+        },
+        "('PointNet (batch size 32)', 4)": {
+            "null": 1.0,
+            "('resnet50 (batch size 32)', 4)": [
+                0.94,
+                0.98
+            ],
+            "('vgg19 (batch size 32)', 4)": [
+                0.94,
+                0.97
+            ],
+            "('DCGAN (batch size 128)', 4)": [
+                0.96,
+                0.89
+            ],
+            "('PointNet (batch size 32)', 4)": [
+                0.96,
+                0.96
+            ],
+            "('Bert-Large (batch size NA)', 4)": [
+                0.96,
+                0.91
+            ],
+            "('GPT2-Medium (batch size NA)', 4)": [
+                0.0,
+                0.0
+            ]
+        },
+        "('Bert-Large (batch size NA)', 4)": {
             "null": 1.0,
             "('resnet50 (batch size 32)', 4)": [
                 0.71,
@@ -276,93 +364,45 @@
                 0.91,
                 0.96
             ],
-            "('Bert-Large (batch size 256/64)', 4)": [
+            "('Bert-Large (batch size NA)', 4)": [
                 0.0,
                 0.0
             ],
-            "('GPT2-Medium (batch size 256/32)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 512/8)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 256/8)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 512/32)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('Bert-Large (batch size 256/16)', 4)": [
+            "('GPT2-Medium (batch size NA)', 4)": [
                 0.0,
                 0.0
             ]
         },
-        "('Bert-Large (batch size 256/64)', 4)": {
-            "null": 0.64,
+        "('GPT2-Medium (batch size NA)', 4)": {
+            "null": 1.0,
             "('resnet50 (batch size 32)', 4)": [
-                0.41,
-                0.65
+                0.0,
+                0.0
             ],
             "('vgg19 (batch size 32)', 4)": [
-                0.26,
-                0.7
+                0.0,
+                0.0
             ],
             "('DCGAN (batch size 128)', 4)": [
-                0.5,
-                0.59
+                0.0,
+                0.0
             ],
             "('PointNet (batch size 32)', 4)": [
-                0.57,
-                0.99
-            ],
-            "('Bert-Large (batch size 256/64)', 4)": [
                 0.0,
                 0.0
             ],
-            "('GPT2-Medium (batch size 256/32)', 4)": [
+            "('Bert-Large (batch size NA)', 4)": [
                 0.0,
                 0.0
             ],
-            "('GPT2-Medium (batch size 512/8)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 256/8)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 512/32)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('Bert-Large (batch size 256/16)', 4)": [
+            "('GPT2-Medium (batch size NA)', 4)": [
                 0.0,
                 0.0
             ]
         },
-        "('GPT2-XL (batch size 512/4)', 8)": {
+        "('GPT2-XL (batch size NA)', 8)": {
             "null": 1.0,
-            "('GPT2-XL (batch size 512/2)', 8)": [
-                0.0,
-                0.0
-            ],
-            "('PointNet (batch size 32)', 8)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-XL (batch size 256/2)', 8)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-XL (batch size 256/4)', 8)": [
-                0.0,
-                0.0
-            ],
-            "('DCGAN (batch size 128)', 8)": [
+            "('resnet50 (batch size 32)', 8)": [
                 0.0,
                 0.0
             ],
@@ -370,18 +410,7 @@
                 0.0,
                 0.0
             ],
-            "('resnet50 (batch size 32)', 8)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-XL (batch size 512/4)', 8)": [
-                0.0,
-                0.0
-            ]
-        },
-        "('GPT2-XL (batch size 512/2)', 8)": {
-            "null": 0.73,
-            "('GPT2-XL (batch size 512/2)', 8)": [
+            "('DCGAN (batch size 128)', 8)": [
                 0.0,
                 0.0
             ],
@@ -389,664 +418,14 @@
                 0.0,
                 0.0
             ],
-            "('GPT2-XL (batch size 256/2)', 8)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-XL (batch size 256/4)', 8)": [
-                0.0,
-                0.0
-            ],
-            "('DCGAN (batch size 128)', 8)": [
-                0.0,
-                0.0
-            ],
-            "('vgg19 (batch size 32)', 8)": [
-                0.0,
-                0.0
-            ],
-            "('resnet50 (batch size 32)', 8)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-XL (batch size 512/4)', 8)": [
-                0.0,
-                0.0
-            ]
-        },
-        "('resnet50 (batch size 32)', 1)": {
-            "('resnet50 (batch size 32)', 1)": [
-                0.76,
-                0.76
-            ],
-            "('vgg19 (batch size 32)', 1)": [
-                0.41,
-                0.8
-            ],
-            "('DCGAN (batch size 128)', 1)": [
-                1.0,
-                0.81
-            ],
-            "('PointNet (batch size 32)', 1)": [
-                1.0,
-                1.0
-            ],
-            "null": 1.0
-        },
-        "('vgg19 (batch size 32)', 1)": {
-            "('resnet50 (batch size 32)', 1)": [
-                0.8,
-                0.41
-            ],
-            "('vgg19 (batch size 32)', 1)": [
-                0.36,
-                0.36
-            ],
-            "('DCGAN (batch size 128)', 1)": [
-                0.9,
-                0.41
-            ],
-            "('PointNet (batch size 32)', 1)": [
-                0.92,
-                1.0
-            ],
-            "null": 1.0
-        },
-        "('DCGAN (batch size 128)', 1)": {
-            "('resnet50 (batch size 32)', 1)": [
-                0.81,
-                1.0
-            ],
-            "('vgg19 (batch size 32)', 1)": [
-                0.41,
-                0.9
-            ],
-            "('DCGAN (batch size 128)', 1)": [
-                0.71,
-                0.69
-            ],
-            "('PointNet (batch size 32)', 1)": [
-                0.9,
-                1.0
-            ],
-            "null": 1.0
-        },
-        "('PointNet (batch size 32)', 1)": {
-            "('resnet50 (batch size 32)', 1)": [
-                1.0,
-                1.0
-            ],
-            "('vgg19 (batch size 32)', 1)": [
-                1.0,
-                0.92
-            ],
-            "('DCGAN (batch size 128)', 1)": [
-                1.0,
-                0.9
-            ],
-            "('PointNet (batch size 32)', 1)": [
-                1.0,
-                1.0
-            ],
-            "null": 1.0
-        },
-        "('resnet50 (batch size 32)', 2)": {
-            "('Bert-Base (batch size 256/16)', 2)": [
-                0.57,
-                0.76
-            ],
-            "('Bert-Base (batch size 256/32)', 2)": [
-                0.67,
-                0.5
-            ],
-            "('GPT2 (batch size 256/8)', 2)": [
-                0.48,
-                0.71
-            ],
-            "('GPT2 (batch size 256/16)', 2)": [
-                0.58,
-                0.5
-            ],
-            "('resnet50 (batch size 32)', 2)": [
-                0.67,
-                0.67
-            ],
-            "('vgg19 (batch size 32)', 2)": [
-                0.37,
-                0.75
-            ],
-            "('DCGAN (batch size 128)', 2)": [
-                0.98,
-                0.86
-            ],
-            "('PointNet (batch size 32)', 2)": [
-                0.98,
-                1.0
-            ],
-            "null": 1.0,
-            "('GPT2 (batch size 512/8)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2 (batch size 512/16)', 2)": [
-                0.0,
-                0.0
-            ]
-        },
-        "('vgg19 (batch size 32)', 2)": {
-            "('Bert-Base (batch size 256/16)', 2)": [
-                0.72,
-                0.46
-            ],
-            "('Bert-Base (batch size 256/32)', 2)": [
-                0.77,
-                0.28
-            ],
-            "('GPT2 (batch size 256/8)', 2)": [
-                0.66,
-                0.44
-            ],
-            "('GPT2 (batch size 256/16)', 2)": [
-                0.67,
-                0.32
-            ],
-            "('resnet50 (batch size 32)', 2)": [
-                0.75,
-                0.37
-            ],
-            "('vgg19 (batch size 32)', 2)": [
-                0.42,
-                0.42
-            ],
-            "('DCGAN (batch size 128)', 2)": [
-                0.9,
-                0.44
-            ],
-            "('PointNet (batch size 32)', 2)": [
-                0.95,
-                1.0
-            ],
-            "null": 1.0,
-            "('GPT2 (batch size 512/8)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2 (batch size 512/16)', 2)": [
-                0.0,
-                0.0
-            ]
-        },
-        "('DCGAN (batch size 128)', 2)": {
-            "('Bert-Base (batch size 256/16)', 2)": [
-                0.56,
-                0.87
-            ],
-            "('Bert-Base (batch size 256/32)', 2)": [
-                0.69,
-                0.6
-            ],
-            "('GPT2 (batch size 256/8)', 2)": [
-                0.47,
-                0.82
-            ],
-            "('GPT2 (batch size 256/16)', 2)": [
-                0.6,
-                0.59
-            ],
-            "('resnet50 (batch size 32)', 2)": [
-                0.86,
-                0.98
-            ],
-            "('vgg19 (batch size 32)', 2)": [
-                0.44,
-                0.9
-            ],
-            "('DCGAN (batch size 128)', 2)": [
-                0.72,
-                0.72
-            ],
-            "('PointNet (batch size 32)', 2)": [
-                0.91,
-                1.0
-            ],
-            "null": 1.0,
-            "('GPT2 (batch size 512/8)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2 (batch size 512/16)', 2)": [
-                0.0,
-                0.0
-            ]
-        },
-        "('PointNet (batch size 32)', 2)": {
-            "('Bert-Base (batch size 256/16)', 2)": [
-                1.0,
-                0.99
-            ],
-            "('Bert-Base (batch size 256/32)', 2)": [
-                1.0,
-                0.6
-            ],
-            "('GPT2 (batch size 256/8)', 2)": [
-                1.0,
-                0.94
-            ],
-            "('GPT2 (batch size 256/16)', 2)": [
-                1.0,
-                0.71
-            ],
-            "('resnet50 (batch size 32)', 2)": [
-                1.0,
-                0.98
-            ],
-            "('vgg19 (batch size 32)', 2)": [
-                1.0,
-                0.95
-            ],
-            "('DCGAN (batch size 128)', 2)": [
-                1.0,
-                0.91
-            ],
-            "('PointNet (batch size 32)', 2)": [
-                1.0,
-                1.0
-            ],
-            "null": 1.0,
-            "('GPT2 (batch size 512/8)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2 (batch size 512/16)', 2)": [
-                0.0,
-                0.0
-            ]
-        },
-        "('GPT2 (batch size 256/8)', 2)": {
-            "('resnet50 (batch size 32)', 2)": [
-                0.71,
-                0.48
-            ],
-            "('vgg19 (batch size 32)', 2)": [
-                0.44,
-                0.66
-            ],
-            "('DCGAN (batch size 128)', 2)": [
-                0.82,
-                0.47
-            ],
-            "('PointNet (batch size 32)', 2)": [
-                0.94,
-                1.0
-            ],
-            "null": 1.0,
-            "('Bert-Base (batch size 256/32)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2 (batch size 512/8)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2 (batch size 512/16)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2 (batch size 256/16)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('Bert-Base (batch size 256/16)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2 (batch size 256/8)', 2)": [
-                0.0,
-                0.0
-            ]
-        },
-        "('GPT2 (batch size 256/16)', 2)": {
-            "('resnet50 (batch size 32)', 2)": [
-                0.5,
-                0.58
-            ],
-            "('vgg19 (batch size 32)', 2)": [
-                0.32,
-                0.67
-            ],
-            "('DCGAN (batch size 128)', 2)": [
-                0.59,
-                0.6
-            ],
-            "('PointNet (batch size 32)', 2)": [
-                0.71,
-                1.0
-            ],
-            "null": 1.0,
-            "('Bert-Base (batch size 256/32)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2 (batch size 512/8)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2 (batch size 512/16)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2 (batch size 256/16)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('Bert-Base (batch size 256/16)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2 (batch size 256/8)', 2)": [
-                0.0,
-                0.0
-            ]
-        },
-        "('resnet50 (batch size 32)', 4)": {
-            "('resnet50 (batch size 32)', 4)": [
-                0.67,
-                0.67
-            ],
-            "('vgg19 (batch size 32)', 4)": [
-                0.51,
-                0.83
-            ],
-            "('DCGAN (batch size 128)', 4)": [
-                1.0,
-                0.85
-            ],
-            "('PointNet (batch size 32)', 4)": [
-                0.98,
-                0.94
-            ],
-            "('Bert-Large (batch size 256/16)', 4)": [
-                0.55,
-                0.71
-            ],
-            "('Bert-Large (batch size 256/64)', 4)": [
-                0.65,
-                0.41
-            ],
-            "('GPT2-Medium (batch size 256/8)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 256/32)', 4)": [
-                0.0,
-                0.0
-            ],
-            "null": 1.0,
-            "('GPT2-Medium (batch size 512/8)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 512/32)', 4)": [
-                0.0,
-                0.0
-            ]
-        },
-        "('vgg19 (batch size 32)', 4)": {
-            "('resnet50 (batch size 32)', 4)": [
-                0.83,
-                0.51
-            ],
-            "('vgg19 (batch size 32)', 4)": [
-                0.42,
-                0.43
-            ],
-            "('DCGAN (batch size 128)', 4)": [
-                0.9,
-                0.49
-            ],
-            "('PointNet (batch size 32)', 4)": [
-                0.97,
-                0.94
-            ],
-            "('Bert-Large (batch size 256/16)', 4)": [
-                0.69,
-                0.49
-            ],
-            "('Bert-Large (batch size 256/64)', 4)": [
-                0.7,
-                0.26
-            ],
-            "('GPT2-Medium (batch size 256/8)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 256/32)', 4)": [
-                0.0,
-                0.0
-            ],
-            "null": 1.0,
-            "('GPT2-Medium (batch size 512/8)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 512/32)', 4)": [
-                0.0,
-                0.0
-            ]
-        },
-        "('DCGAN (batch size 128)', 4)": {
-            "('resnet50 (batch size 32)', 4)": [
-                0.85,
-                1.0
-            ],
-            "('vgg19 (batch size 32)', 4)": [
-                0.49,
-                0.9
-            ],
-            "('DCGAN (batch size 128)', 4)": [
-                0.96,
-                0.95
-            ],
-            "('PointNet (batch size 32)', 4)": [
-                0.89,
-                0.96
-            ],
-            "('Bert-Large (batch size 256/16)', 4)": [
-                0.51,
-                0.81
-            ],
-            "('Bert-Large (batch size 256/64)', 4)": [
-                0.59,
-                0.5
-            ],
-            "('GPT2-Medium (batch size 256/8)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 256/32)', 4)": [
-                0.0,
-                0.0
-            ],
-            "null": 1.0,
-            "('GPT2-Medium (batch size 512/8)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 512/32)', 4)": [
-                0.0,
-                0.0
-            ]
-        },
-        "('PointNet (batch size 32)', 4)": {
-            "('resnet50 (batch size 32)', 4)": [
-                0.94,
-                0.98
-            ],
-            "('vgg19 (batch size 32)', 4)": [
-                0.94,
-                0.97
-            ],
-            "('DCGAN (batch size 128)', 4)": [
-                0.96,
-                0.89
-            ],
-            "('PointNet (batch size 32)', 4)": [
-                0.96,
-                0.96
-            ],
-            "('Bert-Large (batch size 256/16)', 4)": [
-                0.96,
-                0.91
-            ],
-            "('Bert-Large (batch size 256/64)', 4)": [
-                0.99,
-                0.57
-            ],
-            "('GPT2-Medium (batch size 256/8)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 256/32)', 4)": [
-                0.0,
-                0.0
-            ],
-            "null": 1.0,
-            "('GPT2-Medium (batch size 512/8)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 512/32)', 4)": [
-                0.0,
-                0.0
-            ]
-        },
-        "('GPT2-Medium (batch size 256/8)', 4)": {
-            "('resnet50 (batch size 32)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('vgg19 (batch size 32)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('DCGAN (batch size 128)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('PointNet (batch size 32)', 4)": [
-                0.0,
-                0.0
-            ],
-            "null": 1.0,
-            "('Bert-Large (batch size 256/64)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 256/32)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 512/8)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 256/8)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 512/32)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('Bert-Large (batch size 256/16)', 4)": [
-                0.0,
-                0.0
-            ]
-        },
-        "('GPT2-Medium (batch size 256/32)', 4)": {
-            "('resnet50 (batch size 32)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('vgg19 (batch size 32)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('DCGAN (batch size 128)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('PointNet (batch size 32)', 4)": [
-                0.0,
-                0.0
-            ],
-            "null": 1.0,
-            "('Bert-Large (batch size 256/64)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 256/32)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 512/8)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 256/8)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 512/32)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('Bert-Large (batch size 256/16)', 4)": [
-                0.0,
-                0.0
-            ]
-        },
-        "('GPT2-XL (batch size 256/4)', 8)": {
-            "('resnet50 (batch size 32)', 8)": [
-                0.36,
-                0.94
-            ],
-            "('vgg19 (batch size 32)', 8)": [
-                0.27,
-                0.75
-            ],
-            "('DCGAN (batch size 128)', 8)": [
-                0.45,
-                0.97
-            ],
-            "('PointNet (batch size 32)', 8)": [
-                0.55,
-                1.0
-            ],
-            "null": 1.0,
-            "('GPT2-XL (batch size 512/2)', 8)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-XL (batch size 256/2)', 8)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-XL (batch size 256/4)', 8)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-XL (batch size 512/4)', 8)": [
+            "('GPT2-XL (batch size NA)', 8)": [
                 0.0,
                 0.0
             ]
         },
         "('resnet50 (batch size 32)', 8)": {
-            "('GPT2-XL (batch size 256/4)', 8)": [
-                0.94,
-                0.36
-            ],
-            "('GPT2-XL (batch size 256/2)', 8)": [
+            "null": 1.0,
+            "('GPT2-XL (batch size NA)', 8)": [
                 0.0,
                 0.0
             ],
@@ -1065,23 +444,11 @@
             "('PointNet (batch size 32)', 8)": [
                 0.97,
                 0.93
-            ],
-            "null": 1.0,
-            "('GPT2-XL (batch size 512/2)', 8)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-XL (batch size 512/4)', 8)": [
-                0.0,
-                0.0
             ]
         },
         "('vgg19 (batch size 32)', 8)": {
-            "('GPT2-XL (batch size 256/4)', 8)": [
-                0.75,
-                0.27
-            ],
-            "('GPT2-XL (batch size 256/2)', 8)": [
+            "null": 1.0,
+            "('GPT2-XL (batch size NA)', 8)": [
                 0.0,
                 0.0
             ],
@@ -1100,23 +467,11 @@
             "('PointNet (batch size 32)', 8)": [
                 0.96,
                 0.93
-            ],
-            "null": 1.0,
-            "('GPT2-XL (batch size 512/2)', 8)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-XL (batch size 512/4)', 8)": [
-                0.0,
-                0.0
             ]
         },
         "('DCGAN (batch size 128)', 8)": {
-            "('GPT2-XL (batch size 256/4)', 8)": [
-                0.97,
-                0.45
-            ],
-            "('GPT2-XL (batch size 256/2)', 8)": [
+            "null": 1.0,
+            "('GPT2-XL (batch size NA)', 8)": [
                 0.0,
                 0.0
             ],
@@ -1135,23 +490,11 @@
             "('PointNet (batch size 32)', 8)": [
                 0.93,
                 0.94
-            ],
-            "null": 1.0,
-            "('GPT2-XL (batch size 512/2)', 8)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-XL (batch size 512/4)', 8)": [
-                0.0,
-                0.0
             ]
         },
         "('PointNet (batch size 32)', 8)": {
-            "('GPT2-XL (batch size 256/4)', 8)": [
-                1.0,
-                0.55
-            ],
-            "('GPT2-XL (batch size 256/2)', 8)": [
+            "null": 1.0,
+            "('GPT2-XL (batch size NA)', 8)": [
                 0.0,
                 0.0
             ],
@@ -1170,55 +513,189 @@
             "('PointNet (batch size 32)', 8)": [
                 0.94,
                 0.94
-            ],
-            "null": 1.0,
-            "('GPT2-XL (batch size 512/2)', 8)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-XL (batch size 512/4)', 8)": [
-                0.0,
-                0.0
             ]
         },
-        "('GPT2-XL (batch size 256/2)', 8)": {
-            "('resnet50 (batch size 32)', 8)": [
-                0.0,
-                0.0
-            ],
-            "('vgg19 (batch size 32)', 8)": [
-                0.0,
-                0.0
-            ],
-            "('DCGAN (batch size 128)', 8)": [
-                0.0,
-                0.0
-            ],
-            "('PointNet (batch size 32)', 8)": [
-                0.0,
-                0.0
-            ],
-            "null": 1.0,
-            "('GPT2-XL (batch size 512/2)', 8)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-XL (batch size 256/2)', 8)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-XL (batch size 256/4)', 8)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-XL (batch size 512/4)', 8)": [
-                0.0,
-                0.0
-            ]
+        "('resnet50 (batch size 64)', 1)": {
+            "null": 1.0
+        },
+        "('resnet50 (batch size 128)', 1)": {
+            "null": 1.0
+        },
+        "('resnet50 (batch size 64)', 2)": {
+            "null": 1.0
+        },
+        "('resnet50 (batch size 128)', 2)": {
+            "null": 1.0
+        },
+        "('resnet50 (batch size 64)', 4)": {
+            "null": 1.0
+        },
+        "('resnet50 (batch size 128)', 4)": {
+            "null": 1.0
+        },
+        "('vgg19 (batch size 64)', 1)": {
+            "null": 1.0
+        },
+        "('vgg19 (batch size 128)', 1)": {
+            "null": 1.0
+        },
+        "('vgg19 (batch size 64)', 2)": {
+            "null": 1.0
+        },
+        "('vgg19 (batch size 128)', 2)": {
+            "null": 1.0
+        },
+        "('vgg19 (batch size 64)', 4)": {
+            "null": 1.0
+        },
+        "('vgg19 (batch size 128)', 4)": {
+            "null": 1.0
+        },
+        "('DCGAN (batch size 32)', 1)": {
+            "null": 1.0
+        },
+        "('DCGAN (batch size 64)', 1)": {
+            "null": 1.0
+        },
+        "('DCGAN (batch size 32)', 2)": {
+            "null": 1.0
+        },
+        "('DCGAN (batch size 64)', 2)": {
+            "null": 1.0
+        },
+        "('DCGAN (batch size 32)', 4)": {
+            "null": 1.0
+        },
+        "('DCGAN (batch size 64)', 4)": {
+            "null": 1.0
+        },
+        "('PointNet (batch size 64)', 1)": {
+            "null": 1.0
+        },
+        "('PointNet (batch size 128)', 1)": {
+            "null": 1.0
+        },
+        "('PointNet (batch size 64)', 2)": {
+            "null": 1.0
+        },
+        "('PointNet (batch size 128)', 2)": {
+            "null": 1.0
+        },
+        "('PointNet (batch size 64)', 4)": {
+            "null": 1.0
+        },
+        "('PointNet (batch size 128)', 4)": {
+            "null": 1.0
+        },
+        "('Bert-Base (batch size NA)', 4)": {
+            "null": 1.0
+        },
+        "('Bert-Base (batch size NA)', 8)": {
+            "null": 1.0
+        },
+        "('Bert-Large (batch size NA)', 2)": {
+            "null": 1.0
+        },
+        "('Bert-Large (batch size NA)', 8)": {
+            "null": 1.0
+        },
+        "('GPT2 (batch size NA)', 4)": {
+            "null": 1.0
+        },
+        "('GPT2 (batch size NA)', 8)": {
+            "null": 1.0
+        },
+        "('GPT2-Medium (batch size NA)', 2)": {
+            "null": 1.0
+        },
+        "('GPT2-Medium (batch size NA)', 8)": {
+            "null": 1.0
+        },
+        "('GPT2-XL (batch size NA)', 2)": {
+            "null": 1.0
+        },
+        "('GPT2-XL (batch size NA)', 4)": {
+            "null": 1.0
         }
     },
     "v100": {
-        "('Bert-Base (batch size 256/16)', 2)": {
+        "('resnet50 (batch size 32)', 1)": {
+            "null": 1.0,
+            "('resnet50 (batch size 32)', 1)": [
+                0.76,
+                0.76
+            ],
+            "('vgg19 (batch size 32)', 1)": [
+                0.41,
+                0.8
+            ],
+            "('DCGAN (batch size 128)', 1)": [
+                1.0,
+                0.81
+            ],
+            "('PointNet (batch size 32)', 1)": [
+                1.0,
+                1.0
+            ]
+        },
+        "('vgg19 (batch size 32)', 1)": {
+            "null": 1.0,
+            "('resnet50 (batch size 32)', 1)": [
+                0.8,
+                0.41
+            ],
+            "('vgg19 (batch size 32)', 1)": [
+                0.36,
+                0.36
+            ],
+            "('DCGAN (batch size 128)', 1)": [
+                0.9,
+                0.41
+            ],
+            "('PointNet (batch size 32)', 1)": [
+                0.92,
+                1.0
+            ]
+        },
+        "('DCGAN (batch size 128)', 1)": {
+            "null": 1.0,
+            "('resnet50 (batch size 32)', 1)": [
+                0.81,
+                1.0
+            ],
+            "('vgg19 (batch size 32)', 1)": [
+                0.41,
+                0.9
+            ],
+            "('DCGAN (batch size 128)', 1)": [
+                0.71,
+                0.69
+            ],
+            "('PointNet (batch size 32)', 1)": [
+                0.9,
+                1.0
+            ]
+        },
+        "('PointNet (batch size 32)', 1)": {
+            "null": 1.0,
+            "('resnet50 (batch size 32)', 1)": [
+                1.0,
+                1.0
+            ],
+            "('vgg19 (batch size 32)', 1)": [
+                1.0,
+                0.92
+            ],
+            "('DCGAN (batch size 128)', 1)": [
+                1.0,
+                0.9
+            ],
+            "('PointNet (batch size 32)', 1)": [
+                1.0,
+                1.0
+            ]
+        },
+        "('Bert-Base (batch size NA)', 2)": {
             "null": 1.0,
             "('resnet50 (batch size 32)', 2)": [
                 0.76,
@@ -1236,247 +713,259 @@
                 0.99,
                 1.0
             ],
-            "('Bert-Base (batch size 256/32)', 2)": [
+            "('GPT2 (batch size NA)', 2)": [
                 0.0,
                 0.0
             ],
-            "('GPT2 (batch size 512/8)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2 (batch size 512/16)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2 (batch size 256/16)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('Bert-Base (batch size 256/16)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2 (batch size 256/8)', 2)": [
+            "('Bert-Base (batch size NA)', 2)": [
                 0.0,
                 0.0
             ]
         },
-        "('Bert-Base (batch size 256/32)', 2)": {
-            "null": 0.62,
+        "('resnet50 (batch size 32)', 2)": {
+            "null": 1.0,
+            "('Bert-Base (batch size NA)', 2)": [
+                0.57,
+                0.76
+            ],
+            "('GPT2 (batch size NA)', 2)": [
+                0.48,
+                0.71
+            ],
             "('resnet50 (batch size 32)', 2)": [
-                0.5,
+                0.67,
                 0.67
             ],
             "('vgg19 (batch size 32)', 2)": [
-                0.28,
-                0.77
+                0.37,
+                0.75
             ],
             "('DCGAN (batch size 128)', 2)": [
-                0.6,
-                0.69
+                0.98,
+                0.86
             ],
             "('PointNet (batch size 32)', 2)": [
-                0.6,
+                0.98,
+                1.0
+            ]
+        },
+        "('vgg19 (batch size 32)', 2)": {
+            "null": 1.0,
+            "('Bert-Base (batch size NA)', 2)": [
+                0.72,
+                0.46
+            ],
+            "('GPT2 (batch size NA)', 2)": [
+                0.66,
+                0.44
+            ],
+            "('resnet50 (batch size 32)', 2)": [
+                0.75,
+                0.37
+            ],
+            "('vgg19 (batch size 32)', 2)": [
+                0.42,
+                0.42
+            ],
+            "('DCGAN (batch size 128)', 2)": [
+                0.9,
+                0.44
+            ],
+            "('PointNet (batch size 32)', 2)": [
+                0.95,
+                1.0
+            ]
+        },
+        "('DCGAN (batch size 128)', 2)": {
+            "null": 1.0,
+            "('Bert-Base (batch size NA)', 2)": [
+                0.56,
+                0.87
+            ],
+            "('GPT2 (batch size NA)', 2)": [
+                0.47,
+                0.82
+            ],
+            "('resnet50 (batch size 32)', 2)": [
+                0.86,
+                0.98
+            ],
+            "('vgg19 (batch size 32)', 2)": [
+                0.44,
+                0.9
+            ],
+            "('DCGAN (batch size 128)', 2)": [
+                0.72,
+                0.72
+            ],
+            "('PointNet (batch size 32)', 2)": [
+                0.91,
+                1.0
+            ]
+        },
+        "('PointNet (batch size 32)', 2)": {
+            "null": 1.0,
+            "('Bert-Base (batch size NA)', 2)": [
+                1.0,
+                0.99
+            ],
+            "('GPT2 (batch size NA)', 2)": [
+                1.0,
+                0.94
+            ],
+            "('resnet50 (batch size 32)', 2)": [
+                1.0,
+                0.98
+            ],
+            "('vgg19 (batch size 32)', 2)": [
+                1.0,
+                0.95
+            ],
+            "('DCGAN (batch size 128)', 2)": [
+                1.0,
+                0.91
+            ],
+            "('PointNet (batch size 32)', 2)": [
+                1.0,
+                1.0
+            ]
+        },
+        "('GPT2 (batch size NA)', 2)": {
+            "null": 1.0,
+            "('resnet50 (batch size 32)', 2)": [
+                0.71,
+                0.48
+            ],
+            "('vgg19 (batch size 32)', 2)": [
+                0.44,
+                0.66
+            ],
+            "('DCGAN (batch size 128)', 2)": [
+                0.82,
+                0.47
+            ],
+            "('PointNet (batch size 32)', 2)": [
+                0.94,
                 1.0
             ],
-            "('Bert-Base (batch size 256/32)', 2)": [
+            "('GPT2 (batch size NA)', 2)": [
                 0.0,
                 0.0
             ],
-            "('GPT2 (batch size 512/8)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2 (batch size 512/16)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2 (batch size 256/16)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('Bert-Base (batch size 256/16)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2 (batch size 256/8)', 2)": [
+            "('Bert-Base (batch size NA)', 2)": [
                 0.0,
                 0.0
             ]
         },
-        "('GPT2 (batch size 512/8)', 2)": {
-            "null": 1.0,
-            "('Bert-Base (batch size 256/32)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('PointNet (batch size 32)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2 (batch size 512/8)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2 (batch size 512/16)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2 (batch size 256/16)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('DCGAN (batch size 128)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('vgg19 (batch size 32)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('resnet50 (batch size 32)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('Bert-Base (batch size 256/16)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2 (batch size 256/8)', 2)": [
-                0.0,
-                0.0
-            ]
-        },
-        "('GPT2 (batch size 512/16)', 2)": {
-            "null": 0.76,
-            "('Bert-Base (batch size 256/32)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('PointNet (batch size 32)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2 (batch size 512/8)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2 (batch size 512/16)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2 (batch size 256/16)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('DCGAN (batch size 128)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('vgg19 (batch size 32)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('resnet50 (batch size 32)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('Bert-Base (batch size 256/16)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2 (batch size 256/8)', 2)": [
-                0.0,
-                0.0
-            ]
-        },
-        "('GPT2-Medium (batch size 512/8)', 4)": {
+        "('resnet50 (batch size 32)', 4)": {
             "null": 1.0,
             "('resnet50 (batch size 32)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('Bert-Large (batch size 256/64)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 256/32)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 512/8)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('PointNet (batch size 32)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 256/8)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 512/32)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('Bert-Large (batch size 256/16)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('DCGAN (batch size 128)', 4)": [
-                0.0,
-                0.0
+                0.67,
+                0.67
             ],
             "('vgg19 (batch size 32)', 4)": [
+                0.51,
+                0.83
+            ],
+            "('DCGAN (batch size 128)', 4)": [
+                1.0,
+                0.85
+            ],
+            "('PointNet (batch size 32)', 4)": [
+                0.98,
+                0.94
+            ],
+            "('Bert-Large (batch size NA)', 4)": [
+                0.55,
+                0.71
+            ],
+            "('GPT2-Medium (batch size NA)', 4)": [
                 0.0,
                 0.0
             ]
         },
-        "('GPT2-Medium (batch size 512/32)', 4)": {
-            "null": 0.66,
+        "('vgg19 (batch size 32)', 4)": {
+            "null": 1.0,
             "('resnet50 (batch size 32)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('Bert-Large (batch size 256/64)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 256/32)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 512/8)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('PointNet (batch size 32)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 256/8)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 512/32)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('Bert-Large (batch size 256/16)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('DCGAN (batch size 128)', 4)": [
-                0.0,
-                0.0
+                0.83,
+                0.51
             ],
             "('vgg19 (batch size 32)', 4)": [
+                0.42,
+                0.43
+            ],
+            "('DCGAN (batch size 128)', 4)": [
+                0.9,
+                0.49
+            ],
+            "('PointNet (batch size 32)', 4)": [
+                0.97,
+                0.94
+            ],
+            "('Bert-Large (batch size NA)', 4)": [
+                0.69,
+                0.49
+            ],
+            "('GPT2-Medium (batch size NA)', 4)": [
                 0.0,
                 0.0
             ]
         },
-        "('Bert-Large (batch size 256/16)', 4)": {
+        "('DCGAN (batch size 128)', 4)": {
+            "null": 1.0,
+            "('resnet50 (batch size 32)', 4)": [
+                0.85,
+                1.0
+            ],
+            "('vgg19 (batch size 32)', 4)": [
+                0.49,
+                0.9
+            ],
+            "('DCGAN (batch size 128)', 4)": [
+                0.96,
+                0.95
+            ],
+            "('PointNet (batch size 32)', 4)": [
+                0.89,
+                0.96
+            ],
+            "('Bert-Large (batch size NA)', 4)": [
+                0.51,
+                0.81
+            ],
+            "('GPT2-Medium (batch size NA)', 4)": [
+                0.0,
+                0.0
+            ]
+        },
+        "('PointNet (batch size 32)', 4)": {
+            "null": 1.0,
+            "('resnet50 (batch size 32)', 4)": [
+                0.94,
+                0.98
+            ],
+            "('vgg19 (batch size 32)', 4)": [
+                0.94,
+                0.97
+            ],
+            "('DCGAN (batch size 128)', 4)": [
+                0.96,
+                0.89
+            ],
+            "('PointNet (batch size 32)', 4)": [
+                0.96,
+                0.96
+            ],
+            "('Bert-Large (batch size NA)', 4)": [
+                0.96,
+                0.91
+            ],
+            "('GPT2-Medium (batch size NA)', 4)": [
+                0.0,
+                0.0
+            ]
+        },
+        "('Bert-Large (batch size NA)', 4)": {
             "null": 1.0,
             "('resnet50 (batch size 32)', 4)": [
                 0.71,
@@ -1494,93 +983,45 @@
                 0.91,
                 0.96
             ],
-            "('Bert-Large (batch size 256/64)', 4)": [
+            "('Bert-Large (batch size NA)', 4)": [
                 0.0,
                 0.0
             ],
-            "('GPT2-Medium (batch size 256/32)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 512/8)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 256/8)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 512/32)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('Bert-Large (batch size 256/16)', 4)": [
+            "('GPT2-Medium (batch size NA)', 4)": [
                 0.0,
                 0.0
             ]
         },
-        "('Bert-Large (batch size 256/64)', 4)": {
-            "null": 0.64,
+        "('GPT2-Medium (batch size NA)', 4)": {
+            "null": 1.0,
             "('resnet50 (batch size 32)', 4)": [
-                0.41,
-                0.65
+                0.0,
+                0.0
             ],
             "('vgg19 (batch size 32)', 4)": [
-                0.26,
-                0.7
+                0.0,
+                0.0
             ],
             "('DCGAN (batch size 128)', 4)": [
-                0.5,
-                0.59
+                0.0,
+                0.0
             ],
             "('PointNet (batch size 32)', 4)": [
-                0.57,
-                0.99
-            ],
-            "('Bert-Large (batch size 256/64)', 4)": [
                 0.0,
                 0.0
             ],
-            "('GPT2-Medium (batch size 256/32)', 4)": [
+            "('Bert-Large (batch size NA)', 4)": [
                 0.0,
                 0.0
             ],
-            "('GPT2-Medium (batch size 512/8)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 256/8)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 512/32)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('Bert-Large (batch size 256/16)', 4)": [
+            "('GPT2-Medium (batch size NA)', 4)": [
                 0.0,
                 0.0
             ]
         },
-        "('GPT2-XL (batch size 512/4)', 8)": {
+        "('GPT2-XL (batch size NA)', 8)": {
             "null": 1.0,
-            "('GPT2-XL (batch size 512/2)', 8)": [
-                0.0,
-                0.0
-            ],
-            "('PointNet (batch size 32)', 8)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-XL (batch size 256/2)', 8)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-XL (batch size 256/4)', 8)": [
-                0.0,
-                0.0
-            ],
-            "('DCGAN (batch size 128)', 8)": [
+            "('resnet50 (batch size 32)', 8)": [
                 0.0,
                 0.0
             ],
@@ -1588,18 +1029,7 @@
                 0.0,
                 0.0
             ],
-            "('resnet50 (batch size 32)', 8)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-XL (batch size 512/4)', 8)": [
-                0.0,
-                0.0
-            ]
-        },
-        "('GPT2-XL (batch size 512/2)', 8)": {
-            "null": 0.73,
-            "('GPT2-XL (batch size 512/2)', 8)": [
+            "('DCGAN (batch size 128)', 8)": [
                 0.0,
                 0.0
             ],
@@ -1607,664 +1037,14 @@
                 0.0,
                 0.0
             ],
-            "('GPT2-XL (batch size 256/2)', 8)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-XL (batch size 256/4)', 8)": [
-                0.0,
-                0.0
-            ],
-            "('DCGAN (batch size 128)', 8)": [
-                0.0,
-                0.0
-            ],
-            "('vgg19 (batch size 32)', 8)": [
-                0.0,
-                0.0
-            ],
-            "('resnet50 (batch size 32)', 8)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-XL (batch size 512/4)', 8)": [
-                0.0,
-                0.0
-            ]
-        },
-        "('resnet50 (batch size 32)', 1)": {
-            "('resnet50 (batch size 32)', 1)": [
-                0.76,
-                0.76
-            ],
-            "('vgg19 (batch size 32)', 1)": [
-                0.41,
-                0.8
-            ],
-            "('DCGAN (batch size 128)', 1)": [
-                1.0,
-                0.81
-            ],
-            "('PointNet (batch size 32)', 1)": [
-                1.0,
-                1.0
-            ],
-            "null": 1.0
-        },
-        "('vgg19 (batch size 32)', 1)": {
-            "('resnet50 (batch size 32)', 1)": [
-                0.8,
-                0.41
-            ],
-            "('vgg19 (batch size 32)', 1)": [
-                0.36,
-                0.36
-            ],
-            "('DCGAN (batch size 128)', 1)": [
-                0.9,
-                0.41
-            ],
-            "('PointNet (batch size 32)', 1)": [
-                0.92,
-                1.0
-            ],
-            "null": 1.0
-        },
-        "('DCGAN (batch size 128)', 1)": {
-            "('resnet50 (batch size 32)', 1)": [
-                0.81,
-                1.0
-            ],
-            "('vgg19 (batch size 32)', 1)": [
-                0.41,
-                0.9
-            ],
-            "('DCGAN (batch size 128)', 1)": [
-                0.71,
-                0.69
-            ],
-            "('PointNet (batch size 32)', 1)": [
-                0.9,
-                1.0
-            ],
-            "null": 1.0
-        },
-        "('PointNet (batch size 32)', 1)": {
-            "('resnet50 (batch size 32)', 1)": [
-                1.0,
-                1.0
-            ],
-            "('vgg19 (batch size 32)', 1)": [
-                1.0,
-                0.92
-            ],
-            "('DCGAN (batch size 128)', 1)": [
-                1.0,
-                0.9
-            ],
-            "('PointNet (batch size 32)', 1)": [
-                1.0,
-                1.0
-            ],
-            "null": 1.0
-        },
-        "('resnet50 (batch size 32)', 2)": {
-            "('Bert-Base (batch size 256/16)', 2)": [
-                0.57,
-                0.76
-            ],
-            "('Bert-Base (batch size 256/32)', 2)": [
-                0.67,
-                0.5
-            ],
-            "('GPT2 (batch size 256/8)', 2)": [
-                0.48,
-                0.71
-            ],
-            "('GPT2 (batch size 256/16)', 2)": [
-                0.58,
-                0.5
-            ],
-            "('resnet50 (batch size 32)', 2)": [
-                0.67,
-                0.67
-            ],
-            "('vgg19 (batch size 32)', 2)": [
-                0.37,
-                0.75
-            ],
-            "('DCGAN (batch size 128)', 2)": [
-                0.98,
-                0.86
-            ],
-            "('PointNet (batch size 32)', 2)": [
-                0.98,
-                1.0
-            ],
-            "null": 1.0,
-            "('GPT2 (batch size 512/8)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2 (batch size 512/16)', 2)": [
-                0.0,
-                0.0
-            ]
-        },
-        "('vgg19 (batch size 32)', 2)": {
-            "('Bert-Base (batch size 256/16)', 2)": [
-                0.72,
-                0.46
-            ],
-            "('Bert-Base (batch size 256/32)', 2)": [
-                0.77,
-                0.28
-            ],
-            "('GPT2 (batch size 256/8)', 2)": [
-                0.66,
-                0.44
-            ],
-            "('GPT2 (batch size 256/16)', 2)": [
-                0.67,
-                0.32
-            ],
-            "('resnet50 (batch size 32)', 2)": [
-                0.75,
-                0.37
-            ],
-            "('vgg19 (batch size 32)', 2)": [
-                0.42,
-                0.42
-            ],
-            "('DCGAN (batch size 128)', 2)": [
-                0.9,
-                0.44
-            ],
-            "('PointNet (batch size 32)', 2)": [
-                0.95,
-                1.0
-            ],
-            "null": 1.0,
-            "('GPT2 (batch size 512/8)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2 (batch size 512/16)', 2)": [
-                0.0,
-                0.0
-            ]
-        },
-        "('DCGAN (batch size 128)', 2)": {
-            "('Bert-Base (batch size 256/16)', 2)": [
-                0.56,
-                0.87
-            ],
-            "('Bert-Base (batch size 256/32)', 2)": [
-                0.69,
-                0.6
-            ],
-            "('GPT2 (batch size 256/8)', 2)": [
-                0.47,
-                0.82
-            ],
-            "('GPT2 (batch size 256/16)', 2)": [
-                0.6,
-                0.59
-            ],
-            "('resnet50 (batch size 32)', 2)": [
-                0.86,
-                0.98
-            ],
-            "('vgg19 (batch size 32)', 2)": [
-                0.44,
-                0.9
-            ],
-            "('DCGAN (batch size 128)', 2)": [
-                0.72,
-                0.72
-            ],
-            "('PointNet (batch size 32)', 2)": [
-                0.91,
-                1.0
-            ],
-            "null": 1.0,
-            "('GPT2 (batch size 512/8)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2 (batch size 512/16)', 2)": [
-                0.0,
-                0.0
-            ]
-        },
-        "('PointNet (batch size 32)', 2)": {
-            "('Bert-Base (batch size 256/16)', 2)": [
-                1.0,
-                0.99
-            ],
-            "('Bert-Base (batch size 256/32)', 2)": [
-                1.0,
-                0.6
-            ],
-            "('GPT2 (batch size 256/8)', 2)": [
-                1.0,
-                0.94
-            ],
-            "('GPT2 (batch size 256/16)', 2)": [
-                1.0,
-                0.71
-            ],
-            "('resnet50 (batch size 32)', 2)": [
-                1.0,
-                0.98
-            ],
-            "('vgg19 (batch size 32)', 2)": [
-                1.0,
-                0.95
-            ],
-            "('DCGAN (batch size 128)', 2)": [
-                1.0,
-                0.91
-            ],
-            "('PointNet (batch size 32)', 2)": [
-                1.0,
-                1.0
-            ],
-            "null": 1.0,
-            "('GPT2 (batch size 512/8)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2 (batch size 512/16)', 2)": [
-                0.0,
-                0.0
-            ]
-        },
-        "('GPT2 (batch size 256/8)', 2)": {
-            "('resnet50 (batch size 32)', 2)": [
-                0.71,
-                0.48
-            ],
-            "('vgg19 (batch size 32)', 2)": [
-                0.44,
-                0.66
-            ],
-            "('DCGAN (batch size 128)', 2)": [
-                0.82,
-                0.47
-            ],
-            "('PointNet (batch size 32)', 2)": [
-                0.94,
-                1.0
-            ],
-            "null": 1.0,
-            "('Bert-Base (batch size 256/32)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2 (batch size 512/8)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2 (batch size 512/16)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2 (batch size 256/16)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('Bert-Base (batch size 256/16)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2 (batch size 256/8)', 2)": [
-                0.0,
-                0.0
-            ]
-        },
-        "('GPT2 (batch size 256/16)', 2)": {
-            "('resnet50 (batch size 32)', 2)": [
-                0.5,
-                0.58
-            ],
-            "('vgg19 (batch size 32)', 2)": [
-                0.32,
-                0.67
-            ],
-            "('DCGAN (batch size 128)', 2)": [
-                0.59,
-                0.6
-            ],
-            "('PointNet (batch size 32)', 2)": [
-                0.71,
-                1.0
-            ],
-            "null": 1.0,
-            "('Bert-Base (batch size 256/32)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2 (batch size 512/8)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2 (batch size 512/16)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2 (batch size 256/16)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('Bert-Base (batch size 256/16)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2 (batch size 256/8)', 2)": [
-                0.0,
-                0.0
-            ]
-        },
-        "('resnet50 (batch size 32)', 4)": {
-            "('resnet50 (batch size 32)', 4)": [
-                0.67,
-                0.67
-            ],
-            "('vgg19 (batch size 32)', 4)": [
-                0.51,
-                0.83
-            ],
-            "('DCGAN (batch size 128)', 4)": [
-                1.0,
-                0.85
-            ],
-            "('PointNet (batch size 32)', 4)": [
-                0.98,
-                0.94
-            ],
-            "('Bert-Large (batch size 256/16)', 4)": [
-                0.55,
-                0.71
-            ],
-            "('Bert-Large (batch size 256/64)', 4)": [
-                0.65,
-                0.41
-            ],
-            "('GPT2-Medium (batch size 256/8)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 256/32)', 4)": [
-                0.0,
-                0.0
-            ],
-            "null": 1.0,
-            "('GPT2-Medium (batch size 512/8)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 512/32)', 4)": [
-                0.0,
-                0.0
-            ]
-        },
-        "('vgg19 (batch size 32)', 4)": {
-            "('resnet50 (batch size 32)', 4)": [
-                0.83,
-                0.51
-            ],
-            "('vgg19 (batch size 32)', 4)": [
-                0.42,
-                0.43
-            ],
-            "('DCGAN (batch size 128)', 4)": [
-                0.9,
-                0.49
-            ],
-            "('PointNet (batch size 32)', 4)": [
-                0.97,
-                0.94
-            ],
-            "('Bert-Large (batch size 256/16)', 4)": [
-                0.69,
-                0.49
-            ],
-            "('Bert-Large (batch size 256/64)', 4)": [
-                0.7,
-                0.26
-            ],
-            "('GPT2-Medium (batch size 256/8)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 256/32)', 4)": [
-                0.0,
-                0.0
-            ],
-            "null": 1.0,
-            "('GPT2-Medium (batch size 512/8)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 512/32)', 4)": [
-                0.0,
-                0.0
-            ]
-        },
-        "('DCGAN (batch size 128)', 4)": {
-            "('resnet50 (batch size 32)', 4)": [
-                0.85,
-                1.0
-            ],
-            "('vgg19 (batch size 32)', 4)": [
-                0.49,
-                0.9
-            ],
-            "('DCGAN (batch size 128)', 4)": [
-                0.96,
-                0.95
-            ],
-            "('PointNet (batch size 32)', 4)": [
-                0.89,
-                0.96
-            ],
-            "('Bert-Large (batch size 256/16)', 4)": [
-                0.51,
-                0.81
-            ],
-            "('Bert-Large (batch size 256/64)', 4)": [
-                0.59,
-                0.5
-            ],
-            "('GPT2-Medium (batch size 256/8)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 256/32)', 4)": [
-                0.0,
-                0.0
-            ],
-            "null": 1.0,
-            "('GPT2-Medium (batch size 512/8)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 512/32)', 4)": [
-                0.0,
-                0.0
-            ]
-        },
-        "('PointNet (batch size 32)', 4)": {
-            "('resnet50 (batch size 32)', 4)": [
-                0.94,
-                0.98
-            ],
-            "('vgg19 (batch size 32)', 4)": [
-                0.94,
-                0.97
-            ],
-            "('DCGAN (batch size 128)', 4)": [
-                0.96,
-                0.89
-            ],
-            "('PointNet (batch size 32)', 4)": [
-                0.96,
-                0.96
-            ],
-            "('Bert-Large (batch size 256/16)', 4)": [
-                0.96,
-                0.91
-            ],
-            "('Bert-Large (batch size 256/64)', 4)": [
-                0.99,
-                0.57
-            ],
-            "('GPT2-Medium (batch size 256/8)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 256/32)', 4)": [
-                0.0,
-                0.0
-            ],
-            "null": 1.0,
-            "('GPT2-Medium (batch size 512/8)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 512/32)', 4)": [
-                0.0,
-                0.0
-            ]
-        },
-        "('GPT2-Medium (batch size 256/8)', 4)": {
-            "('resnet50 (batch size 32)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('vgg19 (batch size 32)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('DCGAN (batch size 128)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('PointNet (batch size 32)', 4)": [
-                0.0,
-                0.0
-            ],
-            "null": 1.0,
-            "('Bert-Large (batch size 256/64)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 256/32)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 512/8)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 256/8)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 512/32)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('Bert-Large (batch size 256/16)', 4)": [
-                0.0,
-                0.0
-            ]
-        },
-        "('GPT2-Medium (batch size 256/32)', 4)": {
-            "('resnet50 (batch size 32)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('vgg19 (batch size 32)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('DCGAN (batch size 128)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('PointNet (batch size 32)', 4)": [
-                0.0,
-                0.0
-            ],
-            "null": 1.0,
-            "('Bert-Large (batch size 256/64)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 256/32)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 512/8)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 256/8)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 512/32)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('Bert-Large (batch size 256/16)', 4)": [
-                0.0,
-                0.0
-            ]
-        },
-        "('GPT2-XL (batch size 256/4)', 8)": {
-            "('resnet50 (batch size 32)', 8)": [
-                0.36,
-                0.94
-            ],
-            "('vgg19 (batch size 32)', 8)": [
-                0.27,
-                0.75
-            ],
-            "('DCGAN (batch size 128)', 8)": [
-                0.45,
-                0.97
-            ],
-            "('PointNet (batch size 32)', 8)": [
-                0.55,
-                1.0
-            ],
-            "null": 1.0,
-            "('GPT2-XL (batch size 512/2)', 8)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-XL (batch size 256/2)', 8)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-XL (batch size 256/4)', 8)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-XL (batch size 512/4)', 8)": [
+            "('GPT2-XL (batch size NA)', 8)": [
                 0.0,
                 0.0
             ]
         },
         "('resnet50 (batch size 32)', 8)": {
-            "('GPT2-XL (batch size 256/4)', 8)": [
-                0.94,
-                0.36
-            ],
-            "('GPT2-XL (batch size 256/2)', 8)": [
+            "null": 1.0,
+            "('GPT2-XL (batch size NA)', 8)": [
                 0.0,
                 0.0
             ],
@@ -2283,23 +1063,11 @@
             "('PointNet (batch size 32)', 8)": [
                 0.97,
                 0.93
-            ],
-            "null": 1.0,
-            "('GPT2-XL (batch size 512/2)', 8)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-XL (batch size 512/4)', 8)": [
-                0.0,
-                0.0
             ]
         },
         "('vgg19 (batch size 32)', 8)": {
-            "('GPT2-XL (batch size 256/4)', 8)": [
-                0.75,
-                0.27
-            ],
-            "('GPT2-XL (batch size 256/2)', 8)": [
+            "null": 1.0,
+            "('GPT2-XL (batch size NA)', 8)": [
                 0.0,
                 0.0
             ],
@@ -2318,23 +1086,11 @@
             "('PointNet (batch size 32)', 8)": [
                 0.96,
                 0.93
-            ],
-            "null": 1.0,
-            "('GPT2-XL (batch size 512/2)', 8)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-XL (batch size 512/4)', 8)": [
-                0.0,
-                0.0
             ]
         },
         "('DCGAN (batch size 128)', 8)": {
-            "('GPT2-XL (batch size 256/4)', 8)": [
-                0.97,
-                0.45
-            ],
-            "('GPT2-XL (batch size 256/2)', 8)": [
+            "null": 1.0,
+            "('GPT2-XL (batch size NA)', 8)": [
                 0.0,
                 0.0
             ],
@@ -2353,23 +1109,11 @@
             "('PointNet (batch size 32)', 8)": [
                 0.93,
                 0.94
-            ],
-            "null": 1.0,
-            "('GPT2-XL (batch size 512/2)', 8)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-XL (batch size 512/4)', 8)": [
-                0.0,
-                0.0
             ]
         },
         "('PointNet (batch size 32)', 8)": {
-            "('GPT2-XL (batch size 256/4)', 8)": [
-                1.0,
-                0.55
-            ],
-            "('GPT2-XL (batch size 256/2)', 8)": [
+            "null": 1.0,
+            "('GPT2-XL (batch size NA)', 8)": [
                 0.0,
                 0.0
             ],
@@ -2388,55 +1132,189 @@
             "('PointNet (batch size 32)', 8)": [
                 0.94,
                 0.94
-            ],
-            "null": 1.0,
-            "('GPT2-XL (batch size 512/2)', 8)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-XL (batch size 512/4)', 8)": [
-                0.0,
-                0.0
             ]
         },
-        "('GPT2-XL (batch size 256/2)', 8)": {
-            "('resnet50 (batch size 32)', 8)": [
-                0.0,
-                0.0
-            ],
-            "('vgg19 (batch size 32)', 8)": [
-                0.0,
-                0.0
-            ],
-            "('DCGAN (batch size 128)', 8)": [
-                0.0,
-                0.0
-            ],
-            "('PointNet (batch size 32)', 8)": [
-                0.0,
-                0.0
-            ],
-            "null": 1.0,
-            "('GPT2-XL (batch size 512/2)', 8)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-XL (batch size 256/2)', 8)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-XL (batch size 256/4)', 8)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-XL (batch size 512/4)', 8)": [
-                0.0,
-                0.0
-            ]
+        "('resnet50 (batch size 64)', 1)": {
+            "null": 1.0
+        },
+        "('resnet50 (batch size 128)', 1)": {
+            "null": 1.0
+        },
+        "('resnet50 (batch size 64)', 2)": {
+            "null": 1.0
+        },
+        "('resnet50 (batch size 128)', 2)": {
+            "null": 1.0
+        },
+        "('resnet50 (batch size 64)', 4)": {
+            "null": 1.0
+        },
+        "('resnet50 (batch size 128)', 4)": {
+            "null": 1.0
+        },
+        "('vgg19 (batch size 64)', 1)": {
+            "null": 1.0
+        },
+        "('vgg19 (batch size 128)', 1)": {
+            "null": 1.0
+        },
+        "('vgg19 (batch size 64)', 2)": {
+            "null": 1.0
+        },
+        "('vgg19 (batch size 128)', 2)": {
+            "null": 1.0
+        },
+        "('vgg19 (batch size 64)', 4)": {
+            "null": 1.0
+        },
+        "('vgg19 (batch size 128)', 4)": {
+            "null": 1.0
+        },
+        "('DCGAN (batch size 32)', 1)": {
+            "null": 1.0
+        },
+        "('DCGAN (batch size 64)', 1)": {
+            "null": 1.0
+        },
+        "('DCGAN (batch size 32)', 2)": {
+            "null": 1.0
+        },
+        "('DCGAN (batch size 64)', 2)": {
+            "null": 1.0
+        },
+        "('DCGAN (batch size 32)', 4)": {
+            "null": 1.0
+        },
+        "('DCGAN (batch size 64)', 4)": {
+            "null": 1.0
+        },
+        "('PointNet (batch size 64)', 1)": {
+            "null": 1.0
+        },
+        "('PointNet (batch size 128)', 1)": {
+            "null": 1.0
+        },
+        "('PointNet (batch size 64)', 2)": {
+            "null": 1.0
+        },
+        "('PointNet (batch size 128)', 2)": {
+            "null": 1.0
+        },
+        "('PointNet (batch size 64)', 4)": {
+            "null": 1.0
+        },
+        "('PointNet (batch size 128)', 4)": {
+            "null": 1.0
+        },
+        "('Bert-Base (batch size NA)', 4)": {
+            "null": 1.0
+        },
+        "('Bert-Base (batch size NA)', 8)": {
+            "null": 1.0
+        },
+        "('Bert-Large (batch size NA)', 2)": {
+            "null": 1.0
+        },
+        "('Bert-Large (batch size NA)', 8)": {
+            "null": 1.0
+        },
+        "('GPT2 (batch size NA)', 4)": {
+            "null": 1.0
+        },
+        "('GPT2 (batch size NA)', 8)": {
+            "null": 1.0
+        },
+        "('GPT2-Medium (batch size NA)', 2)": {
+            "null": 1.0
+        },
+        "('GPT2-Medium (batch size NA)', 8)": {
+            "null": 1.0
+        },
+        "('GPT2-XL (batch size NA)', 2)": {
+            "null": 1.0
+        },
+        "('GPT2-XL (batch size NA)', 4)": {
+            "null": 1.0
         }
     },
     "p100": {
-        "('Bert-Base (batch size 256/16)', 2)": {
+        "('resnet50 (batch size 32)', 1)": {
+            "null": 1.0,
+            "('resnet50 (batch size 32)', 1)": [
+                0.76,
+                0.76
+            ],
+            "('vgg19 (batch size 32)', 1)": [
+                0.41,
+                0.8
+            ],
+            "('DCGAN (batch size 128)', 1)": [
+                1.0,
+                0.81
+            ],
+            "('PointNet (batch size 32)', 1)": [
+                1.0,
+                1.0
+            ]
+        },
+        "('vgg19 (batch size 32)', 1)": {
+            "null": 1.0,
+            "('resnet50 (batch size 32)', 1)": [
+                0.8,
+                0.41
+            ],
+            "('vgg19 (batch size 32)', 1)": [
+                0.36,
+                0.36
+            ],
+            "('DCGAN (batch size 128)', 1)": [
+                0.9,
+                0.41
+            ],
+            "('PointNet (batch size 32)', 1)": [
+                0.92,
+                1.0
+            ]
+        },
+        "('DCGAN (batch size 128)', 1)": {
+            "null": 1.0,
+            "('resnet50 (batch size 32)', 1)": [
+                0.81,
+                1.0
+            ],
+            "('vgg19 (batch size 32)', 1)": [
+                0.41,
+                0.9
+            ],
+            "('DCGAN (batch size 128)', 1)": [
+                0.71,
+                0.69
+            ],
+            "('PointNet (batch size 32)', 1)": [
+                0.9,
+                1.0
+            ]
+        },
+        "('PointNet (batch size 32)', 1)": {
+            "null": 1.0,
+            "('resnet50 (batch size 32)', 1)": [
+                1.0,
+                1.0
+            ],
+            "('vgg19 (batch size 32)', 1)": [
+                1.0,
+                0.92
+            ],
+            "('DCGAN (batch size 128)', 1)": [
+                1.0,
+                0.9
+            ],
+            "('PointNet (batch size 32)', 1)": [
+                1.0,
+                1.0
+            ]
+        },
+        "('Bert-Base (batch size NA)', 2)": {
             "null": 1.0,
             "('resnet50 (batch size 32)', 2)": [
                 0.76,
@@ -2454,247 +1332,259 @@
                 0.99,
                 1.0
             ],
-            "('Bert-Base (batch size 256/32)', 2)": [
+            "('GPT2 (batch size NA)', 2)": [
                 0.0,
                 0.0
             ],
-            "('GPT2 (batch size 512/8)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2 (batch size 512/16)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2 (batch size 256/16)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('Bert-Base (batch size 256/16)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2 (batch size 256/8)', 2)": [
+            "('Bert-Base (batch size NA)', 2)": [
                 0.0,
                 0.0
             ]
         },
-        "('Bert-Base (batch size 256/32)', 2)": {
-            "null": 0.62,
+        "('resnet50 (batch size 32)', 2)": {
+            "null": 1.0,
+            "('Bert-Base (batch size NA)', 2)": [
+                0.57,
+                0.76
+            ],
+            "('GPT2 (batch size NA)', 2)": [
+                0.48,
+                0.71
+            ],
             "('resnet50 (batch size 32)', 2)": [
-                0.5,
+                0.67,
                 0.67
             ],
             "('vgg19 (batch size 32)', 2)": [
-                0.28,
-                0.77
+                0.37,
+                0.75
             ],
             "('DCGAN (batch size 128)', 2)": [
-                0.6,
-                0.69
+                0.98,
+                0.86
             ],
             "('PointNet (batch size 32)', 2)": [
-                0.6,
+                0.98,
+                1.0
+            ]
+        },
+        "('vgg19 (batch size 32)', 2)": {
+            "null": 1.0,
+            "('Bert-Base (batch size NA)', 2)": [
+                0.72,
+                0.46
+            ],
+            "('GPT2 (batch size NA)', 2)": [
+                0.66,
+                0.44
+            ],
+            "('resnet50 (batch size 32)', 2)": [
+                0.75,
+                0.37
+            ],
+            "('vgg19 (batch size 32)', 2)": [
+                0.42,
+                0.42
+            ],
+            "('DCGAN (batch size 128)', 2)": [
+                0.9,
+                0.44
+            ],
+            "('PointNet (batch size 32)', 2)": [
+                0.95,
+                1.0
+            ]
+        },
+        "('DCGAN (batch size 128)', 2)": {
+            "null": 1.0,
+            "('Bert-Base (batch size NA)', 2)": [
+                0.56,
+                0.87
+            ],
+            "('GPT2 (batch size NA)', 2)": [
+                0.47,
+                0.82
+            ],
+            "('resnet50 (batch size 32)', 2)": [
+                0.86,
+                0.98
+            ],
+            "('vgg19 (batch size 32)', 2)": [
+                0.44,
+                0.9
+            ],
+            "('DCGAN (batch size 128)', 2)": [
+                0.72,
+                0.72
+            ],
+            "('PointNet (batch size 32)', 2)": [
+                0.91,
+                1.0
+            ]
+        },
+        "('PointNet (batch size 32)', 2)": {
+            "null": 1.0,
+            "('Bert-Base (batch size NA)', 2)": [
+                1.0,
+                0.99
+            ],
+            "('GPT2 (batch size NA)', 2)": [
+                1.0,
+                0.94
+            ],
+            "('resnet50 (batch size 32)', 2)": [
+                1.0,
+                0.98
+            ],
+            "('vgg19 (batch size 32)', 2)": [
+                1.0,
+                0.95
+            ],
+            "('DCGAN (batch size 128)', 2)": [
+                1.0,
+                0.91
+            ],
+            "('PointNet (batch size 32)', 2)": [
+                1.0,
+                1.0
+            ]
+        },
+        "('GPT2 (batch size NA)', 2)": {
+            "null": 1.0,
+            "('resnet50 (batch size 32)', 2)": [
+                0.71,
+                0.48
+            ],
+            "('vgg19 (batch size 32)', 2)": [
+                0.44,
+                0.66
+            ],
+            "('DCGAN (batch size 128)', 2)": [
+                0.82,
+                0.47
+            ],
+            "('PointNet (batch size 32)', 2)": [
+                0.94,
                 1.0
             ],
-            "('Bert-Base (batch size 256/32)', 2)": [
+            "('GPT2 (batch size NA)', 2)": [
                 0.0,
                 0.0
             ],
-            "('GPT2 (batch size 512/8)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2 (batch size 512/16)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2 (batch size 256/16)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('Bert-Base (batch size 256/16)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2 (batch size 256/8)', 2)": [
+            "('Bert-Base (batch size NA)', 2)": [
                 0.0,
                 0.0
             ]
         },
-        "('GPT2 (batch size 512/8)', 2)": {
-            "null": 1.0,
-            "('Bert-Base (batch size 256/32)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('PointNet (batch size 32)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2 (batch size 512/8)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2 (batch size 512/16)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2 (batch size 256/16)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('DCGAN (batch size 128)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('vgg19 (batch size 32)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('resnet50 (batch size 32)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('Bert-Base (batch size 256/16)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2 (batch size 256/8)', 2)": [
-                0.0,
-                0.0
-            ]
-        },
-        "('GPT2 (batch size 512/16)', 2)": {
-            "null": 0.76,
-            "('Bert-Base (batch size 256/32)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('PointNet (batch size 32)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2 (batch size 512/8)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2 (batch size 512/16)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2 (batch size 256/16)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('DCGAN (batch size 128)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('vgg19 (batch size 32)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('resnet50 (batch size 32)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('Bert-Base (batch size 256/16)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2 (batch size 256/8)', 2)": [
-                0.0,
-                0.0
-            ]
-        },
-        "('GPT2-Medium (batch size 512/8)', 4)": {
+        "('resnet50 (batch size 32)', 4)": {
             "null": 1.0,
             "('resnet50 (batch size 32)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('Bert-Large (batch size 256/64)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 256/32)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 512/8)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('PointNet (batch size 32)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 256/8)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 512/32)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('Bert-Large (batch size 256/16)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('DCGAN (batch size 128)', 4)": [
-                0.0,
-                0.0
+                0.67,
+                0.67
             ],
             "('vgg19 (batch size 32)', 4)": [
+                0.51,
+                0.83
+            ],
+            "('DCGAN (batch size 128)', 4)": [
+                1.0,
+                0.85
+            ],
+            "('PointNet (batch size 32)', 4)": [
+                0.98,
+                0.94
+            ],
+            "('Bert-Large (batch size NA)', 4)": [
+                0.55,
+                0.71
+            ],
+            "('GPT2-Medium (batch size NA)', 4)": [
                 0.0,
                 0.0
             ]
         },
-        "('GPT2-Medium (batch size 512/32)', 4)": {
-            "null": 0.66,
+        "('vgg19 (batch size 32)', 4)": {
+            "null": 1.0,
             "('resnet50 (batch size 32)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('Bert-Large (batch size 256/64)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 256/32)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 512/8)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('PointNet (batch size 32)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 256/8)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 512/32)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('Bert-Large (batch size 256/16)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('DCGAN (batch size 128)', 4)": [
-                0.0,
-                0.0
+                0.83,
+                0.51
             ],
             "('vgg19 (batch size 32)', 4)": [
+                0.42,
+                0.43
+            ],
+            "('DCGAN (batch size 128)', 4)": [
+                0.9,
+                0.49
+            ],
+            "('PointNet (batch size 32)', 4)": [
+                0.97,
+                0.94
+            ],
+            "('Bert-Large (batch size NA)', 4)": [
+                0.69,
+                0.49
+            ],
+            "('GPT2-Medium (batch size NA)', 4)": [
                 0.0,
                 0.0
             ]
         },
-        "('Bert-Large (batch size 256/16)', 4)": {
+        "('DCGAN (batch size 128)', 4)": {
+            "null": 1.0,
+            "('resnet50 (batch size 32)', 4)": [
+                0.85,
+                1.0
+            ],
+            "('vgg19 (batch size 32)', 4)": [
+                0.49,
+                0.9
+            ],
+            "('DCGAN (batch size 128)', 4)": [
+                0.96,
+                0.95
+            ],
+            "('PointNet (batch size 32)', 4)": [
+                0.89,
+                0.96
+            ],
+            "('Bert-Large (batch size NA)', 4)": [
+                0.51,
+                0.81
+            ],
+            "('GPT2-Medium (batch size NA)', 4)": [
+                0.0,
+                0.0
+            ]
+        },
+        "('PointNet (batch size 32)', 4)": {
+            "null": 1.0,
+            "('resnet50 (batch size 32)', 4)": [
+                0.94,
+                0.98
+            ],
+            "('vgg19 (batch size 32)', 4)": [
+                0.94,
+                0.97
+            ],
+            "('DCGAN (batch size 128)', 4)": [
+                0.96,
+                0.89
+            ],
+            "('PointNet (batch size 32)', 4)": [
+                0.96,
+                0.96
+            ],
+            "('Bert-Large (batch size NA)', 4)": [
+                0.96,
+                0.91
+            ],
+            "('GPT2-Medium (batch size NA)', 4)": [
+                0.0,
+                0.0
+            ]
+        },
+        "('Bert-Large (batch size NA)', 4)": {
             "null": 1.0,
             "('resnet50 (batch size 32)', 4)": [
                 0.71,
@@ -2712,93 +1602,45 @@
                 0.91,
                 0.96
             ],
-            "('Bert-Large (batch size 256/64)', 4)": [
+            "('Bert-Large (batch size NA)', 4)": [
                 0.0,
                 0.0
             ],
-            "('GPT2-Medium (batch size 256/32)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 512/8)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 256/8)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 512/32)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('Bert-Large (batch size 256/16)', 4)": [
+            "('GPT2-Medium (batch size NA)', 4)": [
                 0.0,
                 0.0
             ]
         },
-        "('Bert-Large (batch size 256/64)', 4)": {
-            "null": 0.64,
+        "('GPT2-Medium (batch size NA)', 4)": {
+            "null": 1.0,
             "('resnet50 (batch size 32)', 4)": [
-                0.41,
-                0.65
+                0.0,
+                0.0
             ],
             "('vgg19 (batch size 32)', 4)": [
-                0.26,
-                0.7
+                0.0,
+                0.0
             ],
             "('DCGAN (batch size 128)', 4)": [
-                0.5,
-                0.59
+                0.0,
+                0.0
             ],
             "('PointNet (batch size 32)', 4)": [
-                0.57,
-                0.99
-            ],
-            "('Bert-Large (batch size 256/64)', 4)": [
                 0.0,
                 0.0
             ],
-            "('GPT2-Medium (batch size 256/32)', 4)": [
+            "('Bert-Large (batch size NA)', 4)": [
                 0.0,
                 0.0
             ],
-            "('GPT2-Medium (batch size 512/8)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 256/8)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 512/32)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('Bert-Large (batch size 256/16)', 4)": [
+            "('GPT2-Medium (batch size NA)', 4)": [
                 0.0,
                 0.0
             ]
         },
-        "('GPT2-XL (batch size 512/4)', 8)": {
+        "('GPT2-XL (batch size NA)', 8)": {
             "null": 1.0,
-            "('GPT2-XL (batch size 512/2)', 8)": [
-                0.0,
-                0.0
-            ],
-            "('PointNet (batch size 32)', 8)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-XL (batch size 256/2)', 8)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-XL (batch size 256/4)', 8)": [
-                0.0,
-                0.0
-            ],
-            "('DCGAN (batch size 128)', 8)": [
+            "('resnet50 (batch size 32)', 8)": [
                 0.0,
                 0.0
             ],
@@ -2806,18 +1648,7 @@
                 0.0,
                 0.0
             ],
-            "('resnet50 (batch size 32)', 8)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-XL (batch size 512/4)', 8)": [
-                0.0,
-                0.0
-            ]
-        },
-        "('GPT2-XL (batch size 512/2)', 8)": {
-            "null": 0.73,
-            "('GPT2-XL (batch size 512/2)', 8)": [
+            "('DCGAN (batch size 128)', 8)": [
                 0.0,
                 0.0
             ],
@@ -2825,664 +1656,14 @@
                 0.0,
                 0.0
             ],
-            "('GPT2-XL (batch size 256/2)', 8)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-XL (batch size 256/4)', 8)": [
-                0.0,
-                0.0
-            ],
-            "('DCGAN (batch size 128)', 8)": [
-                0.0,
-                0.0
-            ],
-            "('vgg19 (batch size 32)', 8)": [
-                0.0,
-                0.0
-            ],
-            "('resnet50 (batch size 32)', 8)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-XL (batch size 512/4)', 8)": [
-                0.0,
-                0.0
-            ]
-        },
-        "('resnet50 (batch size 32)', 1)": {
-            "('resnet50 (batch size 32)', 1)": [
-                0.76,
-                0.76
-            ],
-            "('vgg19 (batch size 32)', 1)": [
-                0.41,
-                0.8
-            ],
-            "('DCGAN (batch size 128)', 1)": [
-                1.0,
-                0.81
-            ],
-            "('PointNet (batch size 32)', 1)": [
-                1.0,
-                1.0
-            ],
-            "null": 1.0
-        },
-        "('vgg19 (batch size 32)', 1)": {
-            "('resnet50 (batch size 32)', 1)": [
-                0.8,
-                0.41
-            ],
-            "('vgg19 (batch size 32)', 1)": [
-                0.36,
-                0.36
-            ],
-            "('DCGAN (batch size 128)', 1)": [
-                0.9,
-                0.41
-            ],
-            "('PointNet (batch size 32)', 1)": [
-                0.92,
-                1.0
-            ],
-            "null": 1.0
-        },
-        "('DCGAN (batch size 128)', 1)": {
-            "('resnet50 (batch size 32)', 1)": [
-                0.81,
-                1.0
-            ],
-            "('vgg19 (batch size 32)', 1)": [
-                0.41,
-                0.9
-            ],
-            "('DCGAN (batch size 128)', 1)": [
-                0.71,
-                0.69
-            ],
-            "('PointNet (batch size 32)', 1)": [
-                0.9,
-                1.0
-            ],
-            "null": 1.0
-        },
-        "('PointNet (batch size 32)', 1)": {
-            "('resnet50 (batch size 32)', 1)": [
-                1.0,
-                1.0
-            ],
-            "('vgg19 (batch size 32)', 1)": [
-                1.0,
-                0.92
-            ],
-            "('DCGAN (batch size 128)', 1)": [
-                1.0,
-                0.9
-            ],
-            "('PointNet (batch size 32)', 1)": [
-                1.0,
-                1.0
-            ],
-            "null": 1.0
-        },
-        "('resnet50 (batch size 32)', 2)": {
-            "('Bert-Base (batch size 256/16)', 2)": [
-                0.57,
-                0.76
-            ],
-            "('Bert-Base (batch size 256/32)', 2)": [
-                0.67,
-                0.5
-            ],
-            "('GPT2 (batch size 256/8)', 2)": [
-                0.48,
-                0.71
-            ],
-            "('GPT2 (batch size 256/16)', 2)": [
-                0.58,
-                0.5
-            ],
-            "('resnet50 (batch size 32)', 2)": [
-                0.67,
-                0.67
-            ],
-            "('vgg19 (batch size 32)', 2)": [
-                0.37,
-                0.75
-            ],
-            "('DCGAN (batch size 128)', 2)": [
-                0.98,
-                0.86
-            ],
-            "('PointNet (batch size 32)', 2)": [
-                0.98,
-                1.0
-            ],
-            "null": 1.0,
-            "('GPT2 (batch size 512/8)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2 (batch size 512/16)', 2)": [
-                0.0,
-                0.0
-            ]
-        },
-        "('vgg19 (batch size 32)', 2)": {
-            "('Bert-Base (batch size 256/16)', 2)": [
-                0.72,
-                0.46
-            ],
-            "('Bert-Base (batch size 256/32)', 2)": [
-                0.77,
-                0.28
-            ],
-            "('GPT2 (batch size 256/8)', 2)": [
-                0.66,
-                0.44
-            ],
-            "('GPT2 (batch size 256/16)', 2)": [
-                0.67,
-                0.32
-            ],
-            "('resnet50 (batch size 32)', 2)": [
-                0.75,
-                0.37
-            ],
-            "('vgg19 (batch size 32)', 2)": [
-                0.42,
-                0.42
-            ],
-            "('DCGAN (batch size 128)', 2)": [
-                0.9,
-                0.44
-            ],
-            "('PointNet (batch size 32)', 2)": [
-                0.95,
-                1.0
-            ],
-            "null": 1.0,
-            "('GPT2 (batch size 512/8)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2 (batch size 512/16)', 2)": [
-                0.0,
-                0.0
-            ]
-        },
-        "('DCGAN (batch size 128)', 2)": {
-            "('Bert-Base (batch size 256/16)', 2)": [
-                0.56,
-                0.87
-            ],
-            "('Bert-Base (batch size 256/32)', 2)": [
-                0.69,
-                0.6
-            ],
-            "('GPT2 (batch size 256/8)', 2)": [
-                0.47,
-                0.82
-            ],
-            "('GPT2 (batch size 256/16)', 2)": [
-                0.6,
-                0.59
-            ],
-            "('resnet50 (batch size 32)', 2)": [
-                0.86,
-                0.98
-            ],
-            "('vgg19 (batch size 32)', 2)": [
-                0.44,
-                0.9
-            ],
-            "('DCGAN (batch size 128)', 2)": [
-                0.72,
-                0.72
-            ],
-            "('PointNet (batch size 32)', 2)": [
-                0.91,
-                1.0
-            ],
-            "null": 1.0,
-            "('GPT2 (batch size 512/8)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2 (batch size 512/16)', 2)": [
-                0.0,
-                0.0
-            ]
-        },
-        "('PointNet (batch size 32)', 2)": {
-            "('Bert-Base (batch size 256/16)', 2)": [
-                1.0,
-                0.99
-            ],
-            "('Bert-Base (batch size 256/32)', 2)": [
-                1.0,
-                0.6
-            ],
-            "('GPT2 (batch size 256/8)', 2)": [
-                1.0,
-                0.94
-            ],
-            "('GPT2 (batch size 256/16)', 2)": [
-                1.0,
-                0.71
-            ],
-            "('resnet50 (batch size 32)', 2)": [
-                1.0,
-                0.98
-            ],
-            "('vgg19 (batch size 32)', 2)": [
-                1.0,
-                0.95
-            ],
-            "('DCGAN (batch size 128)', 2)": [
-                1.0,
-                0.91
-            ],
-            "('PointNet (batch size 32)', 2)": [
-                1.0,
-                1.0
-            ],
-            "null": 1.0,
-            "('GPT2 (batch size 512/8)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2 (batch size 512/16)', 2)": [
-                0.0,
-                0.0
-            ]
-        },
-        "('GPT2 (batch size 256/8)', 2)": {
-            "('resnet50 (batch size 32)', 2)": [
-                0.71,
-                0.48
-            ],
-            "('vgg19 (batch size 32)', 2)": [
-                0.44,
-                0.66
-            ],
-            "('DCGAN (batch size 128)', 2)": [
-                0.82,
-                0.47
-            ],
-            "('PointNet (batch size 32)', 2)": [
-                0.94,
-                1.0
-            ],
-            "null": 1.0,
-            "('Bert-Base (batch size 256/32)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2 (batch size 512/8)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2 (batch size 512/16)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2 (batch size 256/16)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('Bert-Base (batch size 256/16)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2 (batch size 256/8)', 2)": [
-                0.0,
-                0.0
-            ]
-        },
-        "('GPT2 (batch size 256/16)', 2)": {
-            "('resnet50 (batch size 32)', 2)": [
-                0.5,
-                0.58
-            ],
-            "('vgg19 (batch size 32)', 2)": [
-                0.32,
-                0.67
-            ],
-            "('DCGAN (batch size 128)', 2)": [
-                0.59,
-                0.6
-            ],
-            "('PointNet (batch size 32)', 2)": [
-                0.71,
-                1.0
-            ],
-            "null": 1.0,
-            "('Bert-Base (batch size 256/32)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2 (batch size 512/8)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2 (batch size 512/16)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2 (batch size 256/16)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('Bert-Base (batch size 256/16)', 2)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2 (batch size 256/8)', 2)": [
-                0.0,
-                0.0
-            ]
-        },
-        "('resnet50 (batch size 32)', 4)": {
-            "('resnet50 (batch size 32)', 4)": [
-                0.67,
-                0.67
-            ],
-            "('vgg19 (batch size 32)', 4)": [
-                0.51,
-                0.83
-            ],
-            "('DCGAN (batch size 128)', 4)": [
-                1.0,
-                0.85
-            ],
-            "('PointNet (batch size 32)', 4)": [
-                0.98,
-                0.94
-            ],
-            "('Bert-Large (batch size 256/16)', 4)": [
-                0.55,
-                0.71
-            ],
-            "('Bert-Large (batch size 256/64)', 4)": [
-                0.65,
-                0.41
-            ],
-            "('GPT2-Medium (batch size 256/8)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 256/32)', 4)": [
-                0.0,
-                0.0
-            ],
-            "null": 1.0,
-            "('GPT2-Medium (batch size 512/8)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 512/32)', 4)": [
-                0.0,
-                0.0
-            ]
-        },
-        "('vgg19 (batch size 32)', 4)": {
-            "('resnet50 (batch size 32)', 4)": [
-                0.83,
-                0.51
-            ],
-            "('vgg19 (batch size 32)', 4)": [
-                0.42,
-                0.43
-            ],
-            "('DCGAN (batch size 128)', 4)": [
-                0.9,
-                0.49
-            ],
-            "('PointNet (batch size 32)', 4)": [
-                0.97,
-                0.94
-            ],
-            "('Bert-Large (batch size 256/16)', 4)": [
-                0.69,
-                0.49
-            ],
-            "('Bert-Large (batch size 256/64)', 4)": [
-                0.7,
-                0.26
-            ],
-            "('GPT2-Medium (batch size 256/8)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 256/32)', 4)": [
-                0.0,
-                0.0
-            ],
-            "null": 1.0,
-            "('GPT2-Medium (batch size 512/8)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 512/32)', 4)": [
-                0.0,
-                0.0
-            ]
-        },
-        "('DCGAN (batch size 128)', 4)": {
-            "('resnet50 (batch size 32)', 4)": [
-                0.85,
-                1.0
-            ],
-            "('vgg19 (batch size 32)', 4)": [
-                0.49,
-                0.9
-            ],
-            "('DCGAN (batch size 128)', 4)": [
-                0.96,
-                0.95
-            ],
-            "('PointNet (batch size 32)', 4)": [
-                0.89,
-                0.96
-            ],
-            "('Bert-Large (batch size 256/16)', 4)": [
-                0.51,
-                0.81
-            ],
-            "('Bert-Large (batch size 256/64)', 4)": [
-                0.59,
-                0.5
-            ],
-            "('GPT2-Medium (batch size 256/8)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 256/32)', 4)": [
-                0.0,
-                0.0
-            ],
-            "null": 1.0,
-            "('GPT2-Medium (batch size 512/8)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 512/32)', 4)": [
-                0.0,
-                0.0
-            ]
-        },
-        "('PointNet (batch size 32)', 4)": {
-            "('resnet50 (batch size 32)', 4)": [
-                0.94,
-                0.98
-            ],
-            "('vgg19 (batch size 32)', 4)": [
-                0.94,
-                0.97
-            ],
-            "('DCGAN (batch size 128)', 4)": [
-                0.96,
-                0.89
-            ],
-            "('PointNet (batch size 32)', 4)": [
-                0.96,
-                0.96
-            ],
-            "('Bert-Large (batch size 256/16)', 4)": [
-                0.96,
-                0.91
-            ],
-            "('Bert-Large (batch size 256/64)', 4)": [
-                0.99,
-                0.57
-            ],
-            "('GPT2-Medium (batch size 256/8)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 256/32)', 4)": [
-                0.0,
-                0.0
-            ],
-            "null": 1.0,
-            "('GPT2-Medium (batch size 512/8)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 512/32)', 4)": [
-                0.0,
-                0.0
-            ]
-        },
-        "('GPT2-Medium (batch size 256/8)', 4)": {
-            "('resnet50 (batch size 32)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('vgg19 (batch size 32)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('DCGAN (batch size 128)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('PointNet (batch size 32)', 4)": [
-                0.0,
-                0.0
-            ],
-            "null": 1.0,
-            "('Bert-Large (batch size 256/64)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 256/32)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 512/8)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 256/8)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 512/32)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('Bert-Large (batch size 256/16)', 4)": [
-                0.0,
-                0.0
-            ]
-        },
-        "('GPT2-Medium (batch size 256/32)', 4)": {
-            "('resnet50 (batch size 32)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('vgg19 (batch size 32)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('DCGAN (batch size 128)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('PointNet (batch size 32)', 4)": [
-                0.0,
-                0.0
-            ],
-            "null": 1.0,
-            "('Bert-Large (batch size 256/64)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 256/32)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 512/8)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 256/8)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-Medium (batch size 512/32)', 4)": [
-                0.0,
-                0.0
-            ],
-            "('Bert-Large (batch size 256/16)', 4)": [
-                0.0,
-                0.0
-            ]
-        },
-        "('GPT2-XL (batch size 256/4)', 8)": {
-            "('resnet50 (batch size 32)', 8)": [
-                0.36,
-                0.94
-            ],
-            "('vgg19 (batch size 32)', 8)": [
-                0.27,
-                0.75
-            ],
-            "('DCGAN (batch size 128)', 8)": [
-                0.45,
-                0.97
-            ],
-            "('PointNet (batch size 32)', 8)": [
-                0.55,
-                1.0
-            ],
-            "null": 1.0,
-            "('GPT2-XL (batch size 512/2)', 8)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-XL (batch size 256/2)', 8)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-XL (batch size 256/4)', 8)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-XL (batch size 512/4)', 8)": [
+            "('GPT2-XL (batch size NA)', 8)": [
                 0.0,
                 0.0
             ]
         },
         "('resnet50 (batch size 32)', 8)": {
-            "('GPT2-XL (batch size 256/4)', 8)": [
-                0.94,
-                0.36
-            ],
-            "('GPT2-XL (batch size 256/2)', 8)": [
+            "null": 1.0,
+            "('GPT2-XL (batch size NA)', 8)": [
                 0.0,
                 0.0
             ],
@@ -3501,23 +1682,11 @@
             "('PointNet (batch size 32)', 8)": [
                 0.97,
                 0.93
-            ],
-            "null": 1.0,
-            "('GPT2-XL (batch size 512/2)', 8)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-XL (batch size 512/4)', 8)": [
-                0.0,
-                0.0
             ]
         },
         "('vgg19 (batch size 32)', 8)": {
-            "('GPT2-XL (batch size 256/4)', 8)": [
-                0.75,
-                0.27
-            ],
-            "('GPT2-XL (batch size 256/2)', 8)": [
+            "null": 1.0,
+            "('GPT2-XL (batch size NA)', 8)": [
                 0.0,
                 0.0
             ],
@@ -3536,23 +1705,11 @@
             "('PointNet (batch size 32)', 8)": [
                 0.96,
                 0.93
-            ],
-            "null": 1.0,
-            "('GPT2-XL (batch size 512/2)', 8)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-XL (batch size 512/4)', 8)": [
-                0.0,
-                0.0
             ]
         },
         "('DCGAN (batch size 128)', 8)": {
-            "('GPT2-XL (batch size 256/4)', 8)": [
-                0.97,
-                0.45
-            ],
-            "('GPT2-XL (batch size 256/2)', 8)": [
+            "null": 1.0,
+            "('GPT2-XL (batch size NA)', 8)": [
                 0.0,
                 0.0
             ],
@@ -3571,23 +1728,11 @@
             "('PointNet (batch size 32)', 8)": [
                 0.93,
                 0.94
-            ],
-            "null": 1.0,
-            "('GPT2-XL (batch size 512/2)', 8)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-XL (batch size 512/4)', 8)": [
-                0.0,
-                0.0
             ]
         },
         "('PointNet (batch size 32)', 8)": {
-            "('GPT2-XL (batch size 256/4)', 8)": [
-                1.0,
-                0.55
-            ],
-            "('GPT2-XL (batch size 256/2)', 8)": [
+            "null": 1.0,
+            "('GPT2-XL (batch size NA)', 8)": [
                 0.0,
                 0.0
             ],
@@ -3606,51 +1751,109 @@
             "('PointNet (batch size 32)', 8)": [
                 0.94,
                 0.94
-            ],
-            "null": 1.0,
-            "('GPT2-XL (batch size 512/2)', 8)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-XL (batch size 512/4)', 8)": [
-                0.0,
-                0.0
             ]
         },
-        "('GPT2-XL (batch size 256/2)', 8)": {
-            "('resnet50 (batch size 32)', 8)": [
-                0.0,
-                0.0
-            ],
-            "('vgg19 (batch size 32)', 8)": [
-                0.0,
-                0.0
-            ],
-            "('DCGAN (batch size 128)', 8)": [
-                0.0,
-                0.0
-            ],
-            "('PointNet (batch size 32)', 8)": [
-                0.0,
-                0.0
-            ],
-            "null": 1.0,
-            "('GPT2-XL (batch size 512/2)', 8)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-XL (batch size 256/2)', 8)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-XL (batch size 256/4)', 8)": [
-                0.0,
-                0.0
-            ],
-            "('GPT2-XL (batch size 512/4)', 8)": [
-                0.0,
-                0.0
-            ]
+        "('resnet50 (batch size 64)', 1)": {
+            "null": 1.0
+        },
+        "('resnet50 (batch size 128)', 1)": {
+            "null": 1.0
+        },
+        "('resnet50 (batch size 64)', 2)": {
+            "null": 1.0
+        },
+        "('resnet50 (batch size 128)', 2)": {
+            "null": 1.0
+        },
+        "('resnet50 (batch size 64)', 4)": {
+            "null": 1.0
+        },
+        "('resnet50 (batch size 128)', 4)": {
+            "null": 1.0
+        },
+        "('vgg19 (batch size 64)', 1)": {
+            "null": 1.0
+        },
+        "('vgg19 (batch size 128)', 1)": {
+            "null": 1.0
+        },
+        "('vgg19 (batch size 64)', 2)": {
+            "null": 1.0
+        },
+        "('vgg19 (batch size 128)', 2)": {
+            "null": 1.0
+        },
+        "('vgg19 (batch size 64)', 4)": {
+            "null": 1.0
+        },
+        "('vgg19 (batch size 128)', 4)": {
+            "null": 1.0
+        },
+        "('DCGAN (batch size 32)', 1)": {
+            "null": 1.0
+        },
+        "('DCGAN (batch size 64)', 1)": {
+            "null": 1.0
+        },
+        "('DCGAN (batch size 32)', 2)": {
+            "null": 1.0
+        },
+        "('DCGAN (batch size 64)', 2)": {
+            "null": 1.0
+        },
+        "('DCGAN (batch size 32)', 4)": {
+            "null": 1.0
+        },
+        "('DCGAN (batch size 64)', 4)": {
+            "null": 1.0
+        },
+        "('PointNet (batch size 64)', 1)": {
+            "null": 1.0
+        },
+        "('PointNet (batch size 128)', 1)": {
+            "null": 1.0
+        },
+        "('PointNet (batch size 64)', 2)": {
+            "null": 1.0
+        },
+        "('PointNet (batch size 128)', 2)": {
+            "null": 1.0
+        },
+        "('PointNet (batch size 64)', 4)": {
+            "null": 1.0
+        },
+        "('PointNet (batch size 128)', 4)": {
+            "null": 1.0
+        },
+        "('Bert-Base (batch size NA)', 4)": {
+            "null": 1.0
+        },
+        "('Bert-Base (batch size NA)', 8)": {
+            "null": 1.0
+        },
+        "('Bert-Large (batch size NA)', 2)": {
+            "null": 1.0
+        },
+        "('Bert-Large (batch size NA)', 8)": {
+            "null": 1.0
+        },
+        "('GPT2 (batch size NA)', 4)": {
+            "null": 1.0
+        },
+        "('GPT2 (batch size NA)', 8)": {
+            "null": 1.0
+        },
+        "('GPT2-Medium (batch size NA)', 2)": {
+            "null": 1.0
+        },
+        "('GPT2-Medium (batch size NA)', 8)": {
+            "null": 1.0
+        },
+        "('GPT2-XL (batch size NA)', 2)": {
+            "null": 1.0
+        },
+        "('GPT2-XL (batch size NA)', 4)": {
+            "null": 1.0
         }
     }
 }

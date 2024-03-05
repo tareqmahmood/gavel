@@ -129,8 +129,8 @@ def dcgan(batch_size):
                        num_steps_arg=num_steps_arg, distributed=True)
 
 
-def gpt2xl(batch_size, micro_batch_size):
-    model = 'GPT2-XL (batch size %d/%d)' % (batch_size, micro_batch_size)
+def gpt2xl(batch_size):
+    model = f'GPT2-XL (batch size {batch_size})'
     command = 'python3 main.py'
     working_directory = 'gpt'
     num_steps_arg = '--steps'
@@ -139,8 +139,8 @@ def gpt2xl(batch_size, micro_batch_size):
                        num_steps_arg=num_steps_arg, distributed=True)
 
 
-def gpt2medium(batch_size, micro_batch_size):
-    model = 'GPT2-Medium (batch size %d/%d)' % (batch_size, micro_batch_size)
+def gpt2medium(batch_size):
+    model = f'GPT2-Medium (batch size {batch_size})'
     command = 'python3 main.py'
     working_directory = 'gpt'
     num_steps_arg = '--steps'
@@ -149,8 +149,8 @@ def gpt2medium(batch_size, micro_batch_size):
                        num_steps_arg=num_steps_arg, distributed=True)
 
 
-def gpt2(batch_size, micro_batch_size):
-    model = 'GPT2 (batch size %d/%d)' % (batch_size, micro_batch_size)
+def gpt2(batch_size):
+    model = f'GPT2 (batch size {batch_size})'
     command = 'python3 main.py'
     working_directory = 'gpt'
     num_steps_arg = '--steps'
@@ -159,8 +159,8 @@ def gpt2(batch_size, micro_batch_size):
                        num_steps_arg=num_steps_arg, distributed=True)
 
 
-def bertbase(batch_size, micro_batch_size):
-    model = 'Bert-Base (batch size %d/%d)' % (batch_size, micro_batch_size)
+def bertbase(batch_size):
+    model = f'Bert-Base (batch size {batch_size})'
     command = 'python3 main.py'
     working_directory = 'gpt'
     num_steps_arg = '--steps'
@@ -169,8 +169,8 @@ def bertbase(batch_size, micro_batch_size):
                        num_steps_arg=num_steps_arg, distributed=True)
 
 
-def bertlarge(batch_size, micro_batch_size):
-    model = 'Bert-Large (batch size %d/%d)' % (batch_size, micro_batch_size)
+def bertlarge(batch_size):
+    model = f'Bert-Large (batch size {batch_size})'
     command = 'python3 main.py'
     working_directory = 'gpt'
     num_steps_arg = '--steps'
@@ -212,39 +212,37 @@ for batch_size in [128]:
     for scale_factor in [1, 2, 4, 8]:
         JobScaleTable[scale_factor].append(dcgan(batch_size))
 
-for batch_size in [256, 512]:
-    for micro_batch_size in [8, 16]:
-        LargeJobTable.append(gpt2(batch_size, micro_batch_size))
-        for scale_factor in [2]:
-            JobScaleTable[scale_factor].append(
-                gpt2(batch_size, micro_batch_size))
+# ignoring batch size of large models
+# they are the same always
 
-for batch_size in [256, 512]:
-    for micro_batch_size in [8, 32]:
-        LargeJobTable.append(gpt2medium(batch_size, micro_batch_size))
-        for scale_factor in [4]:
-            JobScaleTable[scale_factor].append(
-                gpt2medium(batch_size, micro_batch_size))
+for batch_size in ["NA"]:
+    LargeJobTable.append(gpt2(batch_size))
+    for scale_factor in [2]:
+        JobScaleTable[scale_factor].append(
+            gpt2(batch_size))
 
-for batch_size in [256, 512]:
-    for micro_batch_size in [2, 4]:
-        LargeJobTable.append(gpt2xl(batch_size, micro_batch_size))
-        for scale_factor in [8]:
-            JobScaleTable[scale_factor].append(
-                gpt2xl(batch_size, micro_batch_size))
+for batch_size in ["NA"]:
+    LargeJobTable.append(gpt2medium(batch_size))
+    for scale_factor in [4]:
+        JobScaleTable[scale_factor].append(
+            gpt2medium(batch_size))
 
-for batch_size in [256]:
-    for micro_batch_size in [16, 32]:
-        LargeJobTable.append(bertbase(batch_size, micro_batch_size))
-        for scale_factor in [2]:
-            JobScaleTable[scale_factor].append(
-                bertbase(batch_size, micro_batch_size))
+for batch_size in ["NA"]:
+    LargeJobTable.append(gpt2xl(batch_size))
+    for scale_factor in [8]:
+        JobScaleTable[scale_factor].append(
+            gpt2xl(batch_size))
 
-for batch_size in [256]:
-    for micro_batch_size in [16, 64]:
-        LargeJobTable.append(bertlarge(batch_size, micro_batch_size))
-        for scale_factor in [4]:
-            JobScaleTable[scale_factor].append(
-                bertlarge(batch_size, micro_batch_size))
+for batch_size in ["NA"]:
+    LargeJobTable.append(bertbase(batch_size))
+    for scale_factor in [2]:
+        JobScaleTable[scale_factor].append(
+            bertbase(batch_size))
+
+for batch_size in ["NA"]:
+    LargeJobTable.append(bertlarge(batch_size))
+    for scale_factor in [4]:
+        JobScaleTable[scale_factor].append(
+            bertlarge(batch_size))
 
 JobTable = SmallJobTable + LargeJobTable
