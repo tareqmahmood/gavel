@@ -5,9 +5,6 @@ set -xe
 
 sudo apt update
 sudo apt install -y htop aria2
-curl https://tareqmahmood.github.io/s/zellij.sh | bash
-
-
 
 # git
 
