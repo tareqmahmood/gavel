@@ -273,6 +273,10 @@ class MaxMinFairnessPolicyWithPacking(PolicyWithPacking):
 
     def get_allocation(self, unflattened_throughputs, scale_factors,
                        unflattened_priority_weights, cluster_spec):
+        # import pprint
+        # pp = pprint.PrettyPrinter(depth=4)
+        # pp.pprint(unflattened_throughputs)
+        # print(len(unflattened_throughputs))
         all_throughputs, index = \
             self.flatten(d=unflattened_throughputs,
                          cluster_spec=cluster_spec,
@@ -306,6 +310,7 @@ class MaxMinFairnessPolicyWithPacking(PolicyWithPacking):
         idx = []
         tputs = []
         # compute the obejctive in a vectorized fashion
+        # print(all_throughputs.shape)
         for i in range(len(all_throughputs)):
             indexes = relevant_combinations[single_job_ids[i]]
             idx += indexes
@@ -318,7 +323,9 @@ class MaxMinFairnessPolicyWithPacking(PolicyWithPacking):
         tputs = sp.csc_matrix(np.vstack(tputs))
         indexed_vars = x[idx]
         realized_tputs = cp.multiply(tputs, indexed_vars)
+        # print(tputs.shape, type(indexed_vars), realized_tputs.shape)
         # reshape so that the sum of each row gives the throughput
+        # print(realized_tputs.shape, len(all_throughputs), int(np.prod(realized_tputs.shape) / len(all_throughputs)))
         realized_tputs_mat = cp.reshape(realized_tputs,
                 (len(all_throughputs),
                 int(np.prod(realized_tputs.shape) / len(all_throughputs))),

@@ -509,7 +509,7 @@ class Scheduler:
                 timestamp = self.get_current_timestamp()
             self._per_job_start_timestamps[job_id] = timestamp
             self._logger.info(
-                '[Job dispatched]\tJob ID: {job_id} GPU:{gpu}'.format(job_id=job_id, gpu=job.scale_factor))
+                '[Job dispatched]\tJob ID: {job_id} Type: \"{job_type}\" GPU:{gpu} '.format(job_id=job_id, job_type=job.job_type, gpu=job.scale_factor))
             self._scheduler_cv.notifyAll()
 
         return job_id
@@ -2205,8 +2205,10 @@ class Scheduler:
         for other_job_id in self._jobs:
             if other_job_id != job_id:
                 other_job = self._jobs[other_job_id]
-                if job.scale_factor != other_job.scale_factor:
-                    continue
+                # tareq: packing policy is throwing reshape error for restricting this
+                # I am commenting this out for now
+                # if job.scale_factor != other_job.scale_factor:
+                #     continue
                 other_job_type_key = (other_job.job_type, other_job.scale_factor)
                 job_type_keys = [job_type_key, other_job_type_key]
                 merged_job_id = \

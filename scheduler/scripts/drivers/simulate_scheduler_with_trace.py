@@ -52,6 +52,17 @@ def main(args):
     sched.get_average_jct(jobs_to_complete)
     sched.get_cluster_utilization()
     sched.get_num_lease_extensions()
+
+    average_jct = sched.get_average_jct()
+    utilization = sched.get_cluster_utilization()
+    makespan = sched.get_current_timestamp()
+    total_cost = sched.get_total_cost()
+
+    print('---------------------------------------------')
+    print('Results:\nAverage JCT = %f \nMakespan = %0.2f' % (
+        average_jct,
+        makespan))
+
     sched.shutdown()
 
 if __name__=='__main__':
