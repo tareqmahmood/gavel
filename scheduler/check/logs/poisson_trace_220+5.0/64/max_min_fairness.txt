@@ -1,0 +1,20 @@
+Job 207: 607307.000
+Job 209: 152550.000
+Job 210: 9825.000
+Job 211: 58058.000
+Job 212: 13280.000
+Job 213: 9868.000
+Job 214: 282243.000
+Job 215: 51510.000
+Job 216: 59434.000
+Job 217: 293827.000
+Job 218: 70590.000
+Job 219: 41668.000
+Average job completion time: 92450.795 seconds (25.68 hours)
+Average job completion time (low priority): 92450.795 seconds (25.68 hours)
+Cluster utilization: 0.556
+Total cost: $0.00
+---------------------------------------------
+Results:
+Average JCT = 92450.794521 
+Makespan = 665998.00

@@ -1,0 +1,20 @@
+Job 448: 54870.000
+Job 449: 20815.000
+Job 450: 5304.000
+Job 451: 19296.000
+Job 452: 588654.000
+Job 453: 289125.000
+Job 454: 15670.000
+Job 455: 6617.000
+Job 456: 54630.000
+Job 457: 38918.000
+Job 458: 9755.000
+Job 459: 24717.000
+Average job completion time: 94123.501 seconds (26.15 hours)
+Average job completion time (low priority): 94123.501 seconds (26.15 hours)
+Cluster utilization: 0.652
+Total cost: $0.00
+---------------------------------------------
+Results:
+Average JCT = 94123.501089 
+Makespan = 757111.00

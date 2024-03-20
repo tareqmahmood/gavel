@@ -1,0 +1,20 @@
+Job 888: 8224.000
+Job 889: 9882.000
+Job 890: 6602.000
+Job 891: 27134.000
+Job 892: 131504.000
+Job 893: 73912.000
+Job 894: 4705.000
+Job 895: 10627.000
+Job 896: 93893.000
+Job 897: 39331.000
+Job 898: 24314.000
+Job 899: 39560.000
+Average job completion time: 108860.945 seconds (30.24 hours)
+Average job completion time (low priority): 108860.945 seconds (30.24 hours)
+Cluster utilization: 0.734
+Total cost: $0.00
+---------------------------------------------
+Results:
+Average JCT = 108860.945434 
+Makespan = 1077442.00
